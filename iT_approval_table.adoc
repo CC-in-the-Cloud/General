@@ -1,0 +1,45 @@
+= Coffee Maker Interpretation Team (CMIT) Approvals
+:showtitle:
+:table-caption: Table
+:revnumber: 0.3
+:revdate: 2020-01-29
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-ITname: CMIT
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== {iTC-ITname} Technical Resolution Approvals
+The goal of the {iTC-ITname} is to always reach a decision by consensus. That may not always be possible, but even when it is, the process for ensuring the changes are agreed to is handled by setting restrictions on the Interpretation branch in GitHub. 
+
+The table below specifies the approval criteria for accepting a resolution from the {iTC-ITname}.
+
+Within these numbers, the requirements of the ToR such as votes per organization, abstentions, etc., are in effect. 
+
+Approvals that occur through the GitHub approval process are automatically recorded and do not need any external recording or process.
+
+[cols=".^2,.^1,.^2,.^1,.^3",options="header"]
+|====
+
+|Category
+|Type
+|Approval
+|By
+|Description
+
+
+|Technical Decision
+|GitHub
+|75%
+^|{iTC-ITname}
+|This is a normal approval within GitHub (of a pull request). There are no rejections or blocks on the change.
+
+|Technical Recommendation
+|Offline (not GitHub)
+|66% with fewer than 25% negative
+^|iTC
+|If the change has been determined to be sufficiently large or a consensus decision cannot be made by the {iTC-ITname}, the final determination will be done by the whole iTC.
+
+|====

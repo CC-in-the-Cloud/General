@@ -1,0 +1,348 @@
+= <TOE type> international Technical Community Work Plan
+:showtitle:
+:imagesdir: images
+:table-caption!:
+:icons: font
+:revnumber: 0.1
+:revdate: 2019-08-05
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== {iTC-longname} Work Plan
+[cols=".^3,.^1,.^1,.^3,^.^1",options="header"]
+|===
+|Task 
+|Start
+|End
+|Comment
+|Status
+
+5.+^.|*iTC Terms of Reference*
+
+
+|{iTC-shortname} ToR created
+|
+|
+|
+|image:check-64.PNG[,,32]
+
+|{iTC-shortname} ToR approved by iTC
+|
+|
+|
+|image:progress-64.PNG[,,32]
+
+|{iTC-shortname} ToR approved by CCDB/CCMC
+|
+|
+|
+|image:important-64.PNG[,,32]
+
+|{iTC-longname} iTC is formally approved as an international Technical Community
+|
+|
+|
+|
+
+|TOR update
+|
+|
+|
+|
+
+5.+^.|*Work Plan*
+
+|Work Plan DRAFT created
+|
+|
+|
+|
+
+|Work Plan DRAFT Update
+|
+|
+|
+|
+
+5.+^.|*Security Problem Definition (SPD)*
+
+|Draft SPD created
+|
+|
+|
+|
+
+|Draft SPD comments reviewed by {iTC-shortname}
+|
+|
+|
+|
+
+|Draft SPD approved by {iTC-shortname}
+|
+|
+|
+|
+
+|Draft SPD published for public review
+|
+|
+|
+|
+
+|Draft SPD comment review
+|
+|
+|
+|
+
+|Update SPD
+|
+|
+|
+|
+
+|Manage update/creation of Position Statements
+|
+|
+|
+|
+
+|Publish disposition of comments and SPD
+|
+|
+|
+|
+
+5.+^.|*Security Functional Requirements (SFRs) & Evaluation Activities (EAs)*
+
+|Draft Security Requirements created
+|
+|
+|
+|
+
+|Draft Evaluation Activities created
+|
+|
+|
+|
+
+|Draft Security Requirements approved by {iTC-shortname}
+|
+|
+|
+|
+
+|Draft Evaluation Activities approved by {iTC-shortname}
+|
+|
+|
+|
+
+|Draft Security Requirements published for public review
+|
+|
+|
+|
+
+|Draft Evaluation Activities published for public review
+|
+|
+|
+|
+
+|Draft Security Requirements comment review
+|
+|
+|
+|
+
+|Draft Evaluation Activities comment review
+|
+|
+|
+|
+
+|Update Security Requirements
+|
+|
+|
+|
+
+|Update Evaluation Activities
+|
+|
+|
+|
+
+|Manage update/creation of Position Statements
+|
+|
+|
+|
+
+5.+^.|*Draft {iTC-longname} collaborative Protection Profile (cPP)*
+
+|Draft cPP by {iTC-shortname} (TOE, Assurance Reqs, rationale, etc.)
+|
+|
+|
+|
+
+|cPP published for public review
+|
+|
+|
+|
+
+|Update cPP and adjudicate comments
+|
+|
+|
+|
+
+|Publish cPP (ready for eval)
+|
+|
+|
+|
+
+5.+^.|*Supporting Documents (SDs) for {iTC-longname}*
+
+|Create draft “Rationale for Supporting Document for {iTC-longname}”
+|
+|
+|
+|
+
+|Get draft “Rationale for Supporting Document for {iTC-longname}”
+|
+|
+|
+|
+
+|Approved by {iTC-shortname}
+|
+|
+|
+|
+
+|Get draft “Rationale for Supporting Document for {iTC-longname}”
+|
+|
+|
+|
+
+|Approved by CCDB and CCMC
+|
+|
+|
+|
+
+|Vulnerability Analysis delivered to {iTC-shortname}
+|
+|
+|
+|
+
+|Equivalency Appendix delivered to {iTC-shortname}
+|
+|
+|
+|
+
+|Draft “Supporting Document for {iTC-longname}” 
+|
+|
+|
+|
+
+|Published for public review (CCDB)
+|
+|
+|
+|
+
+|{iTC-shortname} review and update of “Supporting Document for {iTC-longname}”
+|
+|
+|
+|
+
+5.+^.|*Evaluation/Certification of {iTC-longname} cPP/SDs*
+
+|Evaluation of cPP/SD
+|
+|
+|
+|
+
+|Certification of cPP/Ss
+|
+|
+|
+|
+
+|CCDB approval of cPP/SD
+|
+|
+|
+|
+
+5.+^.|*Final {iTC-longname} cPP/SD*
+
+|Publish cPP and SD
+|
+|
+|
+|
+
+5.+^.|*Create Work Plan for cPP Interpretations & cPP v2.0*
+
+|Create Work Plan to update cPP/SD – fixes and new capabilities
+|
+|
+|
+|
+
+|===
+
+=== Status Key
+
+[cols="1,.^3",options="header"]
+|===
+
+|Icon
+|Description
+
+|image:check-64.PNG[,,32]
+|Task has been completed
+
+|image:progress-64.PNG[,,32]
+|Task is in progress
+
+|image:important-64.PNG[,,32]
+|Task progress is in question
+
+|===
+
+== Revision History
+[cols="1,1,3",options="header"]
+|===
+|Version |Date |Description
+
+|0.1
+|TBD
+|Initial release for internal review
+
+|
+|
+|
+
+|===

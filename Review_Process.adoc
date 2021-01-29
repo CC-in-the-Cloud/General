@@ -1,0 +1,138 @@
+= Public Review Process for the _Coffee Maker_ iTC Documentation
+:showtitle:
+:toc:
+:toclevels: 3
+:table-caption: Table
+:revnumber: 0.1
+:revdate: 2019-08-14
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== Introduction
+
+[REVIEW]
+====
+This document calls the review period "Public Review Draft 1" and shows covering multiple documents at one time. Other terms can be used for the review (I have seen "Working Draft/Implementation Draft" and others). Any term can be used, but be consistent throughout the document.
+====
+
+This describes the Public Review Process used by the {iTC-shortname} for the preparation and eventual publication of the documentation being produced. Specific announcements will be handled individually.
+
+Please email {iTC-email} if there are any questions about the Review process.
+
+== Document Release Process
+The {iTC-shortname} follows the document release process below for the publication of documents. While ideally the cPP and SD would be released at the same time, this may not be the case and different documents may pass through the review process in parallel.
+
+[ditaa]
+....
+                                  
+    +----------+    +----------+   +----------+   +----------+   +----------+
+    |          |    |          |   | Public   |   |          |   | Public   |
+    | Internal |    |  Public  |   | Review   |   |  Public  |   | Review   |
+    |  Draft   |--> |  Review  |-->| Draft 1  |-->|  Review  |-->| Draft 2  |-+
+    |          |    |  Draft 1 |   | Update   |   |  Draft 2 |   | Update   | |
+    |          |    |  (45d)   |   | (60d)    |   |  (45d)   |   | (60d)    | |
+    +----------+    +----------+   +----------+   +----------+   +----------+ |
+                                                                              |
+            +-----------------------------------------------------------------+
+            |   +----------+   +----------+   +-----------+
+            |   |          |   |          |   |           |
+            |   | Proposed |   | Proposed |   | Final     |
+            +-->|  Draft   |-->|  Update  |-->| Document  |
+                |          |   |          |   | Published |
+                | (30d)    |   | (10d)    |   |           |
+                +----------+   +----------+   +-----------+
+....
+
+[REVIEW]
+====
+The time periods here can be adjusted based on what the iTC thinks is best. The time periods are generally considered the maximum time, but could be adjusted generally or individually. Note that if you do change them for a specific document review process that this should be called out explicitly with the review announcement covering that document.
+====
+
+.Review Timeline
+[[timeline]]
+|===
+|Phase |Time |Description
+
+|Internal Draft
+|
+|The normal, pre-release process for creating the documents
+
+|Public Review Draft 1
+|45 days
+|{iTC-shortname} has voted according to Terms of Reference to release this version for public review. Public (i.e. from non-iTC participants) comments are accepted during this period
+
+|Public Review Draft 1 Update
+|Up to 60 days
+|The {iTC-shortname} will review all received comments and update the documents accordingly
+
+|Public Review Draft 2
+|45 days
+|{iTC-shortname} has voted according to Terms of Reference to release this version for public review. Public (i.e. from non-iTC participants) comments are accepted during this period
+
+PAD Toolbox drafts will be published with this review (final review on toolboxes may proceed independently from rest of documents).
+
+|Public Review Draft 2 Update
+|Up to 60 days
+|The {iTC-shortname} will review all received comments and update the documents accordingly
+
+|Public Review Draft 3 (Optional, not shown)
+|45 days
+|{iTC-shortname} has voted according to Terms of Reference to release this version for public review. Public (i.e. from non-iTC participants) comments are accepted during this period
+
+|Public Review Draft 3 Update (Optional, not shown)
+|Up to 60 days
+|The {iTC-shortname} will review all received comments and update the documents accordingly
+
+|Proposed Draft
+|30 days
+|{iTC-shortname} has voted according to Terms of Reference to propose this as the final document. Public (i.e. from non-iTC participants) comments are accepted during this period
+
+|Proposed Update
+|10 days
+|{iTC-shortname} reviews any further comments and prepares the document for final publishing (updating all dates, producing official versions for publication)
+
+|Final Document Published
+|
+|Documents are posted to Common Criteria Portal
+
+|===
+
+The {iTC-shortname} may decide, based on the comments received during the Public Review Draft 2 period, that a Public Review Draft 3 period is needed. Public announcement of a third Review Draft or a Proposed Draft will be made once all comments have been addressed.
+
+=== Review Process
+There are two ways to contribute comments and suggestions to the {iTC-shortname}. The first is through GitHub, the second by spreadsheet. It should be noted however that comments that are received via the spreadsheet will be added to the GitHub platform to allow for a comprehensive discussion. Also, feedback for comments is only provided via the answers in the GitHub. 
+
+Each comment should have a suggested resolution be proposed if a change is needed to the document.
+
+[REVIEW]
+====
+It is possible that the iTC will not want to use GitHub for direct entry though for many reasons it is actually preferable (since you then do not need to enter that information in manually). If the iTC would prefer to not use GitHub, then this section should be removed.
+====
+
+==== GitHub Review Process
+To use GitHub to submit comments, you must have a GitHub account (and it is assumed you know how to use GitHub). Each comment should be submitted as an individual {iTC-GitHub}/issues[Issue] with the Label "Public Review" assigned. Pull Requests created for any issues will be linked to these Issues for traceability.
+
+==== Comment Matrix Spreadsheet Review Process
+In the <<SupDocTable>> table there is a link to the Comment Matrix spreadsheet. There are instructions for using the Matrix on the second worksheet. Please create a separate copy of the spreadsheet for each document.
+
+Email the spreadsheets to {iTC-email}.
+
+.Supporting Documents
+[[SupDocTable]]
+[cols="1,1",options="header"]
+|===
+|Title ^|Link
+
+.^|Comment Matrix
+^|{iTC-website}Comments-Matrix.xlsx[Download Comment Matrix]
+
+
+|===
+
+== Additional Notes
+The documents under review are the current state of output. Two major areas of discussion within the {iTC-shortname} that are still under consideration within are noted below. 

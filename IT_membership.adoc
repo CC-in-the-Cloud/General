@@ -1,0 +1,134 @@
+= Coffee Maker iTC Interpretation Team Membership
+:showtitle:
+:sectnumlevels: 3
+:table-caption: Table
+:imagesdir: images
+:icons: font
+:revnumber: 0.1
+:revdate: 2020-01-29
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+:iTC-ITname: CMIT
+
+== Introduction
+The {iTC-ITname} is chartered to handle changes between the "normal" release cycle of the iTC. As requests for interpretation are made, the {iTC-ITname} will review the requests and propose changes to the existing cPP and related documents. These changes would be rolled out "immediately" into the appropriate, currently maintained documents (i.e. they would not be rolled into documents which have been sunset). 
+
+The membership of the {iTC-ITname} is expected to be a subset of the overall iTC membership. There are several reasons for this, the primary one being the ability to rapidly respond to incoming requests. Being a member of the {iTC-ITname} comes with an expectation of a time commitment to regularly participate, both in terms of working on solutions to posed questions as well as voting on proposed solutions.
+
+== General Membership Information
+
+=== {iTC-ITname} Participation
+{iTC-ITname} members are expected to actively contribute to {iTC-ITname} activities and participate in the decision making process.
+
+[REVIEW]
+====
+The activity levels here should be verified
+====
+
+.Membership Participation Requirements
+[cols=".^1,.^1,.^2",options="header"]
+|===
+|Participation 
+|Minimum Activity Level
+|Description
+
+|Meetings (online or in person)
+|50%
+|Participation directly (or if allowed, by designated representative) in regularly scheduled {iTC-ITname} meetings
+
+|Voting
+|75%
+|Voting, either by GitHub approvals, email ballots or live meeting, on the proposals (this is not meant to be voting approvals this often, only voting actively this often)
+
+|===
+
+If it is determined that these rates are not being met, participation rates in the {iTC-ITname} may be checked as determined by the chair of the {iTC-ITname}. The {iTC-ITname} may then determine actions to be taken regarding members who are unable or unwilling to meet the obligations of membership.
+
+Membership is in general unlimited in time as long as no special incidents occur (e.g. see regulations below if new applicants want to join the {iTC-ITname} or regulations on involuntary leaving {iTC-ITname}). There should be only one representative per organisation (e.g. company or Scheme) in the {iTC-ITname}. Only members of the {iTC-shortname} can become {iTC-ITname} members. {iTC-ITname} will inform the {iTC-shortname} about all changes to the list of members.
+
+=== {iTC-ITname} Voting Member Size
+As the {iTC-ITname} is designed to be a subset of the entire {iTC-shortname}, it will have a defined size of the voting membership to ensure proper representation. 
+
+[REVIEW]
+====
+The size of the IT should be set here based on the overall size of the iTC. 
+====
+
+.{iTC-ITname} Voting Member Size
+[cols=".^1,.^1",options="header"]
+|===
+|Level 
+|Number
+
+|Minimum Size
+|XXX
+
+|Maximum Size
+|YYY
+
+|===
+
+The {iTC-ITname} will stop working on incoming requests if the membership falls below the minimum size. In this case, incoming requests would be handled by the full {iTC-shortname} until enough members can be added to the {iTC-ITname} to reconstitute it.
+
+
+The maximum or minimum sizes can only be changed by the full {iTC-shortname}.
+
+=== Non-Voting Membership
+From time to time the {iTC-ITname} may, at its discretion, accept non-voting participation by official representatives of the CC community (e.g. CCDB representatives, Scheme representatives, iTC or subgroup chairs, etc.). Non-voting participants are welcome to attend meetings and give input as they see fit. Non-voting participants are not subject to the same thresholds for meeting attendance as voting members. In particular the {iTC-ITname} intends that the involvement of non-voting participants should encourage greater levels of Scheme participation, and help to maintain support for cPPs in Position and Endorsement statements.
+
+To become a non-voting participant, please contact the chair or deputy chair for consideration. The {iTC-ITname} will discuss and approve using standard voting criteria.
+
+== Determining Membership
+=== Initial Membership
+The initial membership of the {iTC-ITname} would be determined by the general iTC. The iTC will first select the "officers" of the {iTC-ITname} (two or three, depending on the iTC needs). Selection of the initial officers is by the normal process defined by the ToR. 
+
+After the officers of the {iTC-ITname} have been named, the remaining membership in the {iTC-ITname} would be by volunteer/nomination up to the maximum number determined by the iTC. Up until the maximum number has been reached, members should be accepted or rejected by consensus.
+
+Once the {iTC-ITname} has been constituted, membership changes are handled by the {iTC-ITname} itself and not the iTC.
+
+=== Membership Changes
+The membership of the {iTC-ITname} is not static, and can be changed based on the needs of the {iTC-ITname} as well as the ability of a member to participate. The following table shows how requests related to changing membership will be handled.
+
+In general, approval to join the {iTC-ITname} is by consensus (assuming there is space). If there is no consensus, voting according to the ToR will be used.
+
+To join the {iTC-ITname}, the applicant must contact the chairperson and request membership.
+
+.{iTC-ITname} Membership Changes
+[cols=".^1,.^1,.^3",options="header"]
+|===
+|Change
+|Current Size
+|Outcome
+
+|Join
+|Full
+|If there is no space, the chair can start a wait list of people looking to join (or request to increase the size of the {iTC-ITname}). 
+
+The chair can also ask if anyone is willing to voluntarily leave for a replacement assuming there is consensus on the person joining.
+
+|Join
+|Not Full
+|The {iTC-ITname} would vote (looking for consensus) on whether the person should be allowed to join.
+
+|Replacement
+|Any
+|This is focused on someone from an organization leaving and having someone new from the same organization take their place. The new person would need consensus to join.
+
+Also note that an organization is not guaranteed membership in the {iTC-ITname}, so this is not guaranteed if there are people waiting to join. In that case the {iTC-ITname} should be notified will vote to determine whether a replacement will be accepted.
+
+|Leave
+|Any
+|As long as the {iTC-ITname} will remain above the minimum level set, there is no issue with someone leaving. If there are waiting people interested in joining, they could be asked to join. If not, then a general call could be made to check for interest.
+
+|Force Leave
+|Any
+|Forcing someone to leave would generally come at the discretion of the officers and unless there was egregious conduct should be limited to someone not meeting the participation requirements.
+
+|===
+
+Any time there is a change (or a request for a change), the {iTC-ITname} should be notified. While an applicant only needs to notify the chair, requests to leave or be replaced should be sent to the entire {iTC-ITname}.

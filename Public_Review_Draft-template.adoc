@@ -1,0 +1,108 @@
+= Public Review Draft 1 of the _Coffee Maker_ iTC <Document(s) for review>
+:showtitle:
+:toc:
+:toclevels: 3
+:table-caption: Table
+:revnumber: 0.2
+:revdate: 2019-08-14
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm.itc@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== Introduction
+
+This is an announcement of a public review period for the <document(s) for review> from the {iTC-shortname}. 
+
+[NOTE]
+====
+A description of the expectations of the review period should be placed here.
+====
+
+The document(s) will follow the Public Review Process as specified at {iTC-website}/Review_Process.html[{iTC-longname} Public Review Process].
+
+Please email {iTC-email} if there are any questions about the Review process.
+
+== Review Status Phase
+The document(s) listed here are in the *Public Review Draft 1* phase.
+
+Publication Date:: <start date>
+End of Comment Period:: <end date>
+
+== Documents for Review
+
+The following are the documents included in this Public Review Draft 1 Period:
+
+.Review Documents
+[[DocTable]]
+[cols="3,1,2",options="header"]
+|===
+|Title ^|Version ^|Link
+
+|collaborative PP for {iTC-longname} feature
+.^|0.8
+^.^|{iTC-website}cPP-filename.pdf[Download cPP]
+
+|PP-Configuration for base-cPP and PP-Modules
+.^|0.8
+^.^|{iTC-website}PPC-filename.pdf[Download PP-Configuration]
+
+|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative PP-Module for Mobile biometric enrolment and verification - for unlocking the device -
+.^|0.3
+^.^|{iTC-website}SD-filename.pdf[Download Supporting Document]
+
+|===
+
+== Document Release Process
+Based on the Public Review Process document, the documents listed here are currently in the highlighted phase below.
+
+[REVIEW]
+====
+I have been using yellow (with cYEL) in the box that is the current phase. Other ditaa colors could be used. This could be removed completely for just note about the phase.
+====
+
+[IMPORTANT]
+====
+If you are making any adjustments to the Review Process from what is documented in your primary document, these should be called out here to be clear. They should have a separate heading to be clear.
+====
+
+[ditaa]
+....
+                                  
+    +----------+    +----------+   +----------+   +----------+   +----------+
+    |          |    |  cYEL    |   | Public   |   |          |   | Public   |
+    | Internal |    |  Public  |   | Review   |   |  Public  |   | Review   |
+    |  Draft   |--> |  Review  |-->| Draft 1  |-->|  Review  |-->| Draft 2  |-+
+    |          |    |  Draft 1 |   | Update   |   |  Draft 2 |   | Update   | |
+    |          |    |  (45d)   |   | (60d)    |   |  (45d)   |   | (60d)    | |
+    +----------+    +----------+   +----------+   +----------+   +----------+ |
+                                                                              |
+            +-----------------------------------------------------------------+
+            |   +----------+   +----------+   +-----------+
+            |   |          |   |          |   |           |
+            |   | Proposed |   | Proposed |   | Final     |
+            +-->|  Draft   |-->|  Update  |-->| Document  |
+                |          |   |          |   | Published |
+                | (30d)    |   | (10d)    |   |           |
+                +----------+   +----------+   +-----------+
+....
+
+== Additional Notes
+The documents under review are the current state of output. Two major areas of discussion within the {iTC-shortname} that are still under consideration within are noted below. 
+
+[REVIEW]
+====
+There may not be anything to go here in which case leave it out. This is for specific topics you want reviewers to focus on or provide explicit input on (or to ignore a section you are still working on but want the rest of the document reviewed).
+====
+
+Comments on these specific topics can be made separately.
+
+=== Issue 1
+A description of the first issue and any specific direction you want to provide to people reviewing the documents.
+
+=== Issue 2
+A description of hte second issue and any specific direction you want to provide to people reviewing the documents.
+ 

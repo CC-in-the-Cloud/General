@@ -1,0 +1,57 @@
+Greetings,
+
+This email initiates the Formal Approval vote by the <iTC name> to <purpose of vote>.
+
+The details of the voting process, including eligibility to vote, can be found in section 7.7 (Voting) of the <iTC> Terms of Reference located at:
+
+<URL to the ToR, could be on the CC Portal page (probably best choice for authority) or on the iTC site>
+
+VOTING PERIOD
+
+The voting period will be 2 weeks, ending on <LAST DATE FOR VOTING, which should include something like end of the day based on some timezone>.
+
+<Describe the purpose of the vote here. If the vote is about a Public Release, make sure to include links to the documents that are proposed to be released. This could be to the GitHub document but ideally should be to the "finished" version of the document (i.e. the HTML/PDF that would actually be released).>
+
+BALLOT QUESTION
+
+The Chairperson of the iTC has put forward a motion to chance the name of the Coffee Mater iTC to the Tea Pot iTC. This will cover all references to the CM-iTC to become the TP-iTC.
+
+Vote on the motion put forward by the Chairperson:
+
+	[ ] Approve the motion for name change
+	[ ] Reject the motion for name change
+	[ ] Abstention from the motion for name change
+
+VOTING RULES
+
+Votes will be counted according to the Terms of Reference as noted above.
+
+HOW TO VOTE
+
+<A few examples of how to vote. Note that more than one way to vote can be included depending on the expectations of the iTC.>
+
+VOTE BY EMAIL
+
+Send an email with *exactly* the following subject line format:
+
+<Vote title>-<organization name>-<voter last name>-<Yes/No/Abstain>
+
+Include the vote and any further information (such as reasons for rejection or editorial suggestions) in the body of the email.
+
+Send the email to the following addresses (ALL of them):
+
+person1@gmail.com
+person2@outlook.com
+person3@yahoo.com
+
+
+VOTE BY SURVEY
+
+Go to the following link:
+
+<URL for the survey>
+
+
+Thank you,
+
+<Chairperson>

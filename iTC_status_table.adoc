@@ -1,0 +1,118 @@
+= _Coffee Maker_ iTC (CM-iTC) Status <DATE>
+:showtitle:
+:table-caption: Table
+:revnumber: 0.3
+:revdate: 2020-01-29
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== General
+[cols=".^1,.^1,.^1"]
+|====
+
+|*Chair:*
+2.+|_Johann Sebastian Bach_
+
+|*Project Manager:*
+2.+|_Ludwig Van Beethoven_
+
+|*Terms of Reference (TOR):*
+|Approved  
+|_Date_
+
+|*Essential Security Requirements (ESR):*
+|Approved
+|_Date_
+
+|*Security Problem Definition (SPD):*
+|_Approved/draft_
+|_Date_
+
+|*Contact the iTC:*
+2.+|contact this iTC at {iTC-email}
+
+|*Collaboration Site(s):*
+2.+|{iTC-website}[GitHub Repository]
+
+{iTC-website}[{iTC-shortname} Website]
+
+https://ccusersforum.onlyoffice.com[CCUF OnlyOffice]
+
+https://www.commoncriteriaportal.org[Other]
+
+|====
+
+== Scheme Information
+[cols="1,3"]
+|====
+
+|*Sponsoring Schemes:*
+|_Sponsoring schemes_
+
+|*Schemes actively involved in the iTC:*
+|_List any other schemes that are actively engaged with the iTC_
+
+|*Position statements:*
+|_Link to any position statement(s) that Schemes have issued_
+
+|*Endorsement statements:*
+|_Link to any endorsement statements that Schemes have issued_
+
+|====
+
+== Work items
+[cols="1,1,1",options="header"]
+|====
+
+|*Document:*
+|*Version:*
+|*Status & Date:*
+
+
+|https://www.commoncriteriaportal.org/files/ppfiles/test_doc_02.pdf[*_cPP for Coffee Makers_*]
+|_1.0_
+|_Published_  
+
+2019-04-01
+3.+|*Interpretations*
+
+https://www.niap-ccevs.org/Documents_and_Guidance/view_td.cfm?td_id=239[CMIT001 FAU_GEN.1 Audit for FMT_SMF.1]
+
+https://www.niap-ccevs.org/Documents_and_Guidance/view_td.cfm?td_id=239[CMIT002 FPT_STM Reliable Time Source correction]
+
+|{itc-website}/published/SD-CM-v1.html[*Supporting Document for evaluating {iTC-longname}*]
+|_1.0_
+|_Published_  
+
+2019-04-01
+
+|*_PP-Module for Milk Frothers_*
+|_0.2_
+|_Draft_
+
+3.+|*Interpretations*
+
+None
+
+|*_PP-Configuration for Coffee Machines with Milk Frothers_*
+|_0.2_
+|_Draft_
+
+3.+|*Interpretations*
+
+None
+
+|====
+
+== Other information
+[cols="1"]
+|====
+
+|_The iTC has been very busy and recently established the CMITS team for reviewing reported issues with the cPP and issuing appropriate interpretations._
+
+|====
+

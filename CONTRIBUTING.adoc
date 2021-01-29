@@ -1,0 +1,65 @@
+= Contributing to the iTC
+:showtitle:
+:toc: macro
+:toclevels: 3
+:imagesdir: images
+:icons: font
+:revnumber: 0.1
+:revdate: 2020-02-20
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/
+
+We want to thank you for taking the time to contribute. :+1: The {iTC-longname} iTC is made up of volunteers, so every bit of help is appreciated.
+
+The following is a set of guidelines for contributing to the {iTC-shortname} work in generating the collaborative Protection Profile (cPP), Supporting Document (SD) and related docs. These are guidelines and not rules. The explicit rules for the {iTC-shortname} have been documented in other places (which are referenced here), but use your best judgement and feel free to propose changes to this document or the {iTC-shortname}.
+
+toc::[]
+
+== Code of Conduct
+The {iTC-shortname} is governed by the {iTC-GitHub}/repo1/code_of_conduct.adoc[{iTC-shortname} Code of Conduct]. By participating in this project you agree to abide by its terms. Please report unacceptable behavior to the {iTC-shortname} Chair and Deputy Chair.
+
+== Getting Started
+The {iTC-shortname} has several repositories for the various documents of the iTC, including the overall management of the {iTC-shortname} as well as the website for posting information. 
+
+The repositories where active work related to the cPP/SD are:
+
+[cols=".^1,.^3",options="header"]
+|===
+|Repository
+|Description
+
+|{iTC-GitHub}repo1[Repository 1]
+|The repository for the cPP and SD
+
+|{iTC-GitHub}repo2[Repository 2]
+|The repository for the administrative documents related to the {iTC-shortname}
+
+|===
+
+== Contributing
+There are two types of contributions you can make to the {iTC-shortname}, Issues and Pull Requests. Issues are how we discuss topics, report concerns, ask questions and come to consensus. Pull Requests are the actual changes to the documents, the proposals that will be reviewed for inclusion into the next iteration. 
+
+=== Submitting Issues
+To help with submitting new Issues, several templates have been created to help prompt for the types of information we would like to see, but if for some reason, these don't meet your needs, feel free to submit a new issue from a blank template.
+
+Before creating a new issue though, please check the {iTC-GitHub}repo1/issues?q=is%3Aissue+is%3Aclosed[list of Closed Issues] to see if this topic has already been discussed. Just because something is closed does not mean it can't be revisited, but opening new issues on existing (and especially closed) topics is not helpful to the community overall.
+
+Go {iTC-GitHub}repo1/issues/new/choose[here] to create a new Issue.
+
+If you are unfamiliar with GitHub, the CCUF Team Tools Working Group has created a https://itc-wgtools.github.io/user-guide/userguide.html[iTC User Guide] to walk through the functionality of GitHub for iTC members.
+
+=== Submitting Pull Requests
+Pull Requests are always welcome contributions to the {iTC-shortname}. With a Pull Request you are showing exactly what changes you would make and where, which allows both discussion of the change and for a direct review of the change. 
+
+Help about how to create Pull Requests can be found https://itc-wgtools.github.io/user-guide/userguide.html#_using_pull_requests[here] in the iTC User Guide.
+
+== Formatting/Style
+The iTC documents are generally written in https://asciidoctor.org[Asciidoctor] markdown. This is a text format that is fairly easy to read, but can be processed into right output (such as PDF and HTML). 
+
+The CCUF Team Tools Working Group has provided a syntax guide for the most common formatting codes that are used that can be downloaded from https://github.com/itc-wgtools/cPP-Tools/tree/master/User%20Guidance[here]. This is meant to be viewed in a text form, or in a program such as https://asciidocfx.com/[AsciidocFX] where you can see both the text and a rich text version live.
+
+The documents also contain several variables which are used to ensure consistent naming. Information about these variables can be found in the {iTC-GitHub}repo1/Template_README.adoc[Template-README] document.

@@ -1,0 +1,310 @@
+= Coffee Maker International Technical Community Terms of Reference
+:showtitle:
+:sectnumlevels: 3
+:table-caption: Table
+:imagesdir: images
+:icons: font
+:revnumber: 0.4
+:revdate: 2019-10-21
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+:sectnums:
+== Identification
+Name: {iTC-longname} International Technical Community
+
+Abbreviation: {iTC-shortname}
+
+== Initiators
+* Scheme 1
+* Scheme 2
+* Scheme 3
+
+== Technology Area and Scope
+The scope of this international Technical Community (iTC) is _<product category>_ products. 
+
+The {iTC-shortname} will develop and maintain a collaborative Protection Profile (cPP) for such products. The {iTC-shortname} will also develop Supporting Documents (SD) that describe the Evaluation Activities for performance evaluation and presentation attack detection that are to take place when evaluating a product against the cPP.
+
+The initial cPP are to consider the Essential Security Requirements (ESR) <<1>>. It is anticipated that the scope of the first version of the cPP is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first version of the cPP with associated Supporting Documents, the {iTC-shortname} may consider to expand the scope of subsequent cPPs.
+
+== Key Persons / Affiliations
+Key roles are defined in <<Roles>>.
+
+In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in “{iTC-longname} International Technical Community – Key persons and affiliations” <<2>> provided separately at the Team lab file area of the iTC.
+
+== Collaboration Infrastructure
+To enable collaboration, the {iTC-shortname} uses collaboration services including email notification, discussion forums, and file storage that are accessible to {iTC-shortname} members. 
+
+The {iTC-shortname} is using a combination of hosted collaboration services provided by the Common Criteria Users Forum and GitHub.
+
+== iTC and cPP Development Process
+=== Application of the White Paper
+This {iTC-shortname} follows the processes defined in “Establishing International Technical Communities and Developing Collaborative Protection Profiles” <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB _<SHORT NAME>_ Working Group, or the CCRA CCDB as applicable. 
+
+=== Maintenance
+The {iTC-shortname} remains in place to answer inquiries and update the cPP as may be requested by CCDB, {iTC-shortname} members and/or others cPP stakeholders. The {iTC-shortname} Chair is responsible for establishing an appropriate periodic schedule and organizing the {iTC-shortname} to review, and if needed, update the cPP and SD.
+
+== Policies
+=== Membership
+This iTC is open to all interested persons who have an active role in this technology area and in CC evaluation. To join the iTC, each person sends a request to:
+
+{iTC-email}
+
+=== Principles
+The {iTC-shortname} should be working in manners that promote fair competition and meet the six principles of international standardisation determined by the WTO-TBT. See G/TBT/1/Rev.13 (8 March 2017) "DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995" <<5>> or later revision.
+
+* Transparency
+* Openness
+* Impartiality & Consensus
+* Effectiveness & Relevance
+* Coherence
+* Development Dimension
+
+If the {iTC-shortname} finds any of the principles not to be appropriate, it should inform the CCDB via the Liaison on what exceptions would be required.
+
+=== Code of Conduct
+The {iTC-shortname} draws from the ISO Code of Conduct for the technical Work <<4>> and the Contributor Covenant Code of Conduct <<6>>.
+
+[cols=".^1,.^2"]
+|===
+
+|Work for the net benefit of the international community
+|We recognize that the development of collaborative Protection Profiles is for the net benefit of the international community, over and above the interests of any individual or organization. We are committed to advancing collaborative Protection Profiles within their agreed scope and we will not hinder their development.
+
+|Uphold consensus and governance
+|We will uphold the key principles of International Standardization in the creation of collaborative Protection Profiles: consensus, transparency, openness, impartiality, effectiveness, relevance, coherence and the development dimension.
+
+|Agree to a clear purpose and scope
+|We are committed to having a clear purpose, scope, objectives, and plan to ensure the timely development of collaborative Protection Profiles.
+
+|Participate actively and manage effective representation	
+|We agree to actively participate in standards development projects. We will make our contributions to the work through the agreed upon tools and procedures in accordance with the iTC guidance documents.
+
+|Escalate and resolve disputes
+|We will identify and escalate disputes in a timely manner to ensure rapid resolution. We will uphold the agreed dispute resolution processes.
+
+|Behave ethically
+|We will act in good faith and with due care and diligence. We will avoid collusive or anticompetitive behaviour. We will promote a culture of fair and ethical behaviour.
+
+|Follow a Code of Conduct
+a|We are committed to following a code of conduct in an open, welcoming and inclusive manner. In meetings we are committed to:
+
+* conducting ourselves in a professional manner
+* respecting others and their opinions
+* accepting group decisions
+* ensuring that the views of all (including those whose first language is not that of the meeting) are heard and understood
+
+|===
+
+=== Language
+The {iTC-shortname} work and documents will be executed in the English language.
+
+=== Revision of the Terms-of-Reference
+The ToR should be subject for discussion and revision as needed and agreed upon within the {iTC-shortname}. 
+
+The CCDB should be informed via the CCDB Liaison whenever changes are made to the ToR that are principal in nature and may affect the endorsement status of the {iTC-shortname} within the CCRA.
+
+=== Decision-making
+==== Editorial decisions
+Editorial decisions (including correction of technical inconsistencies) are made at the discretion of the Technical Editor, in consultation with the Core SMEs and {iTC-shortname} Chair when needed.
+
+==== Technical decisions
+Ideally, technical decisions are made by reaching group consensus (see <<Voting>> for a definition). In most cases, the Core SMEs will be able to propose a resolution that is acceptable to the {iTC-shortname} and the originator of the issue. 
+
+As a guideline, decisions are made according to the following process:
+
+. Decisions may be made via email or during an in-person meeting or telephone conference call. In the case of email, the {iTC-shortname} will provide one or two weeks to make the decision. For in person or telephone conference calls, only members that attend the meeting will be able to participate in making the decision.
+. Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting will be implemented.
+. If there are members that disagree with a decision, they can request the reason for the objection to be documented.
+. Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
+
+Other {iTC-shortname} members are encouraged to post comments in response to issues and proposed resolutions at any time.
+
+A typical issue should be resolved within a two week period. Some issues may require more time for study and deliberation or due to holidays or other events. 
+
+=== Voting
+Decisions shall be taken on the basis of the consensus principle whenever possible.
+
+[quote,ISO/IEC Guide 2:2004]
+____
+Consensus: General agreement, characterized by the absence of sustained opposition to substantial issues by any important part of the concerned interests and by a process that involves seeking to take into account the views of all parties concerned and to reconcile any conflicting arguments.
+
+NOTE Consensus need not imply unanimity.
+____
+
+[REVIEW]
+====
+When creating your ToR, it is important to understand that this section is not the only way to accomplish voting procedures for an iTC, but is a good one to follow. Any well-documented and transparent set of voting procedures should be acceptable for use.
+====
+
+The {iTC-shortname} may define different classes of voting, but for votes related to the iTC itself, the process here defines how the voting will proceed. If the class of vote needed has not been defined, then the process here will be used by default.
+
+Voting is used infrequently as a way to formally decide on a particular iTC issue. The following would be considered iTC issues to require a formal vote:
+
+[GUIDANCE]
+====
+This is a short list and should be reviewed.
+====
+
+* Establishing formal working groups within the iTC (such as the Interpretation Team or special interest groups to work on specific areas)
+* Changes to the iTC governing documents (such as the Essential Security Requirements or Terms of Reference)
+* Public Review/Release of documents
+
+As determined by the iTC, additional voting classes will be defined in the documents where they will be used.
+
+==== Vote Eligibility
+Voting is limited specifically to the members defined at the time the vote is called. Membership in the {iTC-shortname} is defined as inclusion on the {iTC-shortname} mailing list.
+
+One vote is allowed for each member organization, not for each individual member, regardless of membership within the {iTC-shortname}. “Organization” is defined according to the definition adopted by the CCUF; for commercial enterprises, a parent company and all of its divisions and subsidiaries comprise one organization. It is the responsibility of each organization to determine which individual member will cast a vote on its behalf.
+
+Eligible voting organizations are determined at the time the Call for Votes is sent out based on inclusion on the {iTC-shortname} mailing list. Any organization not included on this list at the time the Call for Votes is posted is ineligible to cast a vote.
+
+==== Vote Workflow
+
+As a guideline, voting takes place according to the following process:
+
+. A Call for Votes is posted, including the mechanism for casting ballots and time period during which ballots are accepted
+. At the end of the voting period, ballots are tabulated and reviewed by the Chairperson or the Technical Editor
+. Results of voting are posted, including a summary of the vote and the votes cast by each organization. 
+
+This process is illustrated, below. Timing for each part of the process is provided as a benchmark. A typical voting cycle should be completed within a three-week period. Some voting periods may be longer due to holidays or other events. 
+
+[#Vote-Workflow] 
+.Vote Workflow
+[ditaa]
+....
+                  +--------------+    +--------------+                     +--------------+
+ /-----------\    |              |    |              |    /-----------\    |              |    /-----------\
+ |           |    | #1           |    | #2           |    |           |    | #3           |    |           |
+ | New Vote  |    | Call for     |    | Member       |    | Voting is |    | Ballots are  |    |    End    |
+ |           |--->| Vote is      +--->| organizations|--->|   Closed  |--->| tabulated    |--->|           |
+ |           |    | announced    |    | may cast     |    |           |    | and results  |    |           |
+ \-----------/    |              |    | their ballots|    \-----------/    | posted       |    \-----------/
+                  |              |    |              |         | |         |              |
+                  +--------------+    +--------------+         | |         +--------------+
+                         |                                     | |                 |
+                         \-------------------+-----------------/ \--------+--------/
+                                             |                            |
+                                         Two Weeks                    One Weeks
+....
+
+Votes submitted shall be explicit: positive, negative, or abstention. A positive vote may be accompanied by editorial or technical comments, on the understanding that the iTC Chair or Technical Editor (as applicable) will decide how to deal with them. If a voting member finds the proposal unacceptable, it shall vote negatively and state the technical reasons. It may indicate that the acceptance of specified technical modifications will change its negative vote to one of approval, but it shall not cast an affirmative vote which is conditional on the acceptance of modifications.
+
+==== Vote Counting
+
+A vote is approved if:
+
+. A two-thirds majority of the Counted votes of the {iTC-shortname} are positive, and
+. Not more than one-quarter of the Counted votes cast are negative.
+
+Counted votes are determined by the following conditions:
+
+* Only one vote per organization is made
+* Negative votes are accompanied by a technical reasons
+
+[NOTE]
+====
+An organization submitting multiple non-matching votes is allowed to determine the final vote to be counted before voting is closed. The onus is on the organization to ensure the proper vote. A set of non-matching votes will cause the organization votes to not be considered Counted votes.
+====
+
+Abstentions and negative votes not accompanied by technical reasons are not considered to be Counted votes in the final total. They will be noted in the record only.
+
+[GUIDANCE]
+====
+An iTC may decide they need to have different classes of voting based on different "classes" of actions. For example moving to a Public Review Draft may require a higher vote than accepting changes into the Master branch (or other classifications). It is acceptable to specify different voting requirements based on different needs as long as it is clearly defined when the types of votes need to be used.
+
+For simplicity and speed it is recommended to use consensus voting whenever possible.
+====
+
+=== Meetings
+Meetings are held at times, with frequency, and in forms that are determined by the {iTC-shortname} members.
+
+=== Record-keeping
+The following records are created and maintained:
+
+* Meeting attendance and summary of decisions
+* Action items and their disposition
+* Comments and resolutions
+* Interim draft documents
+* iTC Roster with indication of voting members
+* Key persons and affiliations
+
+These records are accessible to {iTC-shortname} members.
+
+=== Patent and other intellectual property
+==== Essential patents
+“Essential Patent” means any issued or pending patent claim for which its use is necessary (i.e., there is no commercially and technically feasible non-infringing alternative) to fulfill the conformance requirements of the Collaborative Protection Profile or Supporting Documents produced by the {iTC-shortname}.
+
+{iTC-shortname} members must inform the Chairperson if they are personally aware of any potential Essential Patent, regardless of the owner or controller of such patents.
+
+As soon as an Essential Patent is identified, the {iTC-shortname} should seek resolution in the following priority order:
+
+. The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the Collaborative Protection Profile or Supporting Documents; or,
+. If the owner of the Essential Patent is unwilling or unable to grant such a license, then the {iTC-shortname} should modify the cPP or SDs so as not to infringe on the Essential Patent. 
+
+==== Members’ intellectual property
+{iTC-shortname} members are solely responsible for protecting their organization’s proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the {iTC-shortname}, do not provide any assurance of such protection.
+
+==== Work product ownership
+No copyrights will be asserted on the Collaborative Protection Profile and Supporting Documents. {iTC-shortname} members may use those work products but may not assert moral or authorship rights. The use of those work products is controlled by the Common Criteria evaluation process: claims of conformance to the work products are meaningless without Common Criteria certification.
+
+=== Inappropriate topics
+iTC members should not discuss topics that could be interpreted as collusion, such as pricing, licensing terms, territories, market shares, or litigation. {iTC-shortname} members are encouraged to inform the Chairperson if they become aware of such discussions.
+
+=== Common Criteria considerations
+The products of this {iTC-shortname} will conform to CCRA requirements for mutual recognition.
+
+Other considerations, such as CC/CEM conformance and PP evaluation, are to be determined.
+
+== Roles
+=== Initiator(s)
+Initiators represent the national government(s) who requested the development of the cPPs and SDs for this technology area. The initiators do not have any particular responsibilities in the {iTC-shortname}, but they can have other roles as well in the {iTC-shortname} according to the ToR. Initiators of the {iTC-longname} cPP are listed in <<Initiators>>.
+
+=== Chairperson(s)
+Chairpersons oversee the operation of the {iTC-shortname} in accordance with the ToR: assign or approve key persons, set and manage schedules, convene meetings, plan and lead activities, solicit participation and input, manage issues and discussions. Chairpersons can also work as core SMEs and make comments or vote on any technical issues. However comments or vote from chairpersons are treated equally and any decision-making should be done as described at <<Decision-making>>.
+
+Every 12 months, or when necessary due to vacancies, or when so requested by members of the {iTC-shortname}, the {iTC-shortname} Chair should discuss the current assignments of key persons with the {iTC-shortname} membership.
+
+=== Record Manager
+The record manager is a role that primarily supports the {iTC-shortname} Chair. Unless agreed otherwise with the {iTC-shortname} Chair, the responsibilities include:
+
+* Establish and maintain a record with key persons and their affiliations.
+* Establish and maintain an updated roster, including identity of organisations/nations eligible to vote.
+* Administrate membership applications.
+* Keep mailing lists up to date.
+* Provide access for new members to appropriate {iTC-shortname} resources.
+* Make notes of meetings. 
+* Keep the {iTC-shortname} action item list updated.
+* Ensure that {iTC-shortname} records are maintained, available and in good order.
+* Support the {iTC-shortname} Chair in daily operation of the {iTC-shortname}.
+
+=== Technical Editor(s)
+Technical Editors serve as the primary author for the cPPs and SDs: create and update documents to reflect the decisions of the {iTC-shortname}, post drafts for access by {iTC-shortname} members, and finalize drafts for approval. 
+
+=== Core SMEs
+Core Subject Matter Experts comprise a team that develops the initial drafts of cPPs and SDs, evaluates issues and comments, and proposes appropriate and equitable resolutions to the {iTC-shortname}. The Core SME team is composed of a balance of industry, end user, and Common Criteria experts who can work effectively with the rest of the {iTC-shortname} members. Core SMEs should have adequate competence, time and resources available in order to contribute to provide timely resolutions to the {iTC-shortname}.
+
+==== Industry SMEs
+Industry SMEs provide knowledge of the technology area and experience with product evaluation. They also help make appropriate decisions based on their practical knowledge of markets, customer expectations, implementation, and costs. 
+
+==== Lab  SMEs
+Lab SMEs provide a solid understanding the evaluation process in the various schemes under the CCRA, and can offer contributions from a unique perspective. They can offer perspective on evaluation activities (what the evaluator does to test or otherwise confirm compliance with requirements), and well as ensuring the requirements are written in such a way that there can be a clear pass/fail criteria.
+
+==== Certification Body SMEs
+Common Criteria certification bodies provide knowledge and experience in the expression of functional and assurance requirements in the language of the CC, and help ensure that the cPP and SDs comply with CCRA-accepted standards and practices.
+
+==== Other SMEs
+Other SMEs can come from a wide range of background, including government technical experts, end user representatives, as well as consultants or those from academia.
+
+== References
+* [#1]#[1]# {iTC-longname} Essential Security Requirements, {iTC-website}[Online] (link when draft published)
+* [#2]#[2]# {iTC-longname} International Technical Community - Key Persons and Affiliations, {iTC-website}[Online] (link when available)
+* [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, http://www.commoncriteriaportal.org/files/communities/Establishing%20iTCs%20and%20cPP%20development%20-%20v0-7.pdf[Online]
+* [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/publication/PUB100397.html[Online]
+* [#5]#[5]#  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&Language=ENGLISH&Context=FomerScriptedSearch&languageUIChanged=true#[Online Search]
+* [#6]#[6]# Contributor Covenant Code of Conduct,  https://www.contributor-covenant.org/version/2/0/code_of_conduct/[Online]

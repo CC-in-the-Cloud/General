@@ -1,0 +1,66 @@
+= Coffee Maker international Technical Community (iTC)
+:showtitle:
+:revnumber: 0.2
+:revdate: 2019-08-23
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+:sectnums!:
+== Acknowledgements
+The {iTC-longname} international Technical Community (iTC) also known as {iTC-shortname} is comprised of representatives from Industry, Government agencies, Common Criteria Test Laboratories, and members of academia.
+
+== Introduction
+
+The {iTC-longname} international Technical Community (iTC) was approved and established by the CCRA Committee in _October 2018_ after review and approval of the Essential Security Requirements (ESR) document for _your technology type_. The initial Essential Security Requirements (ESR) was produced by the _name of Working Group before the iTC was established_. 
+
+The iTC is sponsored by _X_ national CCRA signatory schemes: _list of schemes_.
+
+https://www.commoncriteriaportal.org/<SOME_LINK_TO_THE_ESR_PDF>[Essential Security Requirements].
+
+The iTC is open to stakeholders with an interest in the security functionality of _technology type_. To join the iTC, please message: {iTC-email}.
+
+The homepage for the {iTC-shortname} is here: {iTC-website}
+
+The work repository for the {iTC-shortname} is here: {iTC-GitHub}
+
+== Position Statements
+
+CCRA signatory nations may publish Position Statements in regard to the work items of the iTC.
+
+https://www.commoncriteriaportal.org/communities/<LINK_TO_THE_POSITION_STATEMENTS>.cfm/[Position Statements].
+
+== Security Problem Definition (SPD)
+
+The iTC released the draft Security Problem Definition (SPD) document for public review on _Date_. The public review closed on _Date_. 
+
+All comments from the public review were addressed and further comments may be received during the public review of the iTC work items.
+
+https://www.commoncriteriaportal.org/communities/<SOME_LINK_TO_THE_SPD_PDF>[SPD document]
+[NOTE]
+====
+If the iTC produces several documents there may be more than one SPD document.
+====
+
+== Work Items
+
+The iTC has published:
+
+ *  a _cPP for something_ 
+ *  a PP-Module that addresses _something_
+ *  a PP-Module that addresses _something else_
+ *  a security functional package that addresses _something_
+ 
+The iTC also issues interpretations addressing issues in the application of these documents.
+{iTC-website}/interpretations/[Interpretations].
+
+The iTC is currently developing:
+
+ *  a _cPP for something_ 
+ *  a PP-Module that addresses _something_
+ *  a PP-Module that addresses _something else_
+ *  a security functional package that addresses _something_
+

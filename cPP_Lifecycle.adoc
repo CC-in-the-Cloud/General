@@ -1,0 +1,121 @@
+= cPP Lifecycle for the _Coffee Maker_ iTC
+:showtitle:
+:toc:
+:toclevels: 3
+:table-caption: Table
+:imagesdir: images
+:revnumber: 0.2
+:revdate: 2020-04-09
+:xrefstyle: full
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== Introduction
+As part of the normal work of the {iTC-shortname}, new iterations of the cPP and SD will be released over time. Ideally, when a new version of the cPP is released, everyone would immediately follow the new version, but of course this is not possible as it takes time to transition to updated requirements.
+
+The purpose of this document is to specify the lifecycle for the cPP versions, providing guidance on when a new version will supersede earlier versions (when the previous version is no longer considered acceptable for use) and how this will be announced to the wider community.
+
+[NOTE]
+====
+While the document talks about cPP revisions, this could cover the cPP, SD and any other related documents.
+====
+
+== Revision Classes
+There are three classes of revisions to a cPP that can be produced. The descriptions are not meant to be exhaustive, but to represent the level of changes in the document.
+
+.Revision Classes for a cPP
+[cols=".^1,.^1,.^4",options="header"]
+|===
+
+|Revision Class
+|Version Position
+|Description
+
+|Major
+|**X**.y.zz
+|Full update to the cPP, including requirements changes (addition or removal of requirements)
+
+|Minor
+|x.**Y**.zz
+|Update to the cPP, likely updating existing requirements, but not changing them (i.e. not adding/removing requirements)
+
+|Technical Decision or Errata
+|x.y.**ZZ**
+|Application of Technical Decisions to the cPP (no other changes)
+
+|===
+
+[REVIEW]
+====
+TDs can be published immediately (i.e. increase the **ZZ** for every TD) or on a periodic basis as an Errata version, which is basically a roll-up of all TDs issued to that version to that point. The iTC should be consistent in how it releases new versions based on TDs, but which one is used does not matter.
+
+Errata updates should be published on some schedule (i.e. every 3-6 months) that will roll-up all TDs into single updates instead of publishing a new version with each TD. In this case, another row should be added to the above table showing an Errata revision class that is immediate, but noting that it contains multiple TDs in a single release.
+====
+
+[IMPORTANT]
+====
+Technical Decisions have their own numbering system. The versioning here is specific to the cPP, and the version which will contain the specific TD. 
+====
+
+== Revision Transitions
+When a new revision will be published, it is immediately available for use. So if version 1.1 is released, it can be immediately used for an evaluation. To ensure a common direction and basis for evaluation within the community, the release of a new cPP revision means that the previous revisions must be retired from active use.
+
+The transition period is a time of overlap when multiple revisions of the cPP may be used for an active evaluation. The transition periods are determined by the type of revision being published. At the end of the transition period, the previous revision will be sunset, or retire and no longer be considered acceptable for new evaluations (evaluations already in process may still be completed).
+
+The following table specifies when the previous revision will be sunset/retired and the new revision takes precedence.
+
+.Transition Periods 
+[cols=".^1,.^1",options="header"]
+|===
+
+|Revision Class
+|Transition Period
+
+|Major
+.2+|6 months after the new revision is published
+
+|Minor
+
+
+|Technical Decision
+|Immediate
+
+|===
+
+[IMPORTANT]
+====
+While the iTC may specify these time periods for the transitions between versions, a scheme may decide on different periods/dates for the transition between versions. The iTC may be able to influence the acceptance of the transition times, but it is a scheme decision.
+====
+
+=== Major & Minor Transitions
+The practical implication of this transition period is that there should only be a 6 month overlap with multiple versions being available for use. The following diagram illustrates the time periods, showing the months from the initial release of v1.0 through to v2.0.
+
+[#transitions]
+[ditaa,"transition.png"]
+....
+/----------------------------\
+|  cPP v1.0     cRED         |
+\----------------------------/
+
+                    /-----------------------\
+                    |  cPP v1.1   cBLU      |
+                    \-----------------------/
+
+                                   /----------------------------\
+                                   |  cPP v2.0    cGRE          |
+                                   \----------------------------/
+
+0                   12       18    22       28         Months
+*-------------------*--------*-----*--------*------------------->
+v1.0                v1.1           v2.0                Release
+
+                             v1.0           v1.1       Sunset
+....
+
+=== Technical Decision Transitions
+By their nature, Technical Decisions are meant to take effect immediately. The one caveat to this is for evaluations where the checkout report has already been submitted to the scheme, at which point the Technical Decisions are not required to be added to the Security Target.
+

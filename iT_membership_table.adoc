@@ -1,0 +1,55 @@
+= Coffee Maker Interpretation Team (CMIT) Membership <DATE>
+:showtitle:
+:table-caption: Table
+:revnumber: 0.3
+:revdate: 2020-01-29
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-ITname: CMIT
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+
+== {iTC-ITname} Membership
+[cols=".^2,.^2,.^2,.^2,.^1",options="header"]
+|====
+
+|Position
+|Name
+|Organization
+|Type
+|Joined
+
+|Chair
+|Johann Sebastian Bach
+|Mr. Coffee
+|Vendor
+|1/1/2019
+
+|Deputy Chair
+|
+|
+|Scheme
+|
+
+|Secretary
+|
+|
+|
+|
+
+|Member
+|
+|
+|Lab
+|
+
+|Non-Voting
+|
+|
+|
+|
+
+
+|====

@@ -1,0 +1,83 @@
+= Allowed Components for the _Coffee Maker_ cPP
+:showtitle:
+:toc: macro
+:imagesdir: images
+:icons: font
+:revnumber: 0.2
+:revdate: 2019-08-23
+
+:iTC-longname: Coffee Maker
+:iTC-shortname: CM-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://coffeemaker.github.io/
+:iTC-GitHub: https://github.com/coffeemaker/repository/
+:pp-name: Coffee Maker cPP
+
+== Introduction
+This page lists the various cPPs and PP-Modules that are approved by the {iTC-shortname} to be used in conjunction with the {pp-name} in PP-Configurations.
+
+[GUIDANCE]
+====
+It may be necessary over time to explicitly reject cPPs (or specific versions) from inclusion with the cPP. There may also be cases where specific versions of the cPP are compatible with specific versions of other components. These should be noted (probably by adding columns to the table).
+====
+
+== Approved Components
+.Allowed Components
+[%header,cols="1,1,1,1,1,2"]
+|===
+|cPP/PP-Module 
+|Version/Date
+|Date Approved
+|Responsible iTC
+|Link
+|Description
+
+|Milk Frother PP-Module
+|v1.0, January 1, 2019
+|March 1, 2019
+|Frother iTC
+|http://milkfrother.somewhere.us[homepage]
+|Milk frother for coffee (and tea)
+
+|===
+
+=== Justification for Allowed Components
+[GUIDANCE]
+====
+Here you would provide the reasons for the allowed inclusion. This can be as short or as long as the iTC determines is necessary.
+====
+
+==== Milk Frother
+Everyone needs the ability to froth their milk before putting it in their coffee, and doing so does not impact the ability to make coffee as defined in the {pp-name}.
+
+== Archive List of Previously Approved Components
+[GUIDANCE]
+====
+As cPPs and components evolve versions may no longer be considered compatible. As versions of components are removed from the approved list their history should be captured in tables here along with a justification for the removal. 
+====
+
+.Archived Components
+[%header,cols="1,1,1,1,1"]
+|===
+|cPP/PP-Module 
+|Version/Date
+|Date Removed
+|Responsible iTC
+|Last cPP compatible version
+
+|Milk Frother PP-Module
+|v1.0, January 1, 2019
+|March 1, 2020
+|Frother iTC
+|version 1.1
+
+|===
+
+=== Justification for Archived Components
+[GUIDANCE]
+====
+Here you would provide the reasons for components no longer being listed as approved. This can be as short or as long as the iTC determines is necessary.
+====
+
+==== Milk Frother
+With the release of {pp-name} v2.0, the requirements on milk frothing have been integrated into the cPP and so the PP-Module is no longer necessary.

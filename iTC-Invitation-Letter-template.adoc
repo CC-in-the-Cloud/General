@@ -1,0 +1,76 @@
+= iTC Invitation Letter
+:showtitle:
+:sectnums:
+:imagesdir: images
+:icons: font
+:revnumber: 0.1
+:revdate: 2019-06-19
+
+:iTC-longname: Coffee Maker
+:WG-shortname: CM-WG
+:iTC-email: cm-itc@gmail.com
+
+<Month day, Year>
+
+Request to establish an International Technical Community (iTC) for the creation of Common Criteria Collaborative Protection Profile and Supporting Document relating to the security evaluation and certification of {iTC-longname}. 
+ 
+== Background  
+The Common Criteria (CC) is an internationally recognized standard that forms the basis for the independent evaluation and certification of the security of a wide range of IT products. The Common Criteria Recognition Arrangement (CCRA) is an arrangement signed by 30 nations that establishes a basis for common evaluation and certification practice, and enables international recognition of product certificates in all of those nations. This means that products certified under CCRA by one of the certificate authorizing nations will have their certification recognized by all 29 of the others. Further details of CC can be found at the official website: www.commoncriteriaportal.org. 
+
+The CCRA infrastructure includes a Management Committee (CCMC) that is responsible for management of the whole arrangement, and a Development Board (CCDB) that is responsible for the management of the CC criteria and methodology. As part of the continuing development of CC usage, the CCMC and CCDB are establishing international Technical Communities (iTCs) to create multi-national security requirements for individual technology types, with the aim of improving its value to end-users and risk owners of security products, and of including product developers in the requirements development process. These security requirements will be expressed in the form of Common Criteria collaborative Protection Profiles (cPPs), and the main aim of an iTC is therefore to create a cPP and associated Supporting Document . As experience in using the cPP builds, the iTC will also provide a forum for sharing that experience and for updating the cPP to cover future developments in the technology type and in the attacks that are made on products. 
+
+== Who we are  
+The CCDB has established a Working Group to assist in creating an iTC (and hence cPP) for {iTC-longname} security (the Working Group name is abbreviated to “{WG-shortname}”). The Working Group comprises participating Certification Bodies from <x> nations, at present:
+
+* Country 1
+* Country 2
+* Country x
+
+[NOTE]
+====
+The countries should be listed alphabetically unless there is a specific preference among the sponsoring schemes.
+====
+
+Together, this group has produced a statement of ‘Essential Security Requirements’ (ESR) which represent the common needs of the {WG-shortname} members. This letter is being sent by the CCDB as part of a call for further participation in the official {iTC-longname} iTC, which will develop the cPP and respective Supporting Document. 
+ 
+== What is needed  
+iTCs are a method of consolidating skills, expertise, and security knowledge from all stakeholders in the evaluation and certification of a technology type. The involvement of product developers, and their collaboration in the work, is crucial to the success of the iTC, and relies upon the individual participants bringing technical knowledge of threats, product functionality, and potential vulnerabilities. It is therefore important that the product developers provide participants with strong technical knowledge for the creation of the cPPs and related Supporting Documents.
+
+There are many skills and backgrounds that are beneficial for the creation of an effective cPP and its Supporting Document. Therefore, the iTC is looking for further participation of:
+
+* Developers - technical representatives, as subject matter experts are vital - marketing and/or CC specialists can take part and may be helpful at the start up meeting but success depends upon the continual interactions between the technical experts of the developers involved as they work to produce and maintain the cPP;  
+* Government experts - especially those versed in the threats associated with the technology and governmental use cases;
+* Evaluators - able to provide proposals and comments upon the technical and cost effectiveness of proposed assurance mechanisms.
+
+[NOTE]
+====
+Responding to this call for participation does not constitute a legal or financial commitment on either side. 
+====
+
+The {iTC-longname} WG welcomes comments on the ESR from CC schemes, industry, academia, etc. Comments will be passed to the working group that prepared the ESR and to the iTC. 
+
+== What are the timelines?  
+Much of the timing will be in the hands of the members and set by the iTC itself. However, the preferred target is for the iTC to produce first technical documents by <date estimate>. The iTC would then be expected to continue with further development and maintenance of the cPPs and SDs as needed. 
+
+Details on the tentative timeline proposed by the initial members can be found in the work plan.
+
+The work was started with an initial teleconference in <Month Year>. 
+
+[NOTE]
+====
+Although work towards a cPP is undertaken by the members before the iTC is formally approved by the CCDB (based on approval of the iTC Terms of Reference), The iTC is proceeding according to the defined steps of the iTC/cPP process (see <<1>>), meaning for example that the next step will be finalizing SPD and public review. 
+====
+
+== How to become a participant  
+Attending a meeting or sending email to the iTC Records Manager at {iTC-email} will provide a prospective {iTC-longname} iTC member or iTC observer with the information needed and the opportunity to join the iTC. 
+ 
+
+== Further Information  
+The Common Criteria portal website (www.commoncriteriaportal.org) provides the definitive source for further information. On this site will be found all of the documents referenced here together with contact details and membership lists for the iTC. 
+
+More details of the process surrounding the creation of an iTC and cPPs are given in the document ‘Establishing International Technical Communities and collaborative Protection Profiles development <<1>>’. 
+ 
+== References  
+[#1]#[1]# “Establishing International Technical Communities and collaborative Protection Profiles development,” [Online]. Available https://www.commoncriteriaportal.org/files/communities/Establishing%20iTCs%20and%20cPP%20development%20-%20v0-7.pdf[here].
+
+

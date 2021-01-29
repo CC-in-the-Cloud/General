@@ -1,0 +1,54 @@
+= Files README
+
+There are several templates and files provided within this repository, each with its own purpose. This focuses on the template files and will describe their purpose.
+
+Most of the templates are written in Asciidoctor syntax. You should take a look at the Templates_README.adoc file as it provides some direct information about general contents of the templates.
+
+[cols=".^1,.^3",options="header"]
+|===
+|File
+|Description
+
+|README.adoc
+|This is a sample README file for the repository. It will be displayed automatically below the code window on the home page of the repository.
+
+|ESR-template.adoc
+|A template for the Essential Security Requirements document that would be created by the Working Group.
+
+|iTC-ToR.adoc
+|A template for the iTC Terms of Reference.
+
+|CC Portal Page.adoc
+|This is a template for the contents that would be placed on the https://www.commoncriteriaportal.org/communities/index.cfm[Common Criteria Communities] page for the iTC.
+
+|iTC-Invitation-Letter-template.adoc
+|This is a template for the official invitation letter to join the iTC. This is posted to the community page for the iTC on the Common Criteria Portal (it can also be posted on the iTC home page).
+
+|iTC_status_table.adoc
+|A template for providing a status update on the progress of the iTC. 
+
+|iTC_Work_Plan_template.adoc
+|This is a template for the table of the overall work plan for the creation of the cPP and related documents.
+
+|PP-Config.adoc
+|A template for documenting what other cPPs, PP-Modules or Packages can be used with the cPP(s) created by the iTC.
+
+|Review_Process.adoc
+|A template for how an iTC would publish drafts for public review and manage the process (phases, time periods, etc).
+
+|Public_Review_Draft_template.adoc
+|A template for announcing a document for public review.
+
+|Comments-Matrix-template.xlsx
+|An Excel spreadsheet template that can be used for accepting comments during public review.
+
+|Vote_email_template.txt
+|A template for an email to be sent out announcing a call for the iTC membership to vote on a topic.
+
+|cPP_Lifecycle.adoc
+|A template for showing the expected live cycle transitions for the cPP as new versions are created and old versions are retired.
+
+|Antitrust.txt
+|A sample antitrust statement that can be added to meeting notes/presentations. This has been copied from other similar organizations and should be acceptable to any organization with legal concerns about participation in the iTC.
+
+|===
