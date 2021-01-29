@@ -1,0 +1,164 @@
+= _CC in the Cloud_ Essential Security Requirements
+:showtitle:
+:icons: font
+:revnumber: 0.1
+:revdate: 2021-01-28
+
+:iTC-longname: Common Criteria in the Cloud iTC
+:iTC-shortname: CCitC-iTC
+
+
+== Preface
+The CC in the Cloud WG is developing an Essential Security Requirements (ESR) that captures the fundamental requirements. This initial draft contains material that was created by the WG as a framework to utilize Common Criteria methodology for products deployed in a cloud environment.
+
+====
+
+== Background and Purpose
+
+There is not yet a defined and accepted method within the Common Criteria that addresses IT product evaluations in the cloud environment.
+
+Today, CC reflects a static point in time security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are liscenced and maintaned to a services model where assurance benefits accrued from CC are not availible in the cloud.
+
+Customers are buying services, not products “Gartner foresees double-digit growth in government use of public cloud services, with spending forecast to grow on average 17.1% per year through 2021.” --Understanding Cloud Adoption in Government
+
+“In fiscal 2019, the White House-issued Cloud Smart strategy gave agencies a mandate to expedite their journeys to the cloud Federal agencies spent a combined $5.9 billion in contract obligations on cloud infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and other cloud support and migration services. They’re on track to spend $7.1 billion in fiscal 2020.”--The State of Federal Cloud: Market Briefing
+
+At some point customers are going to recognize that a CC evaluation of an ICT product provides little assurance in a cloud environment Without a plan for CC addressing, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
+
+As the market moves to cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for the cloud scenario.
+
+====
+
+== Use Case(s)
+
+Use Case 1: Software as a service (SaaS) a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted.It is sometimes referred to as "on-demand software", and was formerly referred to as "software plus services" by Microsoft. SaaS applications are also known as on-demand software and Web-based/Web-hosted software
+
+[NOTE]
+cPP_App_SW
+
+Use Case 2: Platform as a service (PaaS) or application platform as a service (aPaaS) or platform-based service is a category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
+
+[NOTE]
+GP_OS_PP
+
+Use Case 3: Infrastructure as a service (IaaS) are online services that provide high-level APIs used to dereference various low-level details of underlying network infrastructure like physical computing resources, location, data partitioning, scaling, security, backup etc. A hypervisor, such as Xen, Oracle VirtualBox, Oracle VM, KVM, VMware ESX/ESXi, or Hyper-V, LXD, runs the virtual machines as guests. Pools of hypervisors within the cloud operational system can support large numbers of virtual machines and the ability to scale services up and down according to customers' varying requirements.
+
+[NOTE]
+PP_BASE_VIRTUALIZATION
+
+[NOTE]
+====
+START HERE FOR NEXT MEETING
+
+Need to adress gaps with sample PPs and the Cloud
+====
+
+== Resources to be Protected
+[NOTE]
+====
+This section provides a list of the type of resources that will be protected when a product is evaluated. Some examples are below.
+====
+
+	Sensitive data in transit.
+	Sensitive data stored locally by the application. 
+	Application code and configuration parameters.
+
+The application should also not require security features in the platform be disabled, as this weakens the underlying platform.
+
+== Attacker access
+[NOTE]
+====
+How can the attacker gain access to the product? 
+====
+
+	An attacker is assumed to attempt attacks from the following vantage points:
+o	The network across which the application engages in communication, both actively and passively.
+o	The platform on which the application is installed, though as an unprivileged subject.
+	An attacker has an arbitrary amount of time to analyze the behavior of the application, its interaction with its host device or platform, and/or the data it transmits over the network.
+
+== Attacker Resources
+[NOTE]
+====
+Generally the attacker will have "an arbitrary amount of time to study ..." whatever the thing the device is protecting against. For example for a Network Device, the ability to study traffic to/from the device, for biometrics it could be to study how it works and time to make fakes to test.
+====
+
+•	An arbitrary amount of time to study input/output from a device
+•	Many sample devices to test and attack
+
+== Boundary of Device
+[NOTE]
+====
+In most cases the boundary is probably the entire device, but if it is intended as a subcomponent, then it may be more restrictive. 
+
+If the boundary is more complex, a diagram may be useful here.
+
+The two examples below are from SW App
+
+	The application consists of the software provided by its vendor. Any software in the application installation package is potentially in scope during evaluation. This includes those pieces that may extend the functionality of the underlying platform, such as kernel drivers. The application exists both as an object that is stored on the file system of the host platform as well as a runtime object that exists during its execution. The application code may execute directly on a microprocessor, or it may be script or bytecode interpreted by a runtime environment.
+	Shared libraries (static or dynamically loaded) from third parties that convey with the application are also in scope.
+
+== Essential Security Requirements
+[NOTE]
+====
+This is the most critical section, the bullet list of requirements the cPP shall have to meet. 
+
+This should be a focused list to product better results.
+
+The list below is taken from the SW App ESR.
+====
+
+Functionality-related requirements are:
+	Limit network connectivity to necessary communications, and encrypt sensitive data that is transmitted remotely using a trusted communications channel.
+	Leverage the platform to protect any sensitive data at rest stored in non-volatile memory, such as credentials.
+	Require initial assignment of credentials by the end user whenever the application is shipped with default credentials or no credentials.
+	Restrict access to those platform resources which are necessary to achieve its stated functionality.
+	Properly implement, or leverage the platform, for cryptographic operations such as key generation, encryption and decryption, random bit generation, hashing, signing, and keyed-hash message authentication.
+	Leverage the platform's exploit mitigation features, and never engage in behavior that undermines the platform's security features.
+	Be distributed only in the format supported by the platform's package manager, and ensure trusted update.
+Assurance-related requirements are:
+	Timely patching of any publicly-disclosed vulnerabilities, including those in 3rd party components that convey with the application.
+	Use of anti-exploitation options provided in the development toolchain.
+
+== Assumptions
+[NOTE]
+====
+These will form the basis of the assumptions in the cPP.
+====
+
+	The application relies upon a trustworthy computing platform for its execution. This includes the underlying platform and whatever runtime environment it provides to the application.
+	The user of the application software is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy.
+	The administrator of the underlying platform or application software is not careless, wilfully negligent or hostile, and administers the software within compliance of the approved enterprise security policy.
+
+== Optional Extensions
+[NOTE]
+====
+These are like "stretch" goals. Things that may not be available in all products but which are available (and likely desirable).
+====
+
+Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
+
+	Client authentication to remote peers using X.509v3 certificates.
+
+== Objective Requirements
+[NOTE]
+====
+These are "future" goals. No products may meet these yet but they are called out as important to the iTC as defined in the founding documents. 
+
+This section may not be in all ESRs.
+====
+
+Requirements specified here specify security-relevant behaviour that is not expected to be realized currently in products, but capabilities that may be mandated in future versions of the ESR and resulting cPPs.
+
+TBD
+
+== Outside the Scope of Evaluation
+[NOTE]
+====
+Things listed here can be explicitly excluded from consideration for requirements. For example types of attacks that may not be readily able to be handled or are just considered out of scope (such as for USB where a device is compromised and returned to the user). 
+
+Things listed here may end up being used in ESRs for PP-Modules based on a base-PP later. For example, additional functionality of the device (such as a VPN gateway on top of a network device) may be excluded here.
+====
+
+	The hardware or firmware of the underlying platform.
+	The host operating system or runtime environment on which the application executes. 
+	Specific functional behavior that is not global to all applications.
