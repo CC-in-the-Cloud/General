@@ -46,24 +46,25 @@ Use Case 3: Infrastructure as a service (IaaS) are online services that provide 
 [NOTE]
 PP_BASE_VIRTUALIZATION
 
+
+
+== Known Evaluation Methodology Gaps
+
+= Static Analysis
+Traditional evaluations must adopt rigid and static boundaries with regards to product version, platform hardware, and product scope. These considerations are problematic when adopted to a dynamic operating environment like the cloud.
+
+= Use of Cryptography
+
+= Platform Abstraction
+
+= Environmental Evolution
+Cloud environments have extremely limited half-lives. Traditional certifications can not match pace.
+== Proposals for Solutions
+
 [NOTE]
 ====
-START HERE FOR NEXT MEETING
-
-Need to adress gaps with sample PPs and the Cloud
+START HERE NEXT MEETING
 ====
-
-== Resources to be Protected
-[NOTE]
-====
-This section provides a list of the type of resources that will be protected when a product is evaluated. Some examples are below.
-====
-
-	Sensitive data in transit.
-	Sensitive data stored locally by the application. 
-	Application code and configuration parameters.
-
-The application should also not require security features in the platform be disabled, as this weakens the underlying platform.
 
 == Attacker access
 [NOTE]
