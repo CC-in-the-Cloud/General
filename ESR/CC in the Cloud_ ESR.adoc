@@ -51,19 +51,21 @@ PP_BASE_VIRTUALIZATION
 == Known Evaluation Methodology Gaps
 
 = Static Analysis
-Traditional evaluations must adopt rigid and static boundaries with regards to product version, platform hardware, and product scope. These considerations are problematic when adopted to a dynamic operating environment like the cloud.
+Traditional product evaluations, most equivalent to SaaS use cases, must adopt rigid and static boundaries with regards to product version, platform components, and product scope. These considerations are problematic when adopted to a dynamic operating environment like the cloud.
+
+Explicit detail of all TOE and Platform configurations and interactions between layers is required to ensure validation. Cloud certifications would require the concept of a Trusted Platform in which this detail often unknown and quickly perishable, but the security posture is not diminished.
 
 = Use of Cryptography
 
 = Platform Abstraction
-
+Existing TOE composition requires stability in both the TOE and TOE Platform.
 = Environmental Evolution
 Cloud environments have extremely limited half-lives. Traditional certifications can not match pace.
 == Proposals for Solutions
 
 [NOTE]
 ====
-START HERE NEXT MEETING
+START HERE NEXT MEETING - Continue discussion around platform level changes
 ====
 
 == Attacker access
