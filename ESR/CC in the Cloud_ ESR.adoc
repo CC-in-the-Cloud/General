@@ -59,14 +59,13 @@ Explicit detail of all TOE and Platform configurations and interactions between 
 
 = Platform Abstraction
 Existing TOE composition requires stability in both the TOE and TOE Platform.
+
 = Environmental Evolution
-Cloud environments have extremely limited half-lives. Traditional certifications can not match pace.
+Cloud environments have extremely limited half-lives. Traditional certifications can not match pace. Furthermore, as Cloud Hosting agreements are negotiated indepedently, access to the same platform or platforms used to evaluate a product cannot be guaranteed to the Common Criteria end user. 
+
 == Proposals for Solutions
 
-[NOTE]
-====
-START HERE NEXT MEETING - Continue discussion around platform level changes
-====
+== Assumptions
 
 == Attacker access
 [NOTE]
@@ -74,10 +73,10 @@ START HERE NEXT MEETING - Continue discussion around platform level changes
 How can the attacker gain access to the product? 
 ====
 
-	An attacker is assumed to attempt attacks from the following vantage points:
-o	The network across which the application engages in communication, both actively and passively.
-o	The platform on which the application is installed, though as an unprivileged subject.
-	An attacker has an arbitrary amount of time to analyze the behavior of the application, its interaction with its host device or platform, and/or the data it transmits over the network.
+* An attacker is assumed to attempt attacks from the following vantage points:
+* The network across which the application engages in communication, both actively and passively.
+* The platform on which the application is installed, though as an unprivileged subject.
+* An attacker has an arbitrary amount of time to analyze the behavior of the application, its interaction with its host device or platform, and/or the data it transmits over the network.
 
 == Attacker Resources
 [NOTE]
@@ -97,8 +96,9 @@ If the boundary is more complex, a diagram may be useful here.
 
 The two examples below are from SW App
 
-	The application consists of the software provided by its vendor. Any software in the application installation package is potentially in scope during evaluation. This includes those pieces that may extend the functionality of the underlying platform, such as kernel drivers. The application exists both as an object that is stored on the file system of the host platform as well as a runtime object that exists during its execution. The application code may execute directly on a microprocessor, or it may be script or bytecode interpreted by a runtime environment.
-	Shared libraries (static or dynamically loaded) from third parties that convey with the application are also in scope.
+* The application consists of the software provided by its vendor. Any software in the application installation package is potentially in scope during evaluation. This includes those pieces that may extend the functionality of the underlying platform, such as kernel drivers. The application exists both as an object that is stored on the file system of the host platform as well as a runtime object that exists during its execution. The application code may execute directly on a microprocessor, or it may be script or bytecode interpreted by a runtime environment.
+* Shared libraries (static or dynamically loaded) from third parties that convey with the application are also in scope.
+====
 
 == Essential Security Requirements
 [NOTE]
@@ -111,16 +111,16 @@ The list below is taken from the SW App ESR.
 ====
 
 Functionality-related requirements are:
-	Limit network connectivity to necessary communications, and encrypt sensitive data that is transmitted remotely using a trusted communications channel.
-	Leverage the platform to protect any sensitive data at rest stored in non-volatile memory, such as credentials.
-	Require initial assignment of credentials by the end user whenever the application is shipped with default credentials or no credentials.
-	Restrict access to those platform resources which are necessary to achieve its stated functionality.
-	Properly implement, or leverage the platform, for cryptographic operations such as key generation, encryption and decryption, random bit generation, hashing, signing, and keyed-hash message authentication.
-	Leverage the platform's exploit mitigation features, and never engage in behavior that undermines the platform's security features.
-	Be distributed only in the format supported by the platform's package manager, and ensure trusted update.
+* *Limit network connectivity to necessary communications, and encrypt sensitive data that is transmitted remotely using a trusted communications channel.
+* Leverage the platform to protect any sensitive data at rest stored in non-volatile memory, such as credentials.
+* Require initial assignment of credentials by the end user whenever the application is shipped with default credentials or no credentials.
+* Restrict access to those platform resources which are necessary to achieve its stated functionality.
+* Properly implement, or leverage the platform, for cryptographic operations such as key generation, encryption and decryption, random bit generation, hashing, signing, and keyed-hash message authentication.
+* Leverage the platform's exploit mitigation features, and never engage in behavior that undermines the platform's security features.
+* Be distributed only in the format supported by the platform's package manager, and ensure trusted update.
 Assurance-related requirements are:
-	Timely patching of any publicly-disclosed vulnerabilities, including those in 3rd party components that convey with the application.
-	Use of anti-exploitation options provided in the development toolchain.
+* Timely patching of any publicly-disclosed vulnerabilities, including those in 3rd party components that convey with the application.
+* Use of anti-exploitation options provided in the development toolchain.
 
 == Assumptions
 [NOTE]
@@ -128,9 +128,12 @@ Assurance-related requirements are:
 These will form the basis of the assumptions in the cPP.
 ====
 
-	The application relies upon a trustworthy computing platform for its execution. This includes the underlying platform and whatever runtime environment it provides to the application.
-	The user of the application software is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy.
-	The administrator of the underlying platform or application software is not careless, wilfully negligent or hostile, and administers the software within compliance of the approved enterprise security policy.
+=== Trusted Platform
+* Cloud based service models inherently incur a trust relationship to certain components of the Information Technology solution. As such, the level and functionality of this trust must be codified by the following considerations:
+
+** The platform provider must 
+[NOTE]
+Start Here Next - Create bullet lists for goals across stack components and how to leverage existing requirements/collateral
 
 == Optional Extensions
 [NOTE]
@@ -140,7 +143,7 @@ These are like "stretch" goals. Things that may not be available in all products
 
 Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
 
-	Client authentication to remote peers using X.509v3 certificates.
+* Client authentication to remote peers using X.509v3 certificates.
 
 == Objective Requirements
 [NOTE]
@@ -162,6 +165,6 @@ Things listed here can be explicitly excluded from consideration for requirement
 Things listed here may end up being used in ESRs for PP-Modules based on a base-PP later. For example, additional functionality of the device (such as a VPN gateway on top of a network device) may be excluded here.
 ====
 
-	The hardware or firmware of the underlying platform.
-	The host operating system or runtime environment on which the application executes. 
-	Specific functional behavior that is not global to all applications.
+* The hardware or firmware of the underlying platform.
+* The host operating system or runtime environment on which the application executes. 
+* Specific functional behavior that is not global to all applications.
