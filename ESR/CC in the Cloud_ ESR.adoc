@@ -2,16 +2,13 @@
 :showtitle:
 :icons: font
 :revnumber: 0.1
-:revdate: 2021-01-28
+:revdate: 2021-04-21
 
 :iTC-longname: Common Criteria in the Cloud iTC
 :iTC-shortname: CCitC-iTC
 
-
 == Preface
 The CC in the Cloud WG is developing an Essential Security Requirements (ESR) that captures the fundamental requirements. This initial draft contains material that was created by the WG as a framework to utilize Common Criteria methodology for products deployed in a cloud environment.
-
-====
 
 == Background and Purpose
 
@@ -26,8 +23,6 @@ Customers are buying services, not products “Gartner foresees double-digit gro
 At some point customers are going to recognize that a CC evaluation of an ICT product provides little assurance in a cloud environment Without a plan for CC addressing, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
 
 As the market moves to cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for the cloud scenario.
-
-====
 
 == Use Case(s)
 
@@ -50,27 +45,30 @@ PP_BASE_VIRTUALIZATION
 
 == Known Evaluation Methodology Gaps
 
-= Static Analysis
+=== Analysis is Static
 Traditional product evaluations, most equivalent to SaaS use cases, must adopt rigid and static boundaries with regards to product version, platform components, and product scope. These considerations are problematic when adopted to a dynamic operating environment like the cloud.
 
 Explicit detail of all TOE and Platform configurations and interactions between layers is required to ensure validation. Cloud certifications would require the concept of a Trusted Platform in which this detail often unknown and quickly perishable, but the security posture is not diminished.
 
-= Use of Cryptography
+=== Use of Cryptography
+Current cryptography certification frameworks rely on extremely detailed algorithm, implenetation, and entropy details that are not always availible or predicatble to end users or product vendors on various Cloud platforms or environments.
 
-= Platform Abstraction
-Existing TOE composition requires stability in both the TOE and TOE Platform.
+=== Platform Abstraction
+Existing TOE composition requires stability in both the TOE and TOE Platform. The TOE operating environment in a Cloud use case may or may not change dramatically due to a variety of factors such as hardware deprecation, underlying firmware updates, OS changes, etc. These changes may or may not be detected by the TOE and may or may not affect the TOE security posture. 
 
-= Environmental Evolution
+New methodology to address minimum satisfactory capabilities in this regard will be needed to bridge this gap.
+
+=== Environmental Evolution
 Cloud environments have extremely limited half-lives. Traditional certifications can not match pace. Furthermore, as Cloud Hosting agreements are negotiated indepedently, access to the same platform or platforms used to evaluate a product cannot be guaranteed to the Common Criteria end user. 
 
-== Proposals for Solutions
+== Proposed Methods for Developing Solutions 
 
 === Create SDs for PP authors to offer an approach for evaluating cloud-based products and services.
 
 ==== Provide additional threat model details for SFR/SAR mappings
 
 ===== Insider Threat
-===== Multi-tennat
+===== Multi-tenant
 ===== Credentials
 ===== Configuration
 
@@ -78,65 +76,29 @@ Cloud environments have extremely limited half-lives. Traditional certifications
 
 === Identify procurement requirements for Cloud and propose updates to utilize CC in the Cloud outputs
 
-== Assumptions
-
-== Attacker access
-[NOTE]
-====
-How can the attacker gain access to the product? 
-====
-
-* An attacker is assumed to attempt attacks from the following vantage points:
-* The network across which the application engages in communication, both actively and passively.
-* The platform on which the application is installed, though as an unprivileged subject.
-* An attacker has an arbitrary amount of time to analyze the behavior of the application, its interaction with its host device or platform, and/or the data it transmits over the network.
-
-== Attacker Resources
-[NOTE]
-====
-Generally the attacker will have "an arbitrary amount of time to study ..." whatever the thing the device is protecting against. For example for a Network Device, the ability to study traffic to/from the device, for biometrics it could be to study how it works and time to make fakes to test.
-====
-
-* An arbitrary amount of time to study input/output from a device
-* Many sample devices to test and attack
-
-== Boundary of Device
-[NOTE]
-====
-In most cases the boundary is probably the entire device, but if it is intended as a subcomponent, then it may be more restrictive. 
-
-If the boundary is more complex, a diagram may be useful here.
-
-The two examples below are from SW App
-
-* The application consists of the software provided by its vendor. Any software in the application installation package is potentially in scope during evaluation. This includes those pieces that may extend the functionality of the underlying platform, such as kernel drivers. The application exists both as an object that is stored on the file system of the host platform as well as a runtime object that exists during its execution. The application code may execute directly on a microprocessor, or it may be script or bytecode interpreted by a runtime environment.
-* Shared libraries (static or dynamically loaded) from third parties that convey with the application are also in scope.
-====
-
 == Essential Security Requirements
 [NOTE]
 ====
 This is the most critical section, the bullet list of requirements the cPP shall have to meet. 
 
-This should be a focused list to product better results.
+Copied from NIST CSF:
+** Identify
+** Protect
+** Detect
+** Respond
+** Recover
 
-The list below is taken from the SW App ESR.
+Also check NIST 800-37r2, 39r2, 53r5
+https://www.nist.gov/cyberframework/risk-management-framework
+
 ====
 
 Functionality-related requirements are:
-* *Limit network connectivity to necessary communications, and encrypt sensitive data that is transmitted remotely using a trusted communications channel.
-* Leverage the platform to protect any sensitive data at rest stored in non-volatile memory, such as credentials.
-* Require initial assignment of credentials by the end user whenever the application is shipped with default credentials or no credentials.
-* Restrict access to those platform resources which are necessary to achieve its stated functionality.
-* Properly implement, or leverage the platform, for cryptographic operations such as key generation, encryption and decryption, random bit generation, hashing, signing, and keyed-hash message authentication.
-* Leverage the platform's exploit mitigation features, and never engage in behavior that undermines the platform's security features.
-* Be distributed only in the format supported by the platform's package manager, and ensure trusted update.
-Assurance-related requirements are:
-* Timely patching of any publicly-disclosed vulnerabilities, including those in 3rd party components that convey with the application.
-* Use of anti-exploitation options provided in the development toolchain.
+
+** TOE must be resillient to underlying platform changes.
+** Risk management must be applied to the range of changes that are acceptable. 
 
 == Assumptions
-
 
 === Trusted Platform
 * Cloud based service models inherently incur a trust relationship to certain components of the Information Technology solution. As such, the level and functionality of this trust must be codified by the following considerations:
@@ -153,28 +115,6 @@ Assurance-related requirements are:
 [NOTE]
 Start Here Next - discuss relationship between the trusted provider vendor seeking a cc in the cloud cert vs a vendor providing a trusted platform for cloud certifications. how will authorities certify a trusted platform? 
 
-== Optional Extensions
-[NOTE]
-====
-These are like "stretch" goals. Things that may not be available in all products but which are available (and likely desirable).
-====
-
-Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
-
-* Client authentication to remote peers using X.509v3 certificates.
-
-== Objective Requirements
-[NOTE]
-====
-These are "future" goals. No products may meet these yet but they are called out as important to the iTC as defined in the founding documents. 
-
-This section may not be in all ESRs.
-====
-
-Requirements specified here specify security-relevant behaviour that is not expected to be realized currently in products, but capabilities that may be mandated in future versions of the ESR and resulting cPPs.
-
-TBD
-
 == Outside the Scope of Evaluation
 [NOTE]
 ====
@@ -182,7 +122,3 @@ Things listed here can be explicitly excluded from consideration for requirement
 
 Things listed here may end up being used in ESRs for PP-Modules based on a base-PP later. For example, additional functionality of the device (such as a VPN gateway on top of a network device) may be excluded here.
 ====
-
-* The hardware or firmware of the underlying platform.
-* The host operating system or runtime environment on which the application executes. 
-* Specific functional behavior that is not global to all applications.
