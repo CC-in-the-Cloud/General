@@ -14,29 +14,33 @@ The CC in the Cloud WG is developing an Essential Security Requirements (ESR) th
 
 There is not yet a defined and accepted method within the Common Criteria that addresses IT product evaluations in the cloud environment.
 
-Today, CC reflects a static point in time security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are liscenced and maintaned to a services model where assurance benefits accrued from CC are not availible in the cloud.
+Today, CC reflects a static point in time for security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are liscenced and maintaned to a services model where assurance benefits accrued from CC are not availible in the cloud.
 
-Customers are buying services, not products “Gartner foresees double-digit growth in government use of public cloud services, with spending forecast to grow on average 17.1% per year through 2021.” --Understanding Cloud Adoption in Government
+Customers are buying services, not products “Gartner foresees double-digit growth in government use of public cloud services, with spending forecast to grow on average 17.1% per year through 2021.” --Understanding cloud Adoption in Government
 
-“In fiscal 2019, the White House-issued Cloud Smart strategy gave agencies a mandate to expedite their journeys to the cloud Federal agencies spent a combined $5.9 billion in contract obligations on cloud infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and other cloud support and migration services. They’re on track to spend $7.1 billion in fiscal 2020.”--The State of Federal Cloud: Market Briefing
+“In fiscal 2019, the White House-issued cloud Smart strategy gave agencies a mandate to expedite their journeys to the cloud Federal agencies spent a combined $5.9 billion in contract obligations on cloud infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and other cloud support and migration services. They’re on track to spend $7.1 billion in fiscal 2020.”--The State of Federal cloud: Market Briefing
 
-At some point customers are going to recognize that a CC evaluation of an ICT product provides little assurance in a cloud environment Without a plan for CC addressing, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
+At some point customers are going to recognize that a CC evaluation of an ICT product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
 
-As the market moves to cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for the cloud scenario.
+As the market moves to cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
 
 == Use Case(s)
 
-Use Case 1: Software as a service (SaaS) a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted.It is sometimes referred to as "on-demand software", and was formerly referred to as "software plus services" by Microsoft. SaaS applications are also known as on-demand software and Web-based/Web-hosted software
+Use Case 1: Software as a service (SaaS) a software licensing and delivery model in which software is licensed on a subscription basis and it is centrally hosted. It is sometimes referred to as "on-demand software", and was formerly referred to as "software plus services" by Microsoft. SaaS applications are also known as on-demand software and Web-based/Web-hosted software
 
 [NOTE]
-cPP_App_SW
+cPP_App_SW, cPP_DBMS, PP_MDM
 
 Use Case 2: Platform as a service (PaaS) or application platform as a service (aPaaS) or platform-based service is a category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
 
 [NOTE]
-GP_OS_PP
+GP_OS_PP, cPP_ND
 
 Use Case 3: Infrastructure as a service (IaaS) are online services that provide high-level APIs used to dereference various low-level details of underlying network infrastructure like physical computing resources, location, data partitioning, scaling, security, backup etc. A hypervisor, such as Xen, Oracle VirtualBox, Oracle VM, KVM, VMware ESX/ESXi, or Hyper-V, LXD, runs the virtual machines as guests. Pools of hypervisors within the cloud operational system can support large numbers of virtual machines and the ability to scale services up and down according to customers' varying requirements.
+
+[comment]
+Add Storage and Network IaaS language to use case?
+[/comment]
 
 [NOTE]
 PP_BASE_VIRTUALIZATION
@@ -48,29 +52,37 @@ PP_BASE_VIRTUALIZATION
 === Analysis is Static
 Traditional product evaluations, most equivalent to SaaS use cases, must adopt rigid and static boundaries with regards to product version, platform components, and product scope. These considerations are problematic when adopted to a dynamic operating environment like the cloud.
 
-Explicit detail of all TOE and Platform configurations and interactions between layers is required to ensure validation. Cloud certifications would require the concept of a Trusted Platform in which this detail often unknown and quickly perishable, but the security posture is not diminished.
+Explicit detail of all TOE and Platform configurations and interactions between layers is required to ensure validation. cloud certifications would require the concept of a Trusted Platform in which this detail often unknown and quickly perishable, but the security posture is not diminished.
 
 === Use of Cryptography
-Current cryptography certification frameworks rely on extremely detailed algorithm, implenetation, and entropy details that are not always availible or predicatble to end users or product vendors on various Cloud platforms or environments.
+Current cryptography certification frameworks rely on extremely detailed algorithm, implenetation, and entropy details that are not always availible or predicatble to end users or product vendors on various cloud platforms or environments.
 
 === Platform Abstraction
-Existing TOE composition requires stability in both the TOE and TOE Platform. The TOE operating environment in a Cloud use case may or may not change dramatically due to a variety of factors such as hardware deprecation, underlying firmware updates, OS changes, etc. These changes may or may not be detected by the TOE and may or may not affect the TOE security posture. 
+Existing TOE composition requires stability in both the TOE and TOE Platform. The TOE operating environment in a cloud use case may or may not change dramatically due to a variety of factors such as hardware deprecation, underlying firmware updates, OS changes, etc. These changes may or may not be detected by the TOE and may or may not affect the TOE security posture. 
 
 New methodology to address minimum satisfactory capabilities in this regard will be needed to bridge this gap.
 
 === Environmental Evolution
-Cloud environments have extremely limited half-lives. Traditional certifications can not match pace. Furthermore, as Cloud Hosting agreements are negotiated indepedently, access to the same platform or platforms used to evaluate a product cannot be guaranteed to the Common Criteria end user. 
+Cloud environments have extremely limited half-lives. Traditional certifications can not match pace. Furthermore, as cloud Hosting agreements are negotiated indepedently, access to the same platform or platforms used to evaluate a product cannot be guaranteed to the Common Criteria end user. 
 
-== Proposed Methods for Developing Solutions 
+== Proposed Approaches for Extending Evaluations to the Cloud
 
-=== Create SDs for PP authors to offer an approach for evaluating cloud-based products and services.
+=== Create SDs for PP authors to offer an approach for evaluating Cloud-based products and services.
+
+[comment]
+Provide specific instructions for updating PPs for cloud use cases. 
+[/comment]
 
 ==== Provide additional threat model details for SFR/SAR mappings
 
-===== Insider Threat
-===== Multi-tenant
+[comment]
+Start here next meeting
+[/comment]
+
 ===== Credentials
 ===== Configuration
+===== Insider Threat
+===== Multi-tenant
 
 === Evaluate MDM Equivalency appendix for re-use in CC in the Cloud SDs to address trusted platform issues
 
@@ -111,9 +123,6 @@ Functionality-related requirements are:
 *** Specify any existing ISO/IEC 20243 (e.g. Open Group Trusted Technology Provider Standard) certificate information for the TOE Environment.
 *** If no collateral as noted above is availible:
 **** The platform providers must identify make, model, and version of any 
-
-[NOTE]
-Start Here Next - discuss relationship between the trusted provider vendor seeking a cc in the cloud cert vs a vendor providing a trusted platform for cloud certifications. how will authorities certify a trusted platform? 
 
 == Outside the Scope of Evaluation
 [NOTE]
