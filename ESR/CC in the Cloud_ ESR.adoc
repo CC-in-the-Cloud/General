@@ -73,15 +73,29 @@ Cloud environments have extremely limited half-lives. Traditional certifications
 Provide specific instructions for updating PPs for cloud use cases. 
 [/comment]
 
-==== Provide additional threat model details for SFR/SAR mappings
-
-[comment]
-Start here next meeting
-[/comment]
+==== Provide additional threat model concerns for SFR/SAR mappings
 
 ===== Credentials
+Traditional CC evaluations typically rely on tusted network or administrator assumptions with regards to credentials and credential managment. As cloud environments inherently challenge these assumptions, it is critical to extended SFRs and SARs to meet additonal TOE security objectives.
+
+It is not sufficient to solely rely on data at rest protections for credentials or key material. CC in the Cloud evaluations must consider the entire lifecylce of secrets, (to include generation, destruction, revocation, etc) as well as any escrow needed to maintain product operations.
+
+For example, a SaaS application that connects to a datastore may or may not be provisioned manualy or programtically. PP Authors that wish to evluate Applications in a Cloud Deployment must ensure that credentials used to connect and encrypt/decrypt data within the Cloud Platform are not vulnerable to compromise. 
+
 ===== Configuration
+As cloud environments offer tremendous benefits of scale to IT Solutions, it is beneficial for product vendors to leverage autonomous deployment and delivery of TOE components. Traditional CC evidence such as Guidance Supplements or access to physical hardware may be difficult for cloud evaluations.
+
+For example, container respositories and/or container orchestration configurations respresent and area of interest for products and services using a cloud model that would require attention from PP Authors or Evaluators targetting CC in the Cloud evalutaions.  
+
 ===== Insider Threat
+Products and services provided through the cloud require trust on behalf of the vendors and user that extends to operational personell far above non-cloud deployments.
+
+PP Authors may wish to excersize additional requirements or expansion of scope that includes ALC deliverables to satisfy these additional threat concerns.
+
+[comment]
+start here next meeting
+[/comment]
+
 ===== Multi-tenant
 
 === Evaluate MDM Equivalency appendix for re-use in CC in the Cloud SDs to address trusted platform issues
