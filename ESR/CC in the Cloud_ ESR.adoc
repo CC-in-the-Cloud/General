@@ -73,7 +73,11 @@ Cloud environments have extremely limited half-lives. Traditional certifications
 Provide specific instructions for updating PPs for cloud use cases. 
 [/comment]
 
-==== Provide additional threat model concerns for SFR/SAR mappings
+==== Provide additional threat model concerns for CCitC
+
+[comment]
+Start Here next time. Look at CSA Matrix v4.
+[/comment]
 
 ===== Credentials
 Traditional CC evaluations typically rely on tusted network or administrator assumptions with regards to credentials and credential managment. As cloud environments inherently challenge these assumptions, it is critical to extended SFRs and SARs to meet additonal TOE security objectives.
@@ -87,24 +91,24 @@ As cloud environments offer tremendous benefits of scale to IT Solutions, it is 
 
 For example, container respositories and/or container orchestration configurations respresent and area of interest for products and services using a cloud model that would require attention from PP Authors or Evaluators targetting CC in the Cloud evalutaions.  
 
-[comment]
-More discussion needed for inclusion in this section.
 ===== Insider Threat
 Products and services provided through the cloud require trust on behalf of the vendors and user that extends to operational personell far above non-cloud deployments.
-PP Authors may wish to excersize additional requirements or expansion of scope that includes ALC deliverables to satisfy these additional threat concerns.
-start here next meeting
-[/comment]
+
+This iTC will consider requirements or expansion of scope that includes ALC deliverables to satisfy these additional threat concerns.
 
 ===== Multi-tenant
-[comment]
-More discussion needed for side channel attack potential i.e. speculative execution
-Does the virtualization PP address this?
-[/comment]
+Convential CC evaluations typically assume that the TOE platform or underlying infastructure is controlled at the enterprise level by a singular entity within the enterprise. In cloud environments, this assumption can not be included as the nature of cloud services inherently introduces an aspect of multiple enterprises (multi-tenant) sharing resources both physical and logical. 
 
-=== Evaluate MDM Equivalency appendix for re-use in CC in the Cloud SDs to address trusted platform issues
+For example, cloud customers of ICT products understand that moving to the cloud means sharing infastrcuture with other customers. While Cloud Providers offering IaaS capabilities may offer dedicated hardware or instances to one cloud customer, this is the minority of cloud use cases.
+
+This iTC will consider products deployed in a multitenant evironment with respect to any optional or objective SFRs involving cloud use cases that mitigate Guest Escape, Data Leakage, Privlege Escalation, etc.
+
+=== Evaluate related approaches for re-use in CCitC
+
+==== Evaluate MDM Equivalency appendix for re-use in CC in the Cloud SDs to address trusted platform issues
 Review FIPS I.G G.5 for examples of post-validation equivalency arguments.
 
-=== Identify procurement requirements for Cloud and propose updates to utilize CC in the Cloud outputs
+==== Identify procurement requirements for Cloud and propose updates to utilize CC in the Cloud outputs
 
 == Essential Security Requirements
 [NOTE]
