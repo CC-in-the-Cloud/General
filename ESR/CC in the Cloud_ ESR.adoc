@@ -27,27 +27,19 @@ As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapte
 
 == Use Cases
 
-////
-Review CSA or ISO (ISO/IEC 22123-1:2021(en) / 17789) or NIST Definitions to attribute instead of wikipedia
-////
-
-*Use Case 1*: Software as a service (SaaS) a software licensing and delivery model in which software is licensed on a subscription basis and it is centrally hosted. It is sometimes referred to as "on-demand software", and was formerly referred to as "software plus services" by Microsoft. SaaS applications are also known as on-demand software and Web-based/Web-hosted software
+*Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. <<nist_cloud>>
 
 ////
 cPP_App_SW, cPP_DBMS, PP_MDM
 ////
 
-*Use Case 2*: Platform as a service (PaaS) is a category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
+*Use Case 2*: Platform as a Service (SaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. <<nist_cloud>>
 
 ////
 GP_OS_PP, cPP_ND
 ////
 
-*Use Case 3*: Infrastructure as a service (IaaS) are online services that provide high-level APIs used to dereference various low-level details of underlying network infrastructure like physical computing resources, location, data partitioning, scaling, security, backup etc. A hypervisor, such as Xen, Oracle VirtualBox, Oracle VM, KVM, VMware ESX/ESXi, or Hyper-V, LXD, runs the virtual machines as guests. Pools of hypervisors within the cloud operational system can support large numbers of virtual machines and the ability to scale services up and down according to customers' varying requirements.
-
-[comment]
-Add Storage and Network IaaS language to use case?
-[/comment]
+*Use Case 3*: Infrastructure as a Service (SaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) <<nist_cloud>>
 
 ////
 PP_BASE_VIRTUALIZATION
@@ -149,6 +141,20 @@ Areas for consideration may include:
 ** Specify any existing ISO/IEC 27001/2 certificate information.
 ** Specify any existing ISO/IEC 20243 (e.g. Open Group Trusted Technology Provider Standard) certificate information for the TOE Environment.
 
+== Summary
+
+The CCiTC WG is focused on providing guidance to existing Common Criteria methodologies to enable the inclusion of Cloud technologies. The contents of this ESR is not an attempt to comprehensively address all implications needed for said effort, however, it attempts to outline the larger elements and challenges.
+
+We acknowledge that the product evaluation structure inherent in Common Criteria can not be fundamentally changed or ignored. With continued development it is the goal of the CCiTC WG to provide additional collateral for the inclusion of cloud deployments or configurations inclusive of cPP or ST conformance claims.
+
+The WG recognizes that existing Cloud Security solution frameworks exist and the goal is not to replace or reinvent them nor to certify cloud solutions. However, consideration will be given if useful elements can be adapted towards the advancement of CC in the cloud efforts.
+
+[bibliography]
+== References
+
+* [[[nist_cloud]]] NIST SP 800-145 "The NIST Definition of Cloud
+Computing"
+
 ////
 Parking Lot for iTC
 
@@ -158,4 +164,4 @@ Parking Lot for iTC
 Review FIPS I.G G.5 for examples of post-validation equivalency arguments.
 
 ==== Identify procurement requirements for Cloud and propose updates to utilize CC in the Cloud outputs
- ////
+////
