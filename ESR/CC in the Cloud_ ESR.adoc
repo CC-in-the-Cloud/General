@@ -143,9 +143,11 @@ Areas for consideration may include:
 
 == Summary
 
-The CCiTC WG is focused on providing guidance to existing Common Criteria methodologies to enable the inclusion of Cloud technologies. The contents of this ESR is not an attempt to comprehensively address all implications needed for said effort, however, it attempts to outline the larger elements and challenges.
+The CCitC WG is focused on providing guidance to existing Common Criteria methodologies to enable the inclusion of Cloud technologies. The contents of this ESR is not an attempt to comprehensively address all implications needed for said effort, however, it attempts to outline the larger elements and challenges.
 
-We acknowledge that the product evaluation structure inherent in Common Criteria can not be fundamentally changed or ignored. With continued development it is the goal of the CCiTC WG to provide additional collateral for the inclusion of cloud deployments or configurations inclusive of cPP or ST conformance claims.
+We acknowledge that the product evaluation structure inherent in Common Criteria can not be fundamentally changed or ignored. With continued development it is the goal of the CCitC WG to provide additional collateral for the inclusion of cloud deployments or configurations inclusive of cPP or ST conformance claims.
+
+We plan to examine and reference existing and developing processes and certifications that could support the extension of cPP’s and ST’s to include cloud usage. The WG also intends to provide guidance as well as examples of specific terminology that could be used in whole or in part by developers of cPP’s and ST’s. In addition, the WG intends to document any limitations found and may consider or present options for future changes.
 
 The WG recognizes that existing Cloud Security solution frameworks exist and the goal is not to replace or reinvent them nor to certify cloud solutions. However, consideration will be given if useful elements can be adapted towards the advancement of CC in the cloud efforts.
 
