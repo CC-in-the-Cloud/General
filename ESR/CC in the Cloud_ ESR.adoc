@@ -9,7 +9,7 @@
 
 == Preface
 
-The CC in the Cloud Technical Work Group (TWG) is developing an Essential Security Requirements (ESR) that captures the fundamental requirements for evaluating products in the Cloud. This initial draft contains material that was created by the TWG as a framework to utilize Common Criteria methodologies for products deployed in a cloud environment.
+The CC in the Cloud Technical Work Group (TWG) is developing an Essential Security Requirements (ESR) that captures the fundamental requirements for evaluating products in the Cloud. This effort is not meant to replace solution or service oriented frameworks or certification processes. The initial draft of this document contains material that was created by the TWG as a framework to utilize Common Criteria methodologies for products deployed in a cloud environment.
 
 == Background and Purpose
 
@@ -26,6 +26,8 @@ At some point customers are going to recognize that a CC evaluation of an Inform
 As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
 
 == Use Cases
+
+Products utilizing cloud platforms are expected to be evaluated within one of the following use cases:
 
 *Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. <<nist_cloud>>
 
