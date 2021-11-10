@@ -9,7 +9,7 @@
 :xrefstyle: full
 
 :iTC-longname: Common Criteria in the Cloud iTC
-:iTC-shortname: CCitC-iTC
+:iTC-shortname: Cloud-iTC
 :iTC-email: TBD
 :iTC-website: https://ccinthecloud.github.io/
 :iTC-GitHub: https://github.com/CC-in-the-Cloud/Admin
@@ -35,7 +35,7 @@ The initial cPP are to consider the Essential Security Requirements (ESR) <<1>>.
 == Key Persons / Affiliations
 Key roles are defined in <<Roles>>.
 
-In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in �{iTC-longname} International Technical Community � Key persons and affiliations� <<2>> provided separately at the Team lab file area of the iTC.
+In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {iTC-longname} International Technical Community Key persons and affiliations <<2>> provided separately at the Team lab file area of the iTC.
 
 == Collaboration Infrastructure
 To enable collaboration, the {iTC-shortname} uses collaboration services including email notification, discussion forums, and file storage that are accessible to {iTC-shortname} members. 
@@ -44,7 +44,7 @@ The {iTC-shortname} is using a combination of hosted collaboration services prov
 
 == iTC and cPP Development Process
 === Application of the White Paper
-This {iTC-shortname} follows the processes defined in �Establishing International Technical Communities and Developing Collaborative Protection Profiles� <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB _<SHORT NAME>_ Working Group, or the CCRA CCDB as applicable. 
+This {iTC-shortname} follows the processes defined in Establishing International Technical Communities and Developing Collaborative Protection Profiles <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB {iTC-shortname} Working Group, or the CCRA CCDB as applicable. 
 
 === Maintenance
 The {iTC-shortname} remains in place to answer inquiries and update the cPP as may be requested by CCDB, {iTC-shortname} members and/or others cPP stakeholders. The {iTC-shortname} Chair is responsible for establishing an appropriate periodic schedule and organizing the {iTC-shortname} to review, and if needed, update the cPP and SD.
@@ -118,8 +118,12 @@ Ideally, technical decisions are made by reaching group consensus (see <<Voting>
 
 As a guideline, decisions are made according to the following process:
 
-. Decisions may be made via email or during an in-person meeting or telephone conference call. In the case of email, the {iTC-shortname} will provide one or two weeks to make the decision. For in person or telephone conference calls, only members that attend the meeting will be able to participate in making the decision.
-. Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting will be implemented.
+. Major Decisions shall be made via the iTC collaboration tools. The {iTC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.
+
+// Define Major and Minor Decisions //
+// Start Here //
+
+. Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.
 . If there are members that disagree with a decision, they can request the reason for the objection to be documented.
 . Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
 
