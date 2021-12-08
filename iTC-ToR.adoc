@@ -118,14 +118,10 @@ Ideally, technical decisions are made by reaching group consensus (see <<Voting>
 
 As a guideline, decisions are made according to the following process:
 
-. Major Decisions shall be made via the iTC collaboration tools. The {iTC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.
-
-// Define Major and Minor Decisions //
-// Start Here //
-
-. Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.
-. If there are members that disagree with a decision, they can request the reason for the objection to be documented.
-. Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
+* Major Decisions shall be made via the iTC collaboration tools. The {iTC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.
+* Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.
+* If there are members that disagree with a decision, they can request the reason for the objection to be documented.
+* Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
 
 Other {iTC-shortname} members are encouraged to post comments in response to issues and proposed resolutions at any time.
 
@@ -141,19 +137,9 @@ Consensus: General agreement, characterized by the absence of sustained oppositi
 NOTE Consensus need not imply unanimity.
 ____
 
-[REVIEW]
-====
-When creating your ToR, it is important to understand that this section is not the only way to accomplish voting procedures for an iTC, but is a good one to follow. Any well-documented and transparent set of voting procedures should be acceptable for use.
-====
-
 The {iTC-shortname} may define different classes of voting, but for votes related to the iTC itself, the process here defines how the voting will proceed. If the class of vote needed has not been defined, then the process here will be used by default.
 
 Voting is used infrequently as a way to formally decide on a particular iTC issue. The following would be considered iTC issues to require a formal vote:
-
-[GUIDANCE]
-====
-This is a short list and should be reviewed.
-====
 
 * Establishing formal working groups within the iTC (such as the Interpretation Team or special interest groups to work on specific areas)
 * Changes to the iTC governing documents (such as the Essential Security Requirements or Terms of Reference)
@@ -162,9 +148,9 @@ This is a short list and should be reviewed.
 As determined by the iTC, additional voting classes will be defined in the documents where they will be used.
 
 ==== Vote Eligibility
-Voting is limited specifically to the members defined at the time the vote is called. Membership in the {iTC-shortname} is defined as inclusion on the {iTC-shortname} mailing list.
+Voting is limited specifically to the members defined at the time the vote is called. Membership in the {iTC-shortname} is defined as inclusion on the {iTC-shortname} roster on the CCUF approved collaboration tool.
 
-One vote is allowed for each member organization, not for each individual member, regardless of membership within the {iTC-shortname}. �Organization� is defined according to the definition adopted by the CCUF; for commercial enterprises, a parent company and all of its divisions and subsidiaries comprise one organization. It is the responsibility of each organization to determine which individual member will cast a vote on its behalf.
+One vote is allowed for each member organization, not for each individual member, regardless of membership within the {iTC-shortname}. _Organization_ is defined according to the definition adopted by the CCUF; for commercial enterprises, a parent company and all of its divisions and subsidiaries comprise one organization. It is the responsibility of each organization to determine which individual member will cast a vote on its behalf.
 
 Eligible voting organizations are determined at the time the Call for Votes is sent out based on inclusion on the {iTC-shortname} mailing list. Any organization not included on this list at the time the Call for Votes is posted is ineligible to cast a vote.
 
@@ -173,7 +159,7 @@ Eligible voting organizations are determined at the time the Call for Votes is s
 As a guideline, voting takes place according to the following process:
 
 . A Call for Votes is posted, including the mechanism for casting ballots and time period during which ballots are accepted
-. At the end of the voting period, ballots are tabulated and reviewed by the Chairperson or the Technical Editor
+. At the end of the voting period, ballots are tabulated and reviewed by the designated ballot officer. 
 . Results of voting are posted, including a summary of the vote and the votes cast by each organization. 
 
 This process is illustrated, below. Timing for each part of the process is provided as a benchmark. A typical voting cycle should be completed within a three-week period. Some voting periods may be longer due to holidays or other events. 
@@ -203,13 +189,16 @@ Votes submitted shall be explicit: positive, negative, or abstention. A positive
 
 A vote is approved if:
 
-. A two-thirds majority of the Counted votes of the {iTC-shortname} are positive, and
-. Not more than one-quarter of the Counted votes cast are negative.
+* A two-thirds majority of the Counted votes of the {iTC-shortname} are positive, and
+* Not more than one-quarter of the Counted votes cast are negative.
+* For elections of iTC roles, only a simple majority is required when voting is needed.
 
 Counted votes are determined by the following conditions:
 
-* Only one vote per organization is made
-* Negative votes are accompanied by a technical reasons
+* Only one vote per organization is made.
+* Negative votes concerning technical issues are encouraged to provide a rationale.
+
+//start here next //
 
 [NOTE]
 ====
@@ -251,7 +240,7 @@ As soon as an Essential Patent is identified, the {iTC-shortname} should seek re
 . The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the Collaborative Protection Profile or Supporting Documents; or,
 . If the owner of the Essential Patent is unwilling or unable to grant such a license, then the {iTC-shortname} should modify the cPP or SDs so as not to infringe on the Essential Patent. 
 
-==== Members� intellectual property
+==== Members intellectual property
 {iTC-shortname} members are solely responsible for protecting their organization�s proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the {iTC-shortname}, do not provide any assurance of such protection.
 
 ==== Work product ownership
