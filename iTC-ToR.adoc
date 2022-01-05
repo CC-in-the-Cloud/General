@@ -198,21 +198,12 @@ Counted votes are determined by the following conditions:
 * Only one vote per organization is made.
 * Negative votes concerning technical issues are encouraged to provide a rationale.
 
-//start here next //
-
 [NOTE]
 ====
 An organization submitting multiple non-matching votes is allowed to determine the final vote to be counted before voting is closed. The onus is on the organization to ensure the proper vote. A set of non-matching votes will cause the organization votes to not be considered Counted votes.
 ====
 
-Abstentions and negative votes not accompanied by technical reasons are not considered to be Counted votes in the final total. They will be noted in the record only.
-
-[GUIDANCE]
-====
-An iTC may decide they need to have different classes of voting based on different "classes" of actions. For example moving to a Public Review Draft may require a higher vote than accepting changes into the Master branch (or other classifications). It is acceptable to specify different voting requirements based on different needs as long as it is clearly defined when the types of votes need to be used.
-
-For simplicity and speed it is recommended to use consensus voting whenever possible.
-====
+Abstentions are not considered to be Counted votes in the final total. They will be noted in the record only.
 
 === Meetings
 Meetings are held at times, with frequency, and in forms that are determined by the {iTC-shortname} members.
@@ -231,17 +222,19 @@ These records are accessible to {iTC-shortname} members.
 
 === Patent and other intellectual property
 ==== Essential patents
-�Essential Patent� means any issued or pending patent claim for which its use is necessary (i.e., there is no commercially and technically feasible non-infringing alternative) to fulfill the conformance requirements of the Collaborative Protection Profile or Supporting Documents produced by the {iTC-shortname}.
+*Essential Patent* means any issued or pending patent claim for which its use is necessary (i.e., there is no commercially and technically feasible non-infringing alternative) to fulfill the conformance requirements of the work product(s) including, but not limited to, guidance for cPP and SD authors produced by the {iTC-shortname}.
 
 {iTC-shortname} members must inform the Chairperson if they are personally aware of any potential Essential Patent, regardless of the owner or controller of such patents.
 
 As soon as an Essential Patent is identified, the {iTC-shortname} should seek resolution in the following priority order:
 
-. The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the Collaborative Protection Profile or Supporting Documents; or,
-. If the owner of the Essential Patent is unwilling or unable to grant such a license, then the {iTC-shortname} should modify the cPP or SDs so as not to infringe on the Essential Patent. 
+* The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the workproduct(s); or,
+* If the owner of the Essential Patent is unwilling or unable to grant such a license, then the {iTC-shortname} should modify the work product(s) so as not to infringe on the Essential Patent. 
+
+//start here next //
 
 ==== Members intellectual property
-{iTC-shortname} members are solely responsible for protecting their organization�s proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the {iTC-shortname}, do not provide any assurance of such protection.
+{iTC-shortname} members are solely responsible for protecting their organization's proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the {iTC-shortname}, do not provide any assurance of such protection.
 
 ==== Work product ownership
 No copyrights will be asserted on the Collaborative Protection Profile and Supporting Documents. {iTC-shortname} members may use those work products but may not assert moral or authorship rights. The use of those work products is controlled by the Common Criteria evaluation process: claims of conformance to the work products are meaningless without Common Criteria certification.
