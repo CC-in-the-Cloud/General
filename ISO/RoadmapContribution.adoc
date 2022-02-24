@@ -1,1 +1,13 @@
+4.x Change A
+Shorthand scheme for identifying changes is to be discussed later. It could be a letter (A-Z then AA-ZZ...) or a keyword, or both. This shorthand scheme *should not* require heavy maintenance.
+4.x.1 Description
+This subclause is description text that is ideally ready to be reused in the Description field of a New Work Item proposal.
+4.x.2 Justification
+This subclause is description text that is ideally ready to be reused in the Justification field of a New Work Item proposal.
+4.x.3 Input from previous work (optional)
+This subclause provides pointers to previous standardisation work (beyond ISO/IEC 15408 and 18045themselves) to be taken as input. If the previous work being referred to has been published (as a standard or other document), it should also be listed in the Bibliography section.
+4.x.4 Related work (optional)
+This subclause provides information on to parallel standardisation work within JTC 1, ISO or IEC and work of interest in liaisons organisations, and may qualify how these relate to the considered change (potential input, necessary adjustments, possible inconsistencies...)
+4.x.5 Impacted documents and clauses 
+Lists impacted parts of 15408 or 18045, possibly at clause or subclause level.
 
