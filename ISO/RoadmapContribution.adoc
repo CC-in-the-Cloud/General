@@ -1,13 +1,60 @@
-4.x Change A
-Shorthand scheme for identifying changes is to be discussed later. It could be a letter (A-Z then AA-ZZ...) or a keyword, or both. This shorthand scheme *should not* require heavy maintenance.
-4.x.1 Description
-This subclause is description text that is ideally ready to be reused in the Description field of a New Work Item proposal.
-4.x.2 Justification
-This subclause is description text that is ideally ready to be reused in the Justification field of a New Work Item proposal.
-4.x.3 Input from previous work (optional)
-This subclause provides pointers to previous standardisation work (beyond ISO/IEC 15408 and 18045themselves) to be taken as input. If the previous work being referred to has been published (as a standard or other document), it should also be listed in the Bibliography section.
-4.x.4 Related work (optional)
-This subclause provides information on to parallel standardisation work within JTC 1, ISO or IEC and work of interest in liaisons organisations, and may qualify how these relate to the considered change (potential input, necessary adjustments, possible inconsistencies...)
-4.x.5 Impacted documents and clauses 
-Lists impacted parts of 15408 or 18045, possibly at clause or subclause level.
+= _CC in the Cloud_  - ISO15408 Roadmap Contribution
+:showtitle:
+:icons: font
+:revnumber: 0.1
+:revdate: 2021-02-24
+
+:iTC-longname: Common Criteria in the Cloud iTC
+:iTC-shortname: CCitC-iTC
+
+
+
+=== 4.x Change A
+_Shorthand scheme for identifying changes is to be discussed later. It could be a letter (A-Z then AA-ZZ...) or a keyword, or both. This shorthand scheme *should not* require heavy maintenance._
+
+CC in the Cloud
+
+=== 4.x.1 Description 
+_This subclause is description text that is ideally ready to be reused in the Description field of a New Work Item proposal._
+
+There is not yet a defined and accepted method within the Common Criteria that addresses IT product evaluations in the cloud environment.
+
+Today, CC reflects a static point in time for security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are licensed and maintained to a services model where assurance benefits accrued from CC are not available in the cloud.
+
+Customers are buying services, not products. “Gartner foresees double-digit growth in government use of public cloud services, with spending forecast to grow on average 17.1% per year through 2021.” --Understanding cloud Adoption in Government
+
+“In fiscal 2019, the White House-issued cloud Smart strategy gave agencies a mandate to expedite their journeys to the cloud. Federal agencies spent a combined $5.9 billion in contract obligations on cloud infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and other cloud support and migration services. They’re on track to spend $7.1 billion in fiscal 2020.”--The State of Federal cloud: Market Briefing
+
+=== 4.x.2 Justification
+_This subclause is description text that is ideally ready to be reused in the Justification field of a New Work Item proposal._
+
+Customers are going to recognize that a CC evaluation of an Information Communication Technologies (ICT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in many real-world scenarios and Customers will require additional country specific testing instead.
+
+As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
+
+=== 4.x.3 Input from previous work (optional)
+_This subclause provides pointers to previous standardisation work (beyond ISO/IEC 15408 and 18045 themselves) to be taken as input. If the previous work being referred to has been published (as a standard or other document), it should also be listed in the Bibliography section._
+
+None
+
+=== 4.x.4 Related work (optional)
+_This subclause provides information on to parallel standardisation work within JTC 1, ISO or IEC and work of interest in liaisons organisations, and may qualify how these relate to the considered change (potential input, necessary adjustments, possible inconsistencies...)_
+
+CCUF has a Technical Community working on this topic.
+As of February 2022, an 'Essential Security Requirement' document has been produced as required for this group to become an official International Technical Comminity under the CCMC (Common Criteria Management Committee). Once this has happened, the group expect to develop a guidance document that can be an input for this topic for ISO/IEC15408. 
+
+In addition, developments in patch management/maintenance will be important to support this topic.
+
+=== 4.x.5 Impacted documents and clauses 
+_Lists impacted parts of 15408 or 18045, possibly at clause or subclause level._
+
+To be determined but investigations so far have suggested the following areas requiring development.
+
+1) A 'Trusted Platform' concept to allow for flexiblity in platform configurations while maintaining security assurance.
+
+2) Environmental Evolution - how to manage rapidly evolving cloud enviroments providing new services and greater efficiencies to customers.
+
+3) Additional threat considerations or assurance requirements - based on inputs from existing cloud security frameworks and elsewhere.
+
+4) Configuration - evolution of traditional user guidance and physical access to hardware to reflect the cloud environment.
 
