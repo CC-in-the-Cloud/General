@@ -107,7 +107,7 @@ New methodology to address minimum satisfactory capabilities in this regard will
 
 Cloud environments are evolving as routine in order to provide new services and greater efficiencies to customers. Traditional certifications can not match pace. Furthermore, as cloud Hosting agreements are negotiated independently, access to the same platform or platforms used to evaluate a product cannot be guaranteed to the Common Criteria end user. 
 
-== Provide additional threat model concerns for CC in the Cloud
+=== Provide additional threat model concerns for CC in the Cloud
 
 Review and monitor relevant Cloud Security Frameworks to capture additional threat considerations or assurance requirements. The following items were identified as particularly relevant for CC in the Cloud efforts.
 
