@@ -28,7 +28,7 @@ Customers are buying services, not products. “Gartner foresees double-digit gr
 === 4.x.2 Justification
 _This subclause is description text that is ideally ready to be reused in the Justification field of a New Work Item proposal._
 
-Customers are going to recognize that a CC evaluation of an Information Communication Technologies (ICT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in many real-world scenarios and Customers will require additional country specific testing instead.
+Customers are going to recognize that a CC evaluation of an Information Communication Technologies (ICT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in many real-world scenarios and customers will require additional country specific testing instead.
 
 As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
 
