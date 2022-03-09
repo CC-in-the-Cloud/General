@@ -9,7 +9,7 @@
 
 == Preface
 
-The CC in the Cloud Technical Work Group (TWG) is developing an Essential Security Requirements (ESR) document that captures the fundamental requirements for evaluating IT products applicable to CC which operate in Cloud environments. Such cloud environments may or may not conform to hybrid, public, or private cloud topologies and the associated Cloud Service Providers. This effort is not meant to replace solution or service oriented frameworks or certification processes. The initial draft of this document contains material that was created by the TWG as a framework to utilize Common Criteria methodologies for products operating in a cloud environment.
+The CC in the Cloud Technical Work Group (CCitC) is developing an Essential Security Requirements (ESR) document that captures the fundamental requirements for evaluating IT products applicable to CC which operate in Cloud environments. Such cloud environments may or may not conform to hybrid, public, or private cloud topologies and the associated Cloud Service Providers. This effort is not meant to replace solution or service oriented frameworks or certification processes. The initial draft of this document contains material that was created by the TWG as a framework to utilize Common Criteria methodologies for products operating in a cloud environment.
 
 == Background and Purpose
 
@@ -37,7 +37,7 @@ The following examples are provided for additonal context. They are not fully re
 
 *Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. <<nist_cloud>>
 
-The following PPs are examples which might be extended with CCiTC methodolgy to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM
 
 For example, if the cPP for Application Software were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and TOE Platform given in the following diagram:
 
@@ -49,7 +49,7 @@ In this example, the SaaS Application provided by the SaaS provider relies on a 
 *Use Case 2*: Platform as a Service (PaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. <<nist_cloud>>
 
 
-The following PPs are examples which might be extended with CCiTC methodolgy to cover the above use case: GP_OS_PP, cPP_ND
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: GP_OS_PP, cPP_ND
 
 For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
 
@@ -61,7 +61,7 @@ In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Ope
 *Use Case 3*: Infrastructure as a Service (IaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) <<nist_cloud>>
 
 
-The following PPs are examples which might be extended with CCiTC methodolgy to cover the above use case: PP_BASE_VIRTUALIZATION
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: PP_BASE_VIRTUALIZATION
 
 For example, if the Protection Profile for Virtualization were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
 
@@ -90,7 +90,7 @@ Existing TOE composition requires stability in both the TOE and TOE Platform. Th
 
 New methodology to address minimum satisfactory capabilities in this regard will be needed to bridge this gap such as a Trusted Platform scheme.
 
-One such possibility may include the inheritence of IaaS and/or PaaS CCiTC evaluation for SaaS use cases. Similarly, a PaaS evaluation may inherit IaaS collateral.
+One such possibility may include the inheritence of IaaS and/or PaaS CCitC evaluation for SaaS use cases. Similarly, a PaaS evaluation may inherit IaaS collateral.
 
 === Environmental Evolution
 
