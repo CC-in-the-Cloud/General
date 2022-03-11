@@ -34,20 +34,44 @@ As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapte
 
 Products utilizing cloud platforms are expected to be evaluated within one of the following use cases:
 
+====
+The following examples are provided for additonal context. They are not fully representative of all possible cloud evaluation scenarios and are not meant to be an exclusive set.
+====
+
 *Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. 
 
-////
-cPP_App_SW, cPP_DBMS, PP_MDM
-////
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM
+
+For example, if the cPP for Application Software were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and TOE Platform given in the following diagram:
+
+.SaaS Example
+image::images/saas.png[SaaS Example]
+
+
+In this example, the SaaS Application provided by the SaaS provider relies on a TOE platform from an OS Vendor which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment.
+
 
 *Use Case 2*: Platform as a Service (SaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. 
 
-////
-GP_OS_PP, cPP_ND
-////
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: GP_OS_PP, cPP_ND
+
+For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
+
+.Paas Example
+image::images/paas.png[PaaS Example]
+
+In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 *Use Case 3*: Infrastructure as a Service (SaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) 
 
+The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: PP_BASE_VIRTUALIZATION
+
+For example, if the Protection Profile for Virtualization were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
+
+.IaaS Example
+image::images/iaas.png[IaaS Example]
+
+In this example, the IaaS hypervisor provided by the IaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 === 4.x.3 Input from previous work (optional)
 _This subclause provides pointers to previous standardisation work (beyond ISO/IEC 15408 and 18045 themselves) to be taken as input. If the previous work being referred to has been published (as a standard or other document), it should also be listed in the Bibliography section._
