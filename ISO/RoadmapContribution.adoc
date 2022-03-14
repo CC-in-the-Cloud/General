@@ -19,7 +19,7 @@ _This subclause is description text that is ideally ready to be reused in the De
 
 There is not yet a defined and accepted method within the Common Criteria that addresses IT product evaluations in the cloud environment.
 
-Today, CC reflects a static point in time for security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are licensed and maintained to a services model where assurance benefits accrued from CC are not available in the cloud.
+Today, CC reflects a static point in time for security evaluation methodology. Over the past several years, members of this TWG have witnessed customer migrations from an on-premise model where products are licensed and maintained via a services model where assurance benefits accrued from CC are not available in the cloud.
 
 Customers are buying services, not products. “Gartner foresees double-digit growth in government use of public cloud services, with spending forecast to grow on average 17.1% per year through 2021.” --Understanding cloud Adoption in Government
 
@@ -30,17 +30,17 @@ _This subclause is description text that is ideally ready to be reused in the Ju
 
 Customers are going to recognize that a CC evaluation of an Information Communication Technologies (ICT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in many real-world scenarios and customers will require additional country specific testing instead.
 
-As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
+As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of s Profiles(PPs) aimed at cloud use case evaluations, may need to add or alter specific code or PP content carefully to ensure evaluate-able products and PPs.
 
 Products utilizing cloud platforms are expected to be evaluated within one of the following use cases:
 
 ====
-The following examples are provided for additonal context. They are not fully representative of all possible cloud evaluation scenarios and are not meant to be an exclusive set.
+The following examples are provided for additional context. They are not fully representative of all possible cloud evaluation scenarios and are not intended to be an exclusive set.
 ====
 
 *Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. 
 
-The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM
+The following PPs are examples which might be extended with CCitC methodology to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM.
 
 For example, if the cPP for Application Software were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and TOE Platform given in the following diagram:
 
@@ -48,35 +48,35 @@ For example, if the cPP for Application Software were to be used as a baseline t
 image::images/saas.png[SaaS Example]
 
 
-In this example, the SaaS Application provided by the SaaS provider relies on a TOE platform from an OS Vendor which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment.
+In this example, the SaaS Application provided by the SaaS provider relies on a TOE platform from an OS Vendor, which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment.
 
 
 *Use Case 2*: Platform as a Service (SaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. 
 
-The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: GP_OS_PP, cPP_ND
+The following PPs are examples which might be extended with CCitC methodology to cover the above use case: GP_OS_PP, cPP_ND.
 
-For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
+For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline, the cloud extensions may be applied to the existing TOE Boundary and Cloud Operating Environment given in the following diagram:
 
 .Paas Example
 image::images/paas.png[PaaS Example]
 
-In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
+In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Operating Environment, which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 *Use Case 3*: Infrastructure as a Service (SaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) 
 
-The following PPs are examples which might be extended with CCitC methodolgy to cover the above use case: PP_BASE_VIRTUALIZATION
+The following PPs are examples which might be extended with CCitC methodology to cover the above use case: PP_BASE_VIRTUALIZATION
 
-For example, if the Protection Profile for Virtualization were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Cloud Operating Environment given in the following diagram:
+For example, if the Protection Profile for Virtualization were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Operating Environment given in the following diagram:
 
 .IaaS Example
 image::images/iaas.png[IaaS Example]
 
-In this example, the IaaS hypervisor provided by the IaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
+In this example, the IaaS hypervisor provided by the IaaS provider relies on a Cloud Operating Environment, which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 === 4.x.3 Input from previous work (optional)
 _This subclause provides pointers to previous standardisation work (beyond ISO/IEC 15408 and 18045 themselves) to be taken as input. If the previous work being referred to has been published (as a standard or other document), it should also be listed in the Bibliography section._
 
-For initial consideration, the following assumption is being developed that may reference existing standards beyod ISO/IEC15408.
+For initial consideration, the following assumption is being developed that may reference existing standards beyond ISO/IEC15408.
 
 ==== Trusted Platform
 
@@ -102,7 +102,7 @@ Areas for consideration may include:
 _This subclause provides information on to parallel standardisation work within JTC 1, ISO or IEC and work of interest in liaisons organisations, and may qualify how these relate to the considered change (potential input, necessary adjustments, possible inconsistencies...)_
 
 CCUF has a Technical Community working on this topic.
-As of February 2022, an 'Essential Security Requirement' document has been produced as required for this group to become an official International Technical Comminity under the CCMC (Common Criteria Management Committee). Consequently, the group expect to develop a guidance document that can be an input for this topic for ISO/IEC15408. 
+In February 2022, an 'Essential Security Requirement' document was produced as required for this group to become an official International Technical Community under the CCMC (Common Criteria Management Committee). Consequently, the group expect to develop a guidance document that can be an input for this topic for ISO/IEC15408. 
 
 In addition, developments in patch management/maintenance will be important to support this topic.
 
@@ -125,7 +125,7 @@ Current cryptography certification frameworks rely on extremely detailed algorit
 
 Existing TOE composition requires stability in both the TOE and TOE Platform. The TOE operating environment in a cloud use case may or may not change dramatically due to a variety of factors such as hardware deprecation, underlying firmware updates, OS changes, etc. These changes may or may not be detected by the TOE and may or may not affect the TOE security posture. 
 
-New methodology to address minimum satisfactory capabilities in this regard will be needed to bridge this gap such as a Trusted Platform scheme.
+New methodology to address minimum satisfactory capabilities in this regard will be required to bridge this gap, such as a Trusted Platform scheme.
 
 ==== Environmental Evolution
 
@@ -133,7 +133,7 @@ Cloud environments are evolving as routine in order to provide new services and 
 
 === Additional threat model concerns for CC in the Cloud
 
-Review and monitor relevant Cloud Security Frameworks will be considered to capture additional threat considerations or assurance requirements. The following items were identified as particularly relevant for CC in the Cloud efforts.
+Review and monitoring of relevant Cloud Security Frameworks will be considered to capture additional threat considerations or assurance requirements. The following items were identified as particularly relevant for CC in the Cloud efforts.
 
 ==== Configuration
 
@@ -145,7 +145,7 @@ For example, container repositories and/or container orchestration configuration
 
 Traditional CC evaluations typically rely on trusted network or administrator assumptions with regards to credentials and credential management. As cloud environments inherently challenge these assumptions, it is critical to extended SFRs and SARs to meet additional TOE security objectives.
 
-It is not sufficient to solely rely on data at rest protections for credentials or key material. CC in the Cloud evaluations must consider the entire lifecycle of secrets, (to include generation, destruction, revocation, etc) as well as any escrow needed to maintain product operations.
+It is not sufficient to solely rely on data-at-rest protections for credentials or key material. CC in the Cloud evaluations must consider the entire lifecycle of secrets, (to include generation, destruction, revocation, etc.) as well as any escrow needed to maintain product operations.
 
 For example, a SaaS application that connects to a datastore may or may not be provisioned manually or programmatically. PP or ST Authors that wish to evaluate applications in a cloud deployment must ensure that credentials used to connect and encrypt/decrypt data within the cloud platform are not vulnerable to compromise.  
 
@@ -169,7 +169,7 @@ This iTC will consider requirements or expansion of scope that includes ALC deli
 
 ==== Multi-tenant
 
-Conventional CC evaluations typically assume that the TOE platform or underlying infrastructure is controlled at the enterprise level by a singular entity within the enterprise. In cloud environments, this assumption can not be included as the nature of cloud services inherently introduces an aspect of multiple enterprises (multi-tenant) sharing resources both physical and logical. 
+Conventional CC evaluations typically assume that the TOE platform or underlying infrastructure is controlled at the enterprise level by a singular entity within the enterprise. In cloud environments, this assumption cannot be included as the nature of cloud services inherently introduces an aspect of multiple enterprises (multi-tenant) sharing resources both physical and logical. 
 
 For example, cloud customers of ICT products understand that moving to the cloud means sharing infrastructure with other customers. While Cloud Providers offering IaaS capabilities may offer dedicated hardware or instances to one cloud customer, this is the minority of cloud use cases.
 
