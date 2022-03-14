@@ -40,7 +40,7 @@ The following examples are provided for additional context. They are not fully r
 
 *Use Case 1*: Software as a Service (SaaS). The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. 
 
-The following PPs are examples which might be extended with CCitC methodology to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM.
+The following PPs are examples which might be extended with CC in the Cloud methodology to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM.
 
 For example, if the cPP for Application Software were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and TOE Platform given in the following diagram:
 
@@ -53,7 +53,7 @@ In this example, the SaaS Application provided by the SaaS provider relies on a 
 
 *Use Case 2*: Platform as a Service (SaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. 
 
-The following PPs are examples which might be extended with CCitC methodology to cover the above use case: GP_OS_PP, cPP_ND.
+The following PPs are examples which might be extended with CC in the Cloud methodology to cover the above use case: GP_OS_PP, cPP_ND.
 
 For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline, the cloud extensions may be applied to the existing TOE Boundary and Cloud Operating Environment given in the following diagram:
 
@@ -64,7 +64,7 @@ In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Ope
 
 *Use Case 3*: Infrastructure as a Service (SaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) 
 
-The following PPs are examples which might be extended with CCitC methodology to cover the above use case: PP_BASE_VIRTUALIZATION
+The following PPs are examples which might be extended with CC in the Cloud methodology to cover the above use case: PP_BASE_VIRTUALIZATION
 
 For example, if the Protection Profile for Virtualization were to be used as a baseline the cloud extensions may be applied to the existing TOE Boundary and Cloud Operating Environment given in the following diagram:
 
@@ -82,7 +82,7 @@ For initial consideration, the following assumption is being developed that may 
 
 Cloud based service models inherently incur a trust relationship to certain components of the Information Technology solution. 
 
-End users of Common Criteria in the Cloud certificates will require that changes to the underlying infrastructure do not degrade the security functionality of the TOE. This ITC will propose an approach that will allow for composable construction of a trusted platform concept by leveraging existing collateral.
+End users of Common Criteria in the Cloud certificates will require that changes to the underlying infrastructure do not degrade the security functionality of the TOE. This work will propose an approach that will allow for composable construction of a trusted platform concept by leveraging existing collateral.
 
 Areas for consideration may include:
 
@@ -102,7 +102,7 @@ Areas for consideration may include:
 _This subclause provides information on to parallel standardisation work within JTC 1, ISO or IEC and work of interest in liaisons organisations, and may qualify how these relate to the considered change (potential input, necessary adjustments, possible inconsistencies...)_
 
 CCUF has a Technical Community working on this topic.
-In February 2022, an 'Essential Security Requirement' document was produced as required for this group to become an official International Technical Community under the CCMC (Common Criteria Management Committee). Consequently, the group expect to develop a guidance document that can be an input for this topic for ISO/IEC15408. 
+In February 2022, an 'Essential Security Requirement' document was produced as required for this group to become an official International Technical Community(iTC) under the CCMC (Common Criteria Management Committee). Consequently, the group expect to develop a guidance document that can be an input for this topic for ISO/IEC15408. 
 
 In addition, developments in patch management/maintenance will be important to support this topic.
 
@@ -165,7 +165,7 @@ For example, virtual machines or containers that leverage encrypted storage volu
 
 Products and services provided through the cloud require trust on behalf of the vendors and user that extends to operational personnel far above non-cloud deployments.
 
-This iTC will consider requirements or expansion of scope that includes ALC deliverables to satisfy these additional threat concerns.
+This work will consider requirements or expansion of scope that includes ALC deliverables to satisfy these additional threat concerns.
 
 ==== Multi-tenant
 
@@ -173,4 +173,4 @@ Conventional CC evaluations typically assume that the TOE platform or underlying
 
 For example, cloud customers of ICT products understand that moving to the cloud means sharing infrastructure with other customers. While Cloud Providers offering IaaS capabilities may offer dedicated hardware or instances to one cloud customer, this is the minority of cloud use cases.
 
-This iTC will consider products deployed in a multi-tenant environment with respect to any optional or objective SFRs involving cloud use cases that mitigate Guest Escape, Data Leakage, Privilege Escalation, etc.
+This work will consider products deployed in a multi-tenant environment with respect to any optional or objective SFRs involving cloud use cases that mitigate Guest Escape, Data Leakage, Privilege Escalation, etc.
