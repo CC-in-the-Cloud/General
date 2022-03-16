@@ -1,15 +1,14 @@
-= Coffee Maker Interpretation Team (CMIT) Membership <DATE>
+= Common Criteria in the Cloud Membership <DATE>
 :showtitle:
 :table-caption: Table
-:revnumber: 0.3
-:revdate: 2020-01-29
+:revnumber: 0.1
+:revdate: 2022-03-16
 
-:iTC-longname: Coffee Maker
-:iTC-shortname: CM-iTC
-:iTC-ITname: CMIT
-:iTC-email: cm-itc-mailing-list@gmail.com
-:iTC-website: https://coffeemaker.github.io/
-:iTC-GitHub: https://github.com/coffeemaker/repository/
+:iTC-longname: Common Criteria in the Cloud iTC
+:iTC-shortname: Cloud-iTC
+:iTC-email: TBD
+:iTC-website: https://ccinthecloud.github.io/
+:iTC-GitHub: https://github.com/CC-in-the-Cloud/Admin
 
 == {iTC-ITname} Membership
 [cols=".^2,.^2,.^2,.^2,.^1",options="header"]
@@ -22,7 +21,7 @@
 |Joined
 
 |Chair
-|Johann Sebastian Bach
+|J
 |Mr. Coffee
 |Vendor
 |1/1/2019
@@ -33,7 +32,13 @@
 |Scheme
 |
 
-|Secretary
+|ISO Liason
+|
+|
+|
+|
+
+|Record Manager
 |
 |
 |

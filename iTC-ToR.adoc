@@ -20,11 +20,6 @@ Name: {iTC-longname} International Technical Community
 
 Abbreviation: {iTC-shortname}
 
-== Initiators
-
-* Canadian Centre for Cyber Security Communications Security Establishment, contact@cyber.gc.ca
-* National Information Assurance Partnership (NIAP), niap@niap-ccevs.org
-
 == Technology Area and Scope
 The scope of this international Technical Community (iTC) are all products utilizing a cloud platform or environment. 
 
@@ -231,8 +226,6 @@ As soon as an Essential Patent is identified, the {iTC-shortname} should seek re
 * The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the workproduct(s); or,
 * If the owner of the Essential Patent is unwilling or unable to grant such a license, then the {iTC-shortname} should modify the work product(s) so as not to infringe on the Essential Patent. 
 
-//start here next //
-
 ==== Members intellectual property
 {iTC-shortname} members are solely responsible for protecting their organization's proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the {iTC-shortname}, do not provide any assurance of such protection.
 
@@ -243,18 +236,19 @@ No copyrights will be asserted on the Collaborative Protection Profile and Suppo
 iTC members should not discuss topics that could be interpreted as collusion, such as pricing, licensing terms, territories, market shares, or litigation. {iTC-shortname} members are encouraged to inform the Chairperson if they become aware of such discussions.
 
 === Common Criteria considerations
-The products of this {iTC-shortname} will conform to CCRA requirements for mutual recognition.
+The work products of this {iTC-shortname} intend to conform to CCRA requirements for mutual recognition.
 
-Other considerations, such as CC/CEM conformance and PP evaluation, are to be determined.
+Further considerations, such as CC/CEM conformance and other mutual recognition schemes are to be determined.
 
 == Roles
-=== Initiator(s)
-Initiators represent the national government(s) who requested the development of the cPPs and SDs for this technology area. The initiators do not have any particular responsibilities in the {iTC-shortname}, but they can have other roles as well in the {iTC-shortname} according to the ToR. Initiators of the {iTC-longname} cPP are listed in <<Initiators>>.
 
 === Chairperson(s)
 Chairpersons oversee the operation of the {iTC-shortname} in accordance with the ToR: assign or approve key persons, set and manage schedules, convene meetings, plan and lead activities, solicit participation and input, manage issues and discussions. Chairpersons can also work as core SMEs and make comments or vote on any technical issues. However comments or vote from chairpersons are treated equally and any decision-making should be done as described at <<Decision-making>>.
 
 Every 12 months, or when necessary due to vacancies, or when so requested by members of the {iTC-shortname}, the {iTC-shortname} Chair should discuss the current assignments of key persons with the {iTC-shortname} membership.
+
+=== ISO Liason
+The ISO Liason is a role that interacts and is responsible for communications and deliverables with the ISO/IEC 15408, ISO/IEC 18045, SC 27 WG 3 groups.
 
 === Record Manager
 The record manager is a role that primarily supports the {iTC-shortname} Chair. Unless agreed otherwise with the {iTC-shortname} Chair, the responsibilities include:
@@ -288,7 +282,7 @@ Common Criteria certification bodies provide knowledge and experience in the exp
 Other SMEs can come from a wide range of background, including government technical experts, end user representatives, as well as consultants or those from academia.
 
 == References
-* [#1]#[1]# {iTC-longname} Essential Security Requirements, {iTC-website}[Online] (link when draft published)
+* [#1]#[1]# {iTC-longname} Essential Security Requirements, {iTC-website}[Online] (https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf)
 * [#2]#[2]# {iTC-longname} International Technical Community - Key Persons and Affiliations, {iTC-website}[Online] (link when available)
 * [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, http://www.commoncriteriaportal.org/files/communities/Establishing%20iTCs%20and%20cPP%20development%20-%20v0-7.pdf[Online]
 * [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/publication/PUB100397.html[Online]
