@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Coffee Maker International Technical Community Terms of Reference</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.admonitionblock td.icon .icon-boilerplate:before {content:"\f023";color:#3F903E;}
+</style>
+<style>
+.admonitionblock td.icon .icon-review:before {content:"\f0ea";color:#FDB109;}
+</style>
+<style>
+.admonitionblock td.icon .icon-guidance:before {content:"\f02d";color:#0909FD;}
+</style>
+<style>
+.admonitionblock td.icon .icon-initial:before {content:"\f25a";color:#C50CCB;}
+</style>
+<style>
+.admonitionblock td.icon .icon-USB:before {content:"\f2db";color:#CB0C33;}
+</style>
+<style>
+.admonitionblock td.icon .icon-discussion:before {content:"\f086";color:#F5F008;}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Coffee Maker International Technical Community Terms of Reference</h1>
+<div class="details">
+<span id="revnumber">version 0.4,</span>
+<span id="revdate">2019-10-21</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_identification">1. Identification</a></li>
+<li><a href="#_technology_area_and_scope">2. Technology Area and Scope</a></li>
+<li><a href="#_key_persons_affiliations">3. Key Persons / Affiliations</a></li>
+<li><a href="#_collaboration_infrastructure">4. Collaboration Infrastructure</a></li>
+<li><a href="#_itc_and_cpp_development_process">5. iTC and cPP Development Process</a>
+<ul class="sectlevel2">
+<li><a href="#_application_of_the_white_paper">5.1. Application of the White Paper</a></li>
+<li><a href="#_maintenance">5.2. Maintenance</a></li>
+</ul>
+</li>
+<li><a href="#_policies">6. Policies</a>
+<ul class="sectlevel2">
+<li><a href="#_membership">6.1. Membership</a></li>
+<li><a href="#_principles">6.2. Principles</a></li>
+<li><a href="#_code_of_conduct">6.3. Code of Conduct</a></li>
+<li><a href="#_language">6.4. Language</a></li>
+<li><a href="#_revision_of_the_terms_of_reference">6.5. Revision of the Terms-of-Reference</a></li>
+<li><a href="#_decision_making">6.6. Decision-making</a></li>
+<li><a href="#_voting">6.7. Voting</a></li>
+<li><a href="#_meetings">6.8. Meetings</a></li>
+<li><a href="#_record_keeping">6.9. Record-keeping</a></li>
+<li><a href="#_patent_and_other_intellectual_property">6.10. Patent and other intellectual property</a></li>
+<li><a href="#_inappropriate_topics">6.11. Inappropriate topics</a></li>
+<li><a href="#_common_criteria_considerations">6.12. Common Criteria considerations</a></li>
+</ul>
+</li>
+<li><a href="#_roles">7. Roles</a>
+<ul class="sectlevel2">
+<li><a href="#_chairpersons">7.1. Chairperson(s)</a></li>
+<li><a href="#_iso_liason">7.2. ISO Liason</a></li>
+<li><a href="#_record_manager">7.3. Record Manager</a></li>
+<li><a href="#_technical_editors">7.4. Technical Editor(s)</a></li>
+<li><a href="#_core_smes">7.5. Core SMEs</a></li>
+</ul>
+</li>
+<li><a href="#_references">8. References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_identification">1. Identification</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Name: Common Criteria in the Cloud iTC International Technical Community</p>
+</div>
+<div class="paragraph">
+<p>Abbreviation: Cloud-iTC</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_technology_area_and_scope">2. Technology Area and Scope</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The scope of this international Technical Community (iTC) are all products utilizing a cloud platform or environment.</p>
+</div>
+<div class="paragraph">
+<p>The Cloud-iTC will develop evaluation collateral and guidance to extend CC product evaluations into cloud scenarios.</p>
+</div>
+<div class="paragraph">
+<p>The initial cPP are to consider the Essential Security Requirements (ESR) <a href="#1">[1]</a>. It is anticipated that the scope of the first version of the cPP is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first version of the cPP with associated Supporting Documents, the Cloud-iTC may consider to expand the scope of subsequent cPPs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_key_persons_affiliations">3. Key Persons / Affiliations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Key roles are defined in <a href="#_roles">Section 7, &#8220;Roles&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in Common Criteria in the Cloud iTC International Technical Community Key persons and affiliations <a href="#2">[2]</a> provided separately at the Team lab file area of the iTC.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_collaboration_infrastructure">4. Collaboration Infrastructure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To enable collaboration, the Cloud-iTC uses collaboration services including email notification, discussion forums, and file storage that are accessible to Cloud-iTC members.</p>
+</div>
+<div class="paragraph">
+<p>The Cloud-iTC is using a combination of hosted collaboration services provided by the Common Criteria Users Forum and GitHub.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_itc_and_cpp_development_process">5. iTC and cPP Development Process</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_application_of_the_white_paper">5.1. Application of the White Paper</h3>
+<div class="paragraph">
+<p>This Cloud-iTC follows the processes defined in Establishing International Technical Communities and Developing Collaborative Protection Profiles <a href="#3">[3]</a> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB Cloud-iTC Working Group, or the CCRA CCDB as applicable.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maintenance">5.2. Maintenance</h3>
+<div class="paragraph">
+<p>The Cloud-iTC remains in place to answer inquiries and update the cPP as may be requested by CCDB, Cloud-iTC members and/or others cPP stakeholders. The Cloud-iTC Chair is responsible for establishing an appropriate periodic schedule and organizing the Cloud-iTC to review, and if needed, update the cPP and SD.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_policies">6. Policies</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_membership">6.1. Membership</h3>
+<div class="paragraph">
+<p>This iTC is open to all interested persons who have an active role in this technology area and in CC evaluation. To join the iTC, each person sends a request to:</p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_principles">6.2. Principles</h3>
+<div class="paragraph">
+<p>The Cloud-iTC should be working in manners that promote fair competition and meet the six principles of international standardisation determined by the WTO-TBT. See G/TBT/1/Rev.13 (8 March 2017) "DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995" <a href="#5">[5]</a> or later revision.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Transparency</p>
+</li>
+<li>
+<p>Openness</p>
+</li>
+<li>
+<p>Impartiality &amp; Consensus</p>
+</li>
+<li>
+<p>Effectiveness &amp; Relevance</p>
+</li>
+<li>
+<p>Coherence</p>
+</li>
+<li>
+<p>Development Dimension</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the Cloud-iTC finds any of the principles not to be appropriate, it should inform the CCDB via the Liaison on what exceptions would be required.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_of_conduct">6.3. Code of Conduct</h3>
+<div class="paragraph">
+<p>The Cloud-iTC draws from the ISO Code of Conduct for the technical Work <a href="#4">[4]</a> and the Contributor Covenant Code of Conduct <a href="#6">[6]</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Work for the net benefit of the international community</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We recognize that the development of collaborative Protection Profiles is for the net benefit of the international community, over and above the interests of any individual or organization. We are committed to advancing collaborative Protection Profiles within their agreed scope and we will not hinder their development.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Uphold consensus and governance</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We will uphold the key principles of International Standardization in the creation of collaborative Protection Profiles: consensus, transparency, openness, impartiality, effectiveness, relevance, coherence and the development dimension.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Agree to a clear purpose and scope</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We are committed to having a clear purpose, scope, objectives, and plan to ensure the timely development of collaborative Protection Profiles.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Participate actively and manage effective representation</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We agree to actively participate in standards development projects. We will make our contributions to the work through the agreed upon tools and procedures in accordance with the iTC guidance documents.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Escalate and resolve disputes</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We will identify and escalate disputes in a timely manner to ensure rapid resolution. We will uphold the agreed dispute resolution processes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Behave ethically</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">We will act in good faith and with due care and diligence. We will avoid collusive or anticompetitive behaviour. We will promote a culture of fair and ethical behaviour.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Follow a Code of Conduct</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>We are committed to following a code of conduct in an open, welcoming and inclusive manner. In meetings we are committed to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>conducting ourselves in a professional manner</p>
+</li>
+<li>
+<p>respecting others and their opinions</p>
+</li>
+<li>
+<p>accepting group decisions</p>
+</li>
+<li>
+<p>ensuring that the views of all (including those whose first language is not that of the meeting) are heard and understood</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_language">6.4. Language</h3>
+<div class="paragraph">
+<p>The Cloud-iTC work and documents will be executed in the English language.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_revision_of_the_terms_of_reference">6.5. Revision of the Terms-of-Reference</h3>
+<div class="paragraph">
+<p>The ToR should be subject for discussion and revision as needed and agreed upon within the Cloud-iTC.</p>
+</div>
+<div class="paragraph">
+<p>The CCDB should be informed via the CCDB Liaison whenever changes are made to the ToR that are principal in nature and may affect the endorsement status of the Cloud-iTC within the CCRA.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_decision_making">6.6. Decision-making</h3>
+<div class="sect3">
+<h4 id="_editorial_decisions">6.6.1. Editorial decisions</h4>
+<div class="paragraph">
+<p>Editorial decisions (including correction of technical inconsistencies) are made at the discretion of the Technical Editor, in consultation with the Core SMEs and Cloud-iTC Chair when needed.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_technical_decisions">6.6.2. Technical decisions</h4>
+<div class="paragraph">
+<p>Ideally, technical decisions are made by reaching group consensus (see <a href="#_voting">Section 6.7, &#8220;Voting&#8221;</a> for a definition). In most cases, the Core SMEs will be able to propose a resolution that is acceptable to the Cloud-iTC and the originator of the issue.</p>
+</div>
+<div class="paragraph">
+<p>As a guideline, decisions are made according to the following process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Major Decisions shall be made via the iTC collaboration tools. The Cloud-iTC will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.</p>
+</li>
+<li>
+<p>Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.</p>
+</li>
+<li>
+<p>If there are members that disagree with a decision, they can request the reason for the objection to be documented.</p>
+</li>
+<li>
+<p>Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Other Cloud-iTC members are encouraged to post comments in response to issues and proposed resolutions at any time.</p>
+</div>
+<div class="paragraph">
+<p>A typical issue should be resolved within a two week period. Some issues may require more time for study and deliberation or due to holidays or other events.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_voting">6.7. Voting</h3>
+<div class="paragraph">
+<p>Decisions shall be taken on the basis of the consensus principle whenever possible.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Consensus: General agreement, characterized by the absence of sustained opposition to substantial issues by any important part of the concerned interests and by a process that involves seeking to take into account the views of all parties concerned and to reconcile any conflicting arguments.</p>
+</div>
+<div class="paragraph">
+<p>NOTE Consensus need not imply unanimity.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; ISO/IEC Guide 2:2004
+</div>
+</div>
+<div class="paragraph">
+<p>The Cloud-iTC may define different classes of voting, but for votes related to the iTC itself, the process here defines how the voting will proceed. If the class of vote needed has not been defined, then the process here will be used by default.</p>
+</div>
+<div class="paragraph">
+<p>Voting is used infrequently as a way to formally decide on a particular iTC issue. The following would be considered iTC issues to require a formal vote:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Establishing formal working groups within the iTC (such as the Interpretation Team or special interest groups to work on specific areas)</p>
+</li>
+<li>
+<p>Changes to the iTC governing documents (such as the Essential Security Requirements or Terms of Reference)</p>
+</li>
+<li>
+<p>Public Review/Release of documents</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As determined by the iTC, additional voting classes will be defined in the documents where they will be used.</p>
+</div>
+<div class="sect3">
+<h4 id="_vote_eligibility">6.7.1. Vote Eligibility</h4>
+<div class="paragraph">
+<p>Voting is limited specifically to the members defined at the time the vote is called. Membership in the Cloud-iTC is defined as inclusion on the Cloud-iTC roster on the CCUF approved collaboration tool.</p>
+</div>
+<div class="paragraph">
+<p>One vote is allowed for each member organization, not for each individual member, regardless of membership within the Cloud-iTC. <em>Organization</em> is defined according to the definition adopted by the CCUF; for commercial enterprises, a parent company and all of its divisions and subsidiaries comprise one organization. It is the responsibility of each organization to determine which individual member will cast a vote on its behalf.</p>
+</div>
+<div class="paragraph">
+<p>Eligible voting organizations are determined at the time the Call for Votes is sent out based on inclusion on the Cloud-iTC mailing list. Any organization not included on this list at the time the Call for Votes is posted is ineligible to cast a vote.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vote_workflow">6.7.2. Vote Workflow</h4>
+<div class="paragraph">
+<p>As a guideline, voting takes place according to the following process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A Call for Votes is posted, including the mechanism for casting ballots and time period during which ballots are accepted</p>
+</li>
+<li>
+<p>At the end of the voting period, ballots are tabulated and reviewed by the designated ballot officer.</p>
+</li>
+<li>
+<p>Results of voting are posted, including a summary of the vote and the votes cast by each organization.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This process is illustrated, below. Timing for each part of the process is provided as a benchmark. A typical voting cycle should be completed within a three-week period. Some voting periods may be longer due to holidays or other events.</p>
+</div>
+<div id="Vote-Workflow" class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="Diagram" width="1120" height="238">
+</div>
+<div class="title">Figure 1. Vote Workflow</div>
+</div>
+<div class="paragraph">
+<p>Votes submitted shall be explicit: positive, negative, or abstention. A positive vote may be accompanied by editorial or technical comments, on the understanding that the iTC Chair or Technical Editor (as applicable) will decide how to deal with them. If a voting member finds the proposal unacceptable, it shall vote negatively and state the technical reasons. It may indicate that the acceptance of specified technical modifications will change its negative vote to one of approval, but it shall not cast an affirmative vote which is conditional on the acceptance of modifications.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vote_counting">6.7.3. Vote Counting</h4>
+<div class="paragraph">
+<p>A vote is approved if:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A two-thirds majority of the Counted votes of the Cloud-iTC are positive, and</p>
+</li>
+<li>
+<p>Not more than one-quarter of the Counted votes cast are negative.</p>
+</li>
+<li>
+<p>For elections of iTC roles, only a simple majority is required when voting is needed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Counted votes are determined by the following conditions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only one vote per organization is made.</p>
+</li>
+<li>
+<p>Negative votes concerning technical issues are encouraged to provide a rationale.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>An organization submitting multiple non-matching votes is allowed to determine the final vote to be counted before voting is closed. The onus is on the organization to ensure the proper vote. A set of non-matching votes will cause the organization votes to not be considered Counted votes.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Abstentions are not considered to be Counted votes in the final total. They will be noted in the record only.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_meetings">6.8. Meetings</h3>
+<div class="paragraph">
+<p>Meetings are held at times, with frequency, and in forms that are determined by the Cloud-iTC members.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_record_keeping">6.9. Record-keeping</h3>
+<div class="paragraph">
+<p>The following records are created and maintained:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Meeting attendance and summary of decisions</p>
+</li>
+<li>
+<p>Action items and their disposition</p>
+</li>
+<li>
+<p>Comments and resolutions</p>
+</li>
+<li>
+<p>Interim draft documents</p>
+</li>
+<li>
+<p>iTC Roster with indication of voting members</p>
+</li>
+<li>
+<p>Key persons and affiliations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These records are accessible to Cloud-iTC members.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_patent_and_other_intellectual_property">6.10. Patent and other intellectual property</h3>
+<div class="sect3">
+<h4 id="_essential_patents">6.10.1. Essential patents</h4>
+<div class="paragraph">
+<p><strong>Essential Patent</strong> means any issued or pending patent claim for which its use is necessary (i.e., there is no commercially and technically feasible non-infringing alternative) to fulfill the conformance requirements of the work product(s) including, but not limited to, guidance for cPP and SD authors produced by the Cloud-iTC.</p>
+</div>
+<div class="paragraph">
+<p>Cloud-iTC members must inform the Chairperson if they are personally aware of any potential Essential Patent, regardless of the owner or controller of such patents.</p>
+</div>
+<div class="paragraph">
+<p>As soon as an Essential Patent is identified, the Cloud-iTC should seek resolution in the following priority order:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The owner of the Essential Patent grants a license, on reciprocally reasonable and non-discriminatory terms and conditions, to anyone desiring to manufacture, sell, or otherwise employ products conforming to the workproduct(s); or,</p>
+</li>
+<li>
+<p>If the owner of the Essential Patent is unwilling or unable to grant such a license, then the Cloud-iTC should modify the work product(s) so as not to infringe on the Essential Patent.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_members_intellectual_property">6.10.2. Members intellectual property</h4>
+<div class="paragraph">
+<p>Cloud-iTC members are solely responsible for protecting their organization&#8217;s proprietary, trade secret, or other sensitive information. The Chairperson, other members, and the technical infrastructure used by the Cloud-iTC, do not provide any assurance of such protection.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_work_product_ownership">6.10.3. Work product ownership</h4>
+<div class="paragraph">
+<p>No copyrights will be asserted on the Collaborative Protection Profile and Supporting Documents. Cloud-iTC members may use those work products but may not assert moral or authorship rights. The use of those work products is controlled by the Common Criteria evaluation process: claims of conformance to the work products are meaningless without Common Criteria certification.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inappropriate_topics">6.11. Inappropriate topics</h3>
+<div class="paragraph">
+<p>iTC members should not discuss topics that could be interpreted as collusion, such as pricing, licensing terms, territories, market shares, or litigation. Cloud-iTC members are encouraged to inform the Chairperson if they become aware of such discussions.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_common_criteria_considerations">6.12. Common Criteria considerations</h3>
+<div class="paragraph">
+<p>The work products of this Cloud-iTC intend to conform to CCRA requirements for mutual recognition.</p>
+</div>
+<div class="paragraph">
+<p>Further considerations, such as CC/CEM conformance and other mutual recognition schemes are to be determined.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_roles">7. Roles</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_chairpersons">7.1. Chairperson(s)</h3>
+<div class="paragraph">
+<p>Chairpersons oversee the operation of the Cloud-iTC in accordance with the ToR: assign or approve key persons, set and manage schedules, convene meetings, plan and lead activities, solicit participation and input, manage issues and discussions. Chairpersons can also work as core SMEs and make comments or vote on any technical issues. However comments or vote from chairpersons are treated equally and any decision-making should be done as described at <a href="#_decision_making">Section 6.6, &#8220;Decision-making&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>Every 12 months, or when necessary due to vacancies, or when so requested by members of the Cloud-iTC, the Cloud-iTC Chair should discuss the current assignments of key persons with the Cloud-iTC membership.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iso_liason">7.2. ISO Liason</h3>
+<div class="paragraph">
+<p>The ISO Liason is a role that interacts and is responsible for communications and deliverables with the ISO/IEC 15408, ISO/IEC 18045, SC 27 WG 3 groups.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_record_manager">7.3. Record Manager</h3>
+<div class="paragraph">
+<p>The record manager is a role that primarily supports the Cloud-iTC Chair. Unless agreed otherwise with the Cloud-iTC Chair, the responsibilities include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Establish and maintain a record with key persons and their affiliations.</p>
+</li>
+<li>
+<p>Establish and maintain an updated roster, including identity of organisations/nations eligible to vote.</p>
+</li>
+<li>
+<p>Administrate membership applications.</p>
+</li>
+<li>
+<p>Keep mailing lists up to date.</p>
+</li>
+<li>
+<p>Provide access for new members to appropriate Cloud-iTC resources.</p>
+</li>
+<li>
+<p>Make notes of meetings.</p>
+</li>
+<li>
+<p>Keep the Cloud-iTC action item list updated.</p>
+</li>
+<li>
+<p>Ensure that Cloud-iTC records are maintained, available and in good order.</p>
+</li>
+<li>
+<p>Support the Cloud-iTC Chair in daily operation of the Cloud-iTC.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_technical_editors">7.4. Technical Editor(s)</h3>
+<div class="paragraph">
+<p>Technical Editors serve as the primary author for the cPPs and SDs: create and update documents to reflect the decisions of the Cloud-iTC, post drafts for access by Cloud-iTC members, and finalize drafts for approval.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_core_smes">7.5. Core SMEs</h3>
+<div class="paragraph">
+<p>Core Subject Matter Experts comprise a team that develops the initial drafts of cPPs and SDs, evaluates issues and comments, and proposes appropriate and equitable resolutions to the Cloud-iTC. The Core SME team is composed of a balance of industry, end user, and Common Criteria experts who can work effectively with the rest of the Cloud-iTC members. Core SMEs should have adequate competence, time and resources available in order to contribute to provide timely resolutions to the Cloud-iTC.</p>
+</div>
+<div class="sect3">
+<h4 id="_industry_smes">7.5.1. Industry SMEs</h4>
+<div class="paragraph">
+<p>Industry SMEs provide knowledge of the technology area and experience with product evaluation. They also help make appropriate decisions based on their practical knowledge of markets, customer expectations, implementation, and costs.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lab_smes">7.5.2. Lab  SMEs</h4>
+<div class="paragraph">
+<p>Lab SMEs provide a solid understanding the evaluation process in the various schemes under the CCRA, and can offer contributions from a unique perspective. They can offer perspective on evaluation activities (what the evaluator does to test or otherwise confirm compliance with requirements), and well as ensuring the requirements are written in such a way that there can be a clear pass/fail criteria.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_certification_body_smes">7.5.3. Certification Body SMEs</h4>
+<div class="paragraph">
+<p>Common Criteria certification bodies provide knowledge and experience in the expression of functional and assurance requirements in the language of the CC, and help ensure that the cPP and SDs comply with CCRA-accepted standards and practices.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_smes">7.5.4. Other SMEs</h4>
+<div class="paragraph">
+<p>Other SMEs can come from a wide range of background, including government technical experts, end user representatives, as well as consultants or those from academia.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">8. References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><span id="1">[1]</span> Common Criteria in the Cloud iTC Essential Security Requirements, <a href="https://ccinthecloud.github.io/">Online</a> (<a href="https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf" class="bare">https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf</a>)</p>
+</li>
+<li>
+<p><span id="2">[2]</span> Common Criteria in the Cloud iTC International Technical Community - Key Persons and Affiliations, <a href="https://ccinthecloud.github.io/">Online</a> (link when available)</p>
+</li>
+<li>
+<p><span id="3">[3]</span> Establishing International Technical Communities and collaborative Protection Profiles development, <a href="http://www.commoncriteriaportal.org/files/communities/Establishing%20iTCs%20and%20cPP%20development%20-%20v0-7.pdf">Online</a></p>
+</li>
+<li>
+<p><span id="4">[4]</span> ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, <a href="https://www.iso.org/publication/PUB100397.html">Online</a></p>
+</li>
+<li>
+<p><span id="5">[5]</span>  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, <a href="https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&amp;Language=ENGLISH&amp;Context=FomerScriptedSearch&amp;languageUIChanged=true#">Online Search</a></p>
+</li>
+<li>
+<p><span id="6">[6]</span> Contributor Covenant Code of Conduct,  <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Online</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.4<br>
+Last updated 2022-03-16 15:25:39 -0500
+</div>
+</div>
+</body>
+</html>
