@@ -10,7 +10,7 @@
 :iTC-website: https://ccinthecloud.github.io/
 :iTC-GitHub: https://github.com/CC-in-the-Cloud/Admin
 
-== {iTC-ITname} Membership
+== CC in the Cloud Membership
 [cols=".^2,.^2,.^2,.^2,.^1",options="header"]
 |====
 
@@ -32,6 +32,12 @@
 |Scheme
 |
 
+|CCDB Liason
+|
+|
+|
+|
+
 |ISO Liason
 |
 |
@@ -44,10 +50,22 @@
 |
 |
 
+|Technical Editor
+|
+|
+|
+|
+
 |Member
 |
 |
 |Lab
+|
+
+|Member
+|
+|NIAP
+|Scheme
 |
 
 |Non-Voting

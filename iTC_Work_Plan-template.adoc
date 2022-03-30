@@ -1,4 +1,4 @@
-= <TOE type> international Technical Community Work Plan
+= CC in the Cloud international Technical Community Work Plan
 :showtitle:
 :imagesdir: images
 :table-caption!:
@@ -7,8 +7,8 @@
 :revdate: 2019-08-05
 :xrefstyle: full
 
-:iTC-longname: Coffee Maker
-:iTC-shortname: CM-iTC
+:iTC-longname: Common Criteria in the Cloud
+:iTC-shortname: CCitC
 :iTC-email: cm-itc-mailing-list@gmail.com
 :iTC-website: https://coffeemaker.github.io/
 :iTC-GitHub: https://github.com/coffeemaker/repository/
@@ -182,122 +182,6 @@
 |
 
 |Manage update/creation of Position Statements
-|
-|
-|
-|
-
-5.+^.|*Draft {iTC-longname} collaborative Protection Profile (cPP)*
-
-|Draft cPP by {iTC-shortname} (TOE, Assurance Reqs, rationale, etc.)
-|
-|
-|
-|
-
-|cPP published for public review
-|
-|
-|
-|
-
-|Update cPP and adjudicate comments
-|
-|
-|
-|
-
-|Publish cPP (ready for eval)
-|
-|
-|
-|
-
-5.+^.|*Supporting Documents (SDs) for {iTC-longname}*
-
-|Create draft “Rationale for Supporting Document for {iTC-longname}”
-|
-|
-|
-|
-
-|Get draft “Rationale for Supporting Document for {iTC-longname}”
-|
-|
-|
-|
-
-|Approved by {iTC-shortname}
-|
-|
-|
-|
-
-|Get draft “Rationale for Supporting Document for {iTC-longname}”
-|
-|
-|
-|
-
-|Approved by CCDB and CCMC
-|
-|
-|
-|
-
-|Vulnerability Analysis delivered to {iTC-shortname}
-|
-|
-|
-|
-
-|Equivalency Appendix delivered to {iTC-shortname}
-|
-|
-|
-|
-
-|Draft “Supporting Document for {iTC-longname}” 
-|
-|
-|
-|
-
-|Published for public review (CCDB)
-|
-|
-|
-|
-
-|{iTC-shortname} review and update of “Supporting Document for {iTC-longname}”
-|
-|
-|
-|
-
-5.+^.|*Evaluation/Certification of {iTC-longname} cPP/SDs*
-
-|Evaluation of cPP/SD
-|
-|
-|
-|
-
-|Certification of cPP/Ss
-|
-|
-|
-|
-
-|CCDB approval of cPP/SD
-|
-|
-|
-|
-
-5.+^.|*Final {iTC-longname} cPP/SD*
-
-|Publish cPP and SD
 |
 |
 |
