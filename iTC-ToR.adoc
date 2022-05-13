@@ -1,4 +1,4 @@
-= Coffee Maker International Technical Community Terms of Reference
+= Common Criteria in the Cloud International Technical Community Terms of Reference
 :showtitle:
 :sectnumlevels: 3
 :table-caption: Table
@@ -25,7 +25,7 @@ The scope of this international Technical Community (iTC) are all products utili
 
 The {iTC-shortname} will develop evaluation collateral and guidance to extend CC product evaluations into cloud scenarios.
 
-The initial cPP are to consider the Essential Security Requirements (ESR) <<1>>. It is anticipated that the scope of the first version of the cPP is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first version of the cPP with associated Supporting Documents, the {iTC-shortname} may consider to expand the scope of subsequent cPPs.
+The initial aim is to consider the Essential Security Requirements (ESR) <<1>>. It is anticipated that the scope of the first version of any work proudcts is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first collection of work products, associated Supporting Documents, the {iTC-shortname} may consider to expanding the scope of subsequent works.
 
 == Key Persons / Affiliations
 Key roles are defined in <<Roles>>.
@@ -37,12 +37,12 @@ To enable collaboration, the {iTC-shortname} uses collaboration services includi
 
 The {iTC-shortname} is using a combination of hosted collaboration services provided by the Common Criteria Users Forum and GitHub.
 
-== iTC and cPP Development Process
+== iTC Development Process
 === Application of the White Paper
 This {iTC-shortname} follows the processes defined in Establishing International Technical Communities and Developing Collaborative Protection Profiles <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB {iTC-shortname} Working Group, or the CCRA CCDB as applicable. 
 
 === Maintenance
-The {iTC-shortname} remains in place to answer inquiries and update the cPP as may be requested by CCDB, {iTC-shortname} members and/or others cPP stakeholders. The {iTC-shortname} Chair is responsible for establishing an appropriate periodic schedule and organizing the {iTC-shortname} to review, and if needed, update the cPP and SD.
+The {iTC-shortname} remains in place to answer inquiries and update the work products as may be requested by CCDB, {iTC-shortname} members and/or others stakeholders. The {iTC-shortname} Chair is responsible for establishing an appropriate periodic schedule and organizing the {iTC-shortname} to review, and if needed, update the iTC work products.
 
 == Policies
 === Membership
@@ -247,8 +247,8 @@ Chairpersons oversee the operation of the {iTC-shortname} in accordance with the
 
 Every 12 months, or when necessary due to vacancies, or when so requested by members of the {iTC-shortname}, the {iTC-shortname} Chair should discuss the current assignments of key persons with the {iTC-shortname} membership.
 
-=== ISO Liason
-The ISO Liason is a role that interacts and is responsible for communications and deliverables with the ISO/IEC 15408, ISO/IEC 18045, SC 27 WG 3 groups.
+=== ISO Liaison
+The ISO Liaison is a role that interacts and is responsible for communications and deliverables with the ISO/IEC 15408, ISO/IEC 18045, SC 27 WG 3 groups.
 
 === Record Manager
 The record manager is a role that primarily supports the {iTC-shortname} Chair. Unless agreed otherwise with the {iTC-shortname} Chair, the responsibilities include:
@@ -264,7 +264,7 @@ The record manager is a role that primarily supports the {iTC-shortname} Chair. 
 * Support the {iTC-shortname} Chair in daily operation of the {iTC-shortname}.
 
 === Technical Editor(s)
-Technical Editors serve as the primary author for the cPPs and SDs: create and update documents to reflect the decisions of the {iTC-shortname}, post drafts for access by {iTC-shortname} members, and finalize drafts for approval. 
+Technical Editors serve as the primary author for the iTC work products: create and update documents to reflect the decisions of the {iTC-shortname}, post drafts for access by {iTC-shortname} members, and finalize drafts for approval. 
 
 === Core SMEs
 Core Subject Matter Experts comprise a team that develops the initial drafts of cPPs and SDs, evaluates issues and comments, and proposes appropriate and equitable resolutions to the {iTC-shortname}. The Core SME team is composed of a balance of industry, end user, and Common Criteria experts who can work effectively with the rest of the {iTC-shortname} members. Core SMEs should have adequate competence, time and resources available in order to contribute to provide timely resolutions to the {iTC-shortname}.
