@@ -75,7 +75,7 @@ If there is nothing to be placed into a specific category, then it should be sta
 
 T.CONFIGURATION::
 
-T.CREDENTIAL::
+T.CREDENTIAL:: For SaaS use cases, an application may access data stores or credentials that would not be provided by the host Operating System. 
 
 T.DATA_SOVEREIGNTY::
 
@@ -84,6 +84,7 @@ T.INSIDER_THREAT:: An attacker from the Cloud Service Provider has vastly increa
 [note]
 CSP admin access to encryption keys may be countered in FEDRAMP and we can map SFRs to his example.
 SaaS applications may implement their own encryption layer to protect from insider threat at the cloud storage object level.
+
 Zero trust / MFA SFRs may be appropriate here
 
 T.MULTI_TENANT::

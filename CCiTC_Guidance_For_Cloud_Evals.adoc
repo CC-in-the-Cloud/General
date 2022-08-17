@@ -1,16 +1,11 @@
 = _CC in the Cloud_ Guidance for Cloud Evaluations
 :showtitle:
 :icons: font
-:revnumber: 0.3.0
+:revnumber: 0.1
 :revdate: 2022-08-17
 
 :iTC-longname: Common Criteria in the Cloud iTC
 :iTC-shortname: CCitC-iTC
-
-[.text-center]
-Version: {revnumber}
-[.text-center]
-Date: {revdate}
 
 == Preface
 
@@ -18,7 +13,7 @@ The CC in the Cloud Technical Work Group (CCitC) is developing an Essential Secu
 
 == Objective
 
-This document defines smart card evaluation and certification terminology and describes appropriate advice.
+This document defines cloud evaluations and certification terminology and describes appropriate advice.
  
 The main intended audience of this document are evaluation sponsors and manufacturers, but it is also related to evaluators, certifiers and end users of this type of products. 
 
@@ -116,14 +111,18 @@ This section in the JIL guidance is meant to help vendors "anticipate their deve
 
 It may be necessary for the iTC to provide additional assurance strategies for PP authors to incorporate more development environment review. The goal of which is to support Dev Ops practices and facilitate cloud evaluations that allow the end user some assurance apart from fixed version evaluations.
 
+[comment]
+-- 
+FEDRamp to SARs Mapping could be leveraged to reuse trusted platform collateral.
+--
+
 [OWASP Cloud Top 10]
 ====
 CNAS-4: CI/CD pipeline & software supply chain flaws
 
 Examples:
 
-Insufficient authentication on CI/CD pipeline systems
-
+* Insufficient authentication on CI/CD pipeline systems
 * Use of untrusted images
 * Use of stale images
 * Insecure communication channels to registries
