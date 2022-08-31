@@ -132,6 +132,11 @@ Examples:
 
 === Security Target Sub-Process
 
+[comment]
+-- 
+Revisit section later. May remove entirely.
+--
+
 This section shall discuss the expected changes to a Security Target for cloud evaluations. This also may be better suited to address SFR changes needed in a PP. For example, changes need to address SFRs that deal with credential management:
 
 [OWASP Cloud Top 10]
@@ -164,21 +169,19 @@ Examples:
 
 SFRs dealing with auditing:
 
-[OWASP Cloud Top 10]
-====
-CNAS-10: Ineffective logging & monitoring (e.g. runtime activity)
+=== Guidance Documentation Sub-Process
 
-Examples:
+This section shall discuss the increased requirements of product configuration in cloud environments.
+
+It is important to distinguish here that not all expected elements of a traditional AGD document can be translated for Cloud Environments. It may be necessary to exclude or supplement these guidance requirments depending on the topology of the product and the cloud service provider. In some circumstances, the Cloud Provider is the only entity that may fulfill these guidance requirements to ensure that the TOE is deployed in the tested configuration. If the CSP is a Trusted Provider, this exclusion may be minimized. 
+
+For example, auditing an on-prem resources versus an equivalent resource deployed to in a cloud environment presents a number of additional considerations. When developing guidance requirements, PP Authors must consider the following common pitfalls for auditing servcies in Cloud Environments and tailor appropriately as needed for the product technology type and Cloud topology:
 
 * No container or host process activity monitoring
 * No network communications monitoring among microservices
 * No resource consumption monitoring to ensure availability of critical resources
 * Lack of monitoring on orchestration configuration propagation and stale configs
-====
 
-=== Guidance Documentation Sub-Process
-
-This section shall discuss the increased requirements of product configuration in cloud environments.
 
 [OWASP CLOUD TOP 10]
 ====
@@ -201,6 +204,18 @@ Examples:
 * Lack of orchestrator node trust rules (e.g. unauthorized hosts joining the cluster)
 * Unauthenticated orchestrator console access
 * Unauthrized or overly-permissive orchestrator access
+====
+
+[OWASP Cloud Top 10]
+====
+CNAS-10: Ineffective logging & monitoring (e.g. runtime activity)
+
+Examples:
+
+* No container or host process activity monitoring
+* No network communications monitoring among microservices
+* No resource consumption monitoring to ensure availability of critical resources
+* Lack of monitoring on orchestration configuration propagation and stale configs
 ====
 
 === Development / Tests Sub-Process
