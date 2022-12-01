@@ -88,73 +88,7 @@ The PP for General Purpose Computing Platform has yet to have been used in an ev
 
 == 2. Analysis of the Assumptions and Security Objectives of the Operating Environment for an example stack of PP’s
 
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
-
-=== 
+image::images/ppstack.png[]
 
 The assumptions and Security Objectives of the Operating Environment for the three PP’s map in this example map well to each other. There are generally only three categories: Platform Integrity, Proper (Non-Malicious User) and Proper (Trusted) Admin. The virtualization PP considers also Physical Security but this not considered by the other PPs.
 
