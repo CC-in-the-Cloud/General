@@ -96,6 +96,8 @@ In the context of these PP’s, where the assurance level is low (no development
 
 If the General Purpose Computing Platform PP is adopted by vendors for cloud infrastructure, then this could be added to the model since it is a number of additional assumptions around root-of-trust and supply chain security that could provide additional assurance.
 
+image::images/GPCP.png[]
+
 == 3. Steps to optimise a PP for TOEs in a cloud environment.
 
 In section 2 specific aspects of the Assumptions and Security Objectives for the Operational Environment were considered to determine whether assumptions made for each PP of interest are consistent and could be satisfied by a cloud environment.
