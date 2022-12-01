@@ -49,25 +49,34 @@ As a way of gaining understanding of how existing PP’s may work within the clo
 
 As an example,
 
-An Application
+An Application,
+____
+*(PP for Application Software)*
+____
+or Network Device  
+____
+*(Network Device cPP)*
+____
+running on an Operating System, 
+____
+*(PP for General Purpose Operating System)*
+____
 
-[example]
-PP for Application Software
+running in a VM, 
+____
+*(Base PP for Virtualization)*
+____
 
+on a Server.      
+____
+*(PP for General Purpose Computing Platform)*
+____
 
-, Or Network Device
-
-running on an Operating System
-
-Running in a VM
-
-On a Server
-
-=== 
+ 
 
 It can be observed that for each PP higher in the stack, it may rely on security services that may or may not be provided by PP’s lower in the stack. It can also generally be observed that the ‘Platform’ for any PP tends to the be PP immediately below in the stack.
 
-=== 
+ 
 
 === 1.2 Protection Profiles of interest
 
