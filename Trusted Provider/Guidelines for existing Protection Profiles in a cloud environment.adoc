@@ -1,4 +1,19 @@
-== Introduction
+
+= Guidelines for optimising existing Protection Profiles to enable effective evaluation of TOEs operating in a cloud environment.
+:showtitle:
+:icons: font
+:revnumber: 0.1
+:revdate: 2022-12-01
+
+:iTC-longname: Common Criteria in the Cloud iTC
+:iTC-shortname: CCitC-iTC
+
+[.text-center]
+Version: {revnumber}
+[.text-center]
+Date: {revdate}
+
+== 1. Introduction
 
 The ‘CC in the Cloud’ TC has been looking at various aspects of providing guidance for evaluation of TOEs in a cloud environment, and the proposed initial approach is to provide guidance for existing Protection Profiles.
 
@@ -16,24 +31,31 @@ _The NIAP App Software PP has ‘Equivalency Guidelines’ that may offer clues.
 [lowerroman, start=2]
 . _Re-using evidence from lower in the stack (e.g. CAVP) is unlikely to be a perfect version match (application evaluation likely to follow after O/S evaluation)._
 
-____
+
 _The ‘Equivalency Guidelines’ above explicitly still state that mapping to a CAVP certificate for one platform is required but further investigation required._
-____
+
 
 [lowerroman, start=3]
 . _All layers of the stack are subject to continual security patching._
 
-____
-_Current ISO ‘patch management for CC’ work is progressing but probably won’t cover a ‘periodic re-assessment’ type approach that may make sense in the cloud (patch-by-patch maintenance looks impractical)._
-____
 
-=== A Composition with existing PP’s
+_Current ISO ‘patch management for CC’ work is progressing but probably won’t cover a ‘periodic re-assessment’ type approach that may make sense in the cloud (patch-by-patch maintenance looks impractical)._
+
+
+
+=== 1.1 A Composition with existing PP’s
 
 As a way of gaining understanding of how existing PP’s may work within the cloud environment, a ‘composition stack’ of PP’s is considered.
 
 As an example,
 
-An Application, Or Network Device
+An Application
+
+[example]
+PP for Application Software
+
+
+, Or Network Device
 
 running on an Operating System
 
@@ -47,7 +69,7 @@ It can be observed that for each PP higher in the stack, it may rely on security
 
 === 
 
-=== Protection Profiles of interest
+=== 1.2 Protection Profiles of interest
 
 Appendix A shows the Threats, Assumptions, Security Objectives for the TOE, and Security Objectives for the operational environment for a number of PP’s of interest.
 
@@ -55,7 +77,7 @@ Generally within the PP’s proposed, the Network Device and Application Softwar
 
 The PP for General Purpose Computing Platform has yet to have been used in an evaluation. Although the PP provides some interesting Security Objectives (e.g. Root-of-Trust) that certainly could be of value within the evaluation stack, for the purposes of this document, will not be considered. Therefore, the virtualization level will be taken as the ‘base’ platform at this time.
 
-== Analysis of the Assumptions and Security Objectives of the Operating Environment for an example stack of PP’s
+== 2. Analysis of the Assumptions and Security Objectives of the Operating Environment for an example stack of PP’s
 
 === 
 
@@ -131,7 +153,7 @@ In the context of these PP’s, where the assurance level is low (no development
 
 If the General Purpose Computing Platform PP is adopted by vendors for cloud infrastructure, then this could be added to the model since it is a number of additional assumptions around root-of-trust and supply chain security that could provide additional assurance.
 
-== Steps to optimise a PP for TOEs in a cloud environment.
+== 3. Steps to optimise a PP for TOEs in a cloud environment.
 
 In section 2 specific aspects of the Assumptions and Security Objectives for the Operational Environment were considered to determine whether assumptions made for each PP of interest are consistent and could be satisfied by a cloud environment.
 
@@ -139,7 +161,7 @@ However, a PP comprises of a number of sections and each should be reviewed and 
 
 Each section in a typical PP should be reviewed:
 
-=== Introduction
+=== 3.1 Introduction
 
 The introduction typically consists of a brief overview, a list of terms, a description of the TOE Boundary and TOE Platform, and Use Cases.
 
@@ -153,17 +175,17 @@ The Use Cases provided should include one for a cloud platform. Any existing tex
 
 _\{example text}?_
 
-=== Conformance Claims
+=== 3.2 Conformance Claims
 
 It is not expected that changes would be required to the Conformance Claims chapter.
 
-=== Security Problem Definition
+=== 3.3 Security Problem Definition
 
 This chapter describes security problems in terms of threats, assumptions and organizational security policies.
 
 It is not expected that a cloud environment will introduce new threats, assumptions or organizational security policies, although the PP writers may wish to consider this or whether existing threats, assumptions and organization security policies should be refined to provide more explanation in the case of cloud.
 
-=== Security Objectives
+=== 3.4 Security Objectives
 
 Security Objectives for the TOE map to security functionalities/services of the TOE itself so it is not expected that changes would be required.
 
@@ -171,7 +193,7 @@ As described in Chapter 2 of this document, the Security Objectives of the Opera
 
 The Security Objectives rationale is not expected to change, unless additional threats, assumptions or security objectives have been added.
 
-=== Security Requirements.
+=== 3.5 Security Requirements.
 
 It is expected that some additional application notes would be appended to a PP regarding Security Requirements.
 
@@ -197,15 +219,15 @@ Class ATE will require some additional application notes required around ‘prov
 
 Class AVA would not be expected to require significant additional application notes.
 
-=== Other considerations
+=== 3.6 Other considerations
 
 A text search of the term ‘platform’ is likely to highlight areas of a PP that will require modification in order to support evaluations in a Cloud environment (if not already resolved with the activities in sections 3.1-3.6
 
-== Appendix A: Threats, Assumptions and Security Objectives for each PP.
+== 4. Appendix A: Threats, Assumptions and Security Objectives for each PP.
 
-=== Protection Profile for General Purpose Computing Platform, Version 1.0
+=== 4.1 Protection Profile for General Purpose Computing Platform, Version 1.0
 
-==== Use Cases +
+==== 4.1.1 Use Cases +
 [USE CASE 1]: Server-Class Platform, Basic
 
 This use case encompasses server-class hardware in a data center. There are no additional physical protections required because the platform is assumed to be protected by the operational environment as indicated by A.PHYSICAL_PROTECTION. The platform is administered through a management controller that accesses the MC through a console or remotely.
@@ -214,7 +236,7 @@ This use case adds audit requirements and Administrator authentication requireme
 
 For changes to included SFRs, selections, and assignments required for this use case, see G.1 Server-Class Platform, Basic.
 
-==== Threats
+==== 4.1.2 Threats
 
 T.PHYSICAL +
 T.SIDE_CHANNEL_LEAKAGE +
@@ -226,9 +248,7 @@ T.NETWORK_BASED_ATTACK +
 T.UNAUTHORIZED_RECONFIGURATION +
 T.UNAUTHORIZED_PLATFORM_ADMINISTRATOR
 
-==== 
-
-==== Assumptions
+==== 4.1.3 Assumptions
 
 A.PHYSICAL_PROTECTION +
 A.ROT_INTEGRITY +
@@ -240,9 +260,7 @@ A.CORRECT_INITIAL_CONFIGURATION +
 A.TRUSTED_USERS +
 A.REGULAR_UPDATES
 
-==== 
-
-==== Security Objectives for the TOE
+==== 4.1.4 Security Objectives for the TOE
 
 O.PHYSICAL_INTEGRITY +
 O.ATTACK_DECECTION_AND_RESPONSE +
@@ -260,15 +278,15 @@ O.AUTHORIZED_ADMINISTRATOR
 
 ==== 
 
-==== Security Objectives for the Operational Environment
+==== 4.1.5 Security Objectives for the Operational Environment
 
 OE.PHYSICAL_PROTECTION +
 OE.SUPPLY_CHAIN +
 OE.TRUSTED_ADMIN
 
-=== Base PP for Virtualization Version 1.1
+=== 4.2 Base PP for Virtualization Version 1.1
 
-==== Threats
+==== 4.2.1 Threats
 
 T.DATA_LEAKAGE +
 T.UNAUTHORISED_UPDATE +
@@ -283,16 +301,15 @@ T.UNPATCHED_SOFTWARE +
 T.MISCONFIGURATION +
 T.DENIAL_OF_SERVICE
 
-==== Assumptions
+==== 4.2.2 Assumptions
 
 A.PLATFORM_INTEGRITY +
 A.PHYSICAL +
 A.TRUSTED_ADMIN +
 A.NON_MALICIOUS_USER
+ 
 
-==== 
-
-==== Security Objectives for the TOE
+==== 4.2.3 Security Objectives for the TOE
 
 O.VM_ISOLATION +
 O.VMM_INTEGRITY +
@@ -305,39 +322,37 @@ O.AUDIT +
 O.CORRECTLY_APPLIED_CONFIGURATION +
 O.RESOURCE_ALLOCATION
 
-==== 
 
-==== 
 
-==== Security Objectives for the Operational Environment
+==== 4.2.4 Security Objectives for the Operational Environment
 
 OE.CONFIG +
 OE.PHYSICAL +
 OE.TRUSTED_ADMIN +
 OE.NON_MALICIOUS_USER
 
-=== Protection Profile for General Purpose Operating Systems Version 4.3
+=== 4.3 Protection Profile for General Purpose Operating Systems Version 4.3
 
-[USE CASE 3] Cloud Systems
+==== 4.3.1 [USE CASE 3] Cloud Systems
 
 The OS provides a platform for providing cloud services running on physical or virtual hardware. An OS is typically part of offerings identified as Infrastructure as a Service (IaaS), Software as a Service (SaaS), and Platform as a Service (PaaS).
 
 This use case typically involves the use of virtualization technology which should be evaluated against the Protection Profile for Server Virtualization.
 
-==== Threats
+==== 4.3.2 Threats
 
 T.NETWORK_ATTACK +
 T.NETWORK_EAVESDROP +
 T.LOCAL_ATTACK +
 T.LIMITED_PHYSICAL_ACCESS
 
-==== Assumptions
+==== 4.3.3 Assumptions
 
 A.PLATFORM +
 A.PROPER_USER +
 A.PROPER_ADMIN
 
-==== Security Objectives for the Operational Environment
+==== 4.3.4 Security Objectives for the Operational Environment
 
 OE.PLATFORM +
 OE.PROPER_USER +
@@ -345,27 +360,27 @@ OE.PROPER_ADMIN
 
 === Protection Profile for Application Software Version 1.4
 
-==== Threats
+==== 4.4.1 Threats
 
 T.NETWORK_ATTACK +
 T.NETWORK_EAVESDROP +
 T.LOCAL_ATTACK +
 T. PHYSICAL_ACCESS
 
-==== Assumptions
+==== 4.4.2 Assumptions
 
 A.PLATFORM (+ time clock) +
 A.PROPER_USER +
 A.PROPER_ADMIN
 
-Security Objectives for the TOE +
+==== 4.4.3 Security Objectives for the TOE +
 O.INTEGRITY +
 O.QUALITY +
 O.MANAGEMENT +
 O.PROTECTED_STORAGE +
 O.PROTECTED_COMMS
 
-==== Security Objectives for the Operational Environment
+==== 4.4.4 Security Objectives for the Operational Environment
 
 OE.PLATFORM +
 OE.PROPER_USER +
