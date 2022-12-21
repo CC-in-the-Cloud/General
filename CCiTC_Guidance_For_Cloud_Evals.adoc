@@ -111,6 +111,11 @@ This section in the JIL guidance is meant to help vendors "anticipate their deve
 
 It may be necessary for the iTC to provide additional assurance strategies for PP authors to incorporate more development environment review. The goal of which is to support Dev Ops practices and facilitate cloud evaluations that allow the end user some assurance apart from fixed version evaluations.
 
+For example if a TOE vendor is leveraging a cloud providers container images to deplay a software product, the Development Environment sub-process should require additional collateral to demonstrate that the cloud provider is providing assurance to the TOE vendor for the image that it is appropriately signed and/or updated.
+
+FEDRamp PaaS OS images can be assumed to receive continous vulnerability patching to maintain authorization and that collateral can be extended to CCiTC.
+
+
 [comment]
 -- 
 FEDRamp to SARs Mapping could be leveraged to reuse trusted platform collateral.
@@ -130,14 +135,14 @@ Examples:
 * Using a single environment to run CI/CD tasks for projects requiring different levels of security
 ====
 
-=== Security Target Sub-Process
-
-[comment]
--- 
-Revisit section later. May remove entirely.
---
+=== Security Target (TSS) Sub-Process
 
 This section shall discuss the expected changes to a Security Target for cloud evaluations. This also may be better suited to address SFR changes needed in a PP. For example, changes need to address SFRs that deal with credential management:
+
+For example, for all Assurance Activities that extend TOE Summary Specification (TSS) requirements in a ST will need to be modified such that Cloud Operating Environments are captured.
+
+Due to the fungible nature of compute resourcing in a Cloud Environment, traditional methods of credential storage to a local operating environment are not viable. Cloud IAM, Token, and Key management are often adapted to Cloud Products and these changes must be reflected in the associated TSS requirements. 
+
 
 [OWASP Cloud Top 10]
 ====
@@ -182,6 +187,39 @@ For example, auditing an on-prem resources versus an equivalent resource deploye
 * No resource consumption monitoring to ensure availability of critical resources
 * Lack of monitoring on orchestration configuration propagation and stale configs
 
+--
+Start here next
+--
+
+CC Guide Modifications:
+
+* Installation Guidance
+** Typically CC Guidance containts instructions on how to configure the TOE exactly as tested. Due to the ethereal nature of cloud platforms, this is often untennable for a variety of reasons. As such, CC guidance must be extended to ensure that the fundamental controls to deploy the TOE in a cloud environment securely are captured.The following items will focus on particular areas of concern.
+* Crytpo Config
+** D@RE
+*** KMS/HMS Config
+** DiT
+* Setting Time / Time Zone for Clound Tenancy
+* Audit config
+* Cloud Dependencies
+** Platform Configuration
+*** This should explain how your cloud platform management plane is set up to allow for the TOE (esxi config/kubernetes config/etc)
+**** Container Orchestration settings
+*** Containerization Settings
+**** Privledge Container Settings
+**** Network bridge settings
+*** Platform Isolation
+** Env. Variables
+** Network Resource Configuration
+*** Network Isolation 
+** Data Storage Resource Configuration
+*** DB or Storage Isolation 
+** Token generation
+* Uninstallation/Removal Guidance
+** Destruction of Secrets
+** Data santization
+
+This section may need a table to map the list items into a table for SaaS / PaaS / IaaS.
 
 [OWASP CLOUD TOP 10]
 ====
