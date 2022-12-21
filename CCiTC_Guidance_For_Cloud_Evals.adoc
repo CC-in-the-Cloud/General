@@ -199,11 +199,15 @@ CC Guide Modifications:
 ** D@RE
 *** KMS/HMS Config
 ** DiT
-* Setting Time
+* Setting Time / Time Zone for Clound Tenancy
 * Audit config
 * Cloud Dependencies
 ** Platform Configuration
-*** This should be for how your cloud platform management plane is set up to allow for the product (esxi config/kubernetes config/etc)
+*** This should explain how your cloud platform management plane is set up to allow for the TOE (esxi config/kubernetes config/etc)
+**** Container Orchestration settings
+*** Containerization Settings
+**** Privledge Container Settings
+**** Network bridge settings
 *** Platform Isolation
 ** Env. Variables
 ** Network Resource Configuration
@@ -211,9 +215,11 @@ CC Guide Modifications:
 ** Data Storage Resource Configuration
 *** DB or Storage Isolation 
 ** Token generation
-* Uninstallation/Destruction Guidance
-** Secret Wipes
+* Uninstallation/Removal Guidance
+** Destruction of Secrets
 ** Data santization
+
+This section may need a table to map the list items into a table for SaaS / PaaS / IaaS.
 
 [OWASP CLOUD TOP 10]
 ====
