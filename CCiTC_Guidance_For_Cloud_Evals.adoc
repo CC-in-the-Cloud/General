@@ -65,9 +65,13 @@ image::images/iaas.png[IaaS Example]
 In this example, the IaaS hypervisor provided by the IaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional TSS and Assurance Activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 ==== On-Premises (On-Prem)
+Please log definition as github issue. These should be contextual with CCiTC.
 ==== Cloud Service Provider (CSP)
+Please log definition as github issue.
 ==== Trusted Cloud Service Provider (TCSP)
+Will define as a group.
 ==== Cloud Authorization Scheme
+Please log definition as github issue.
 
 === Architecture
 
@@ -86,12 +90,25 @@ In contrast to Agile methodology, the majority of PaaS or IaaS use cases are mor
 === Roles Clarification
 
 ==== TOE Developer
-==== Cloud Service Provider
+Pull from JIL template
+
+==== Cloud Service Provider (CSP)
+Will define role as TC.
+
 ==== Sponsor
+Pull from JIL template
+
 ==== Evaluator
-==== Certification Body
+Pull from JIL template
+
+==== Certification Body (CB)
+Pull from JIL template
+
 ==== Cloud Authorization Scheme
+Will define role as TC.
+
 ==== End User
+Pull from JIL template
 
 === Contributors Involvement
 
@@ -186,10 +203,6 @@ For example, auditing an on-prem resources versus an equivalent resource deploye
 * No network communications monitoring among microservices
 * No resource consumption monitoring to ensure availability of critical resources
 * Lack of monitoring on orchestration configuration propagation and stale configs
-
---
-Start here next
---
 
 CC Guide Modifications:
 
