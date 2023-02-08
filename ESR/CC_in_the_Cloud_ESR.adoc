@@ -28,7 +28,7 @@ Customers are buying services, not products. “Gartner foresees double-digit gr
 
 “In fiscal 2019, the White House-issued cloud Smart strategy gave agencies a mandate to expedite their journeys to the cloud. Federal agencies spent a combined $5.9 billion in contract obligations on cloud infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and other cloud support and migration services. They’re on track to spend $7.1 billion in fiscal 2020.”--The State of Federal cloud: Market Briefing
 
-At some point customers are going to recognize that a CC evaluation of an Information Communication Technologies (ICT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
+At some point customers are going to recognize that a CC evaluation of an Information Technologies (IT) product provides little assurance in a cloud environment. Without a plan for CC addressing this factor, CC will become irrelevant in DevOps and Customers will require additional country specific testing instead.
 
 As the market moves to such cloud-based solutions, ISO/IEC15408 should be adapted in order to provide security assurance for cloud scenarios. In addition, vendors of products to be evaluated along with authors of cPP’s aimed at cloud use case evaluations, may need to add or alter specific code or cPP content carefully to ensure evaluate-able products and cPP’s.
 
@@ -145,7 +145,7 @@ This iTC will consider requirements or expansion of scope that includes Assuranc
 
 Conventional CC evaluations typically assume that the TOE platform or underlying infrastructure is controlled at the enterprise level by a singular entity within the enterprise. In cloud environments, this assumption can not be included as the nature of cloud services inherently introduces an aspect of multiple enterprises (multi-tenant) sharing resources both physical and logical. 
 
-For example, cloud customers of ICT products understand that moving to the cloud means sharing infrastructure with other customers. While Cloud Providers offering IaaS capabilities may offer dedicated hardware or instances to one cloud customer, this is the minority of cloud use cases.
+For example, cloud customers of IT products understand that moving to the cloud means sharing infrastructure with other customers. While Cloud Providers offering IaaS capabilities may offer dedicated hardware or instances to one cloud customer, this is the minority of cloud use cases.
 
 This iTC will consider products deployed in a multi-tenant environment with respect to any optional or objective SFRs involving cloud use cases that mitigate Guest Escape, Data Leakage, Privilege Escalation, etc.
 
