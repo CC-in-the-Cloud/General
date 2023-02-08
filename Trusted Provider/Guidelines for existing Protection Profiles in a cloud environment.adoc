@@ -21,10 +21,12 @@ There are existing Protection Profiles already in use for ‘on premise’ evalu
 
 There is also a brief look at how a composition of PP’s might look in the ‘CC in the Cloud’ domain in the future. However, it should be noted that the initial focus is for individual PP’s being updated to consider TOEs in a Cloud Environment.
 
-While this approach gives some guidance on how to assess whether a cloud platform for a TOE is provided sufficient security assurance and satisfying the requirements of the PP, there are some aspects that require further work, namely:
+[NOTE]
+====
+While the approach proposed in the document gives some guidance on how to assess whether a cloud platform for a TOE is provided sufficient security assurance and satisfying the requirements of the PP, there are some aspects that require further work, namely:
 
 [lowerroman]
-. _We want to be able to ‘re-use’ certificate evidence across OS/platforms/hw/etc._
+    . _We want to be able to ‘re-use’ certificate evidence across OS/platforms/hw/etc._
 
 _The NIAP App Software PP has ‘Equivalency Guidelines’ that may offer clues._
 
@@ -36,11 +38,11 @@ _The ‘Equivalency Guidelines’ above explicitly still state that mapping to a
 
 
 [lowerroman, start=3]
-. _All layers of the stack are subject to continual security patching. Maintenance of the security level and the impact of new vulnerabiities, software developmet, evolving standards and attack capabilities should be considered. _
+. _All layers of the stack are subject to continual security patching. Maintenance of the security level and the impact of new vulnerabiities, software development, evolving standards and attack capabilities should be considered._
 
 
 _Current ISO ‘patch management for CC’ work is progressing but probably won’t cover a ‘periodic re-assessment’ type approach that may make sense in the cloud (patch-by-patch maintenance looks impractical)._
-
+====
 
 
 == 2. Steps to optimise a PP for TOEs in a cloud environment.
@@ -97,7 +99,7 @@ Security Functional Requirements should be each considered carefully as to wheth
 
 For example, Cryptographic Support (FCS) may include cryptographic operations using services of the platform, or random number generation derived from platform entropy sources. Others example would be any SFRs around boot integrity and maybe key destruction.
 
-Security Assurance Requirements.
+=== 2.6 Security Assurance Requirements.
 
 Classes ASE and ADV are not expected to require change.
 
@@ -115,7 +117,7 @@ Class ATE will require some additional application notes required around ‘prov
 
 Class AVA would not be expected to require significant additional application notes.
 
-=== 2.6 Other considerations
+=== 2.7 Other considerations
 
 A text search of the term ‘platform’ is likely to highlight areas of a PP that will require modification in order to support evaluations in a Cloud environment (if not already resolved with the activities in sections 3.1-3.6
 
@@ -182,7 +184,10 @@ OE.TRUSTED_ADMIN
 
 === 3.2 Base PP for Virtualization Version 1.1
 
-==== 3.2.1 Threats
+==== 3.2.1 Use Cases +
+None for Cloud
+
+==== 3.2.2 Threats
 
 T.DATA_LEAKAGE +
 T.UNAUTHORISED_UPDATE +
@@ -197,7 +202,7 @@ T.UNPATCHED_SOFTWARE +
 T.MISCONFIGURATION +
 T.DENIAL_OF_SERVICE
 
-==== 3.2.2 Assumptions
+==== 3.2.3 Assumptions
 
 A.PLATFORM_INTEGRITY +
 A.PHYSICAL +
@@ -205,7 +210,7 @@ A.TRUSTED_ADMIN +
 A.NON_MALICIOUS_USER
  
 
-==== 3.2.3 Security Objectives for the TOE
+==== 3.2.4 Security Objectives for the TOE
 
 O.VM_ISOLATION +
 O.VMM_INTEGRITY +
@@ -220,7 +225,7 @@ O.RESOURCE_ALLOCATION
 
 
 
-==== 3.2.4 Security Objectives for the Operational Environment
+==== 3.2.5 Security Objectives for the Operational Environment
 
 OE.CONFIG +
 OE.PHYSICAL +
@@ -256,27 +261,30 @@ OE.PROPER_ADMIN
 
 === Protection Profile for Application Software Version 1.4
 
-==== 3.4.1 Threats
+==== 3.4.1 Use Cases +
+None for Cloud
+
+==== 3.4.2 Threats
 
 T.NETWORK_ATTACK +
 T.NETWORK_EAVESDROP +
 T.LOCAL_ATTACK +
 T. PHYSICAL_ACCESS
 
-==== 3.4.2 Assumptions
+==== 3.4.3 Assumptions
 
 A.PLATFORM (+ time clock) +
 A.PROPER_USER +
 A.PROPER_ADMIN
 
-==== 3.4.3 Security Objectives for the TOE +
+==== 3.4.4 Security Objectives for the TOE +
 O.INTEGRITY +
 O.QUALITY +
 O.MANAGEMENT +
 O.PROTECTED_STORAGE +
 O.PROTECTED_COMMS
 
-==== 3.4.4 Security Objectives for the Operational Environment
+==== 3.4.5 Security Objectives for the Operational Environment
 
 OE.PLATFORM +
 OE.PROPER_USER +
