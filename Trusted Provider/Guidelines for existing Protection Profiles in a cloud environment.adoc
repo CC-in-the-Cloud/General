@@ -45,8 +45,7 @@ _Current ISO ‘patch management for CC’ work is progressing but probably won�
 ====
 
 
-== 2. Steps to optimise a PP for TOEs in a cloud environment.
-
+== 2. Steps to optimize a PP for TOEs in a cloud environment.
 
 
 A PP comprises of a number of sections and each should be reviewed and updated in order to give directions to ST authors for TOEs in a cloud environment:
