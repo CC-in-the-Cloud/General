@@ -109,10 +109,9 @@ In this example, the IaaS hypervisor provided by the IaaS provider relies on a C
 x
 ==== On-Premises (On-Prem)
 
-.Draft
-----
-On-premises refers to IT infrastructure hardware and software applications that are hosted on-site at the customer. The customer has direct control of on-premises IT assets including security and upkeep, and the physical location. Traditionally, Common Criteria has assumed on-premises environments.
-----
+On-premises refers to IT infrastructure hardware and software applications that are administered on-site at the customer by the customer. The customer has direct control of on-premises IT assets including security, upkeep, and the physical location. Traditionally, Common Criteria has assumed on-premises environments.
+
+There are existing cloud deployment models in which a CSP will deploy infrastructure locally within a customer's physical control as an extension of a Cloud Service. As the CSP maintains administrative control of the infrastructure this shall not be considered an "on-premises" model.
 
 ==== Cloud Service Provider (CSP)
 
