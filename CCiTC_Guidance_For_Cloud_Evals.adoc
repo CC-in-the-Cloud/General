@@ -45,6 +45,10 @@ A model for enabling ubiquitous, convenient, on-demand network access to a share
 [NIST SP 1800-16D under Cloud Computing from NIST SP 800-145
 NISTIR 8401]
 
+==== Hosting Environment
+
+
+
 ==== Hybrid Cloud
 
 The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
@@ -122,6 +126,11 @@ A cloud service provider, or CSP, is a company that offers some component of clo
 Will define as a group.
 
 ==== Trusted Platform
+
+A Trusted Platform is the underlying hosting environment for the TOE that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
+
+* The certificate authorizing scheme determines sufficiency and may publish a policy.
+* Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
 
 
 ==== Cloud Authorization Scheme
