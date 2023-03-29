@@ -23,6 +23,10 @@ The main intended audience of this document are Protection Profile authors (e.g.
 
 The following definitions are used throughout the document. It is important that each term be clearly understood in order that guidance documentation for the evaluation process be put in context. 
 
+==== Bare Metal 
+
+A bare-metal server is a physical computer server that is used by one consumer, or tenant, only. Each server offered for rental is a distinct physical piece of hardware that is a functional server on its own.
+
 ==== Product
 
 Part of the equipment (hardware, software and materials) for which usability is to be specified or evaluated.
@@ -69,6 +73,10 @@ on or off premises.
 A cloud deployment model in which a cloud service customer uses public cloud services provided by two or more cloud service providers
 
 [ISO/IEC 27465]
+
+==== Multi-Tenant
+
+Multi-Tenant uses a shared infrastructure to provide services for multiple cloud customers. Multi-Tenancy means that multiple customers of a cloud vendor are using the same computing resources. Despite the fact that they share resources, cloud customers are logically separated from each other, and their data is isolated.
 
 ==== Software as a Service (SaaS)
 
@@ -454,6 +462,13 @@ A product that operates identically outside of a cloud operating environment may
 
 A product that is only designed to operate in a cloud-native context may need refinements to test cases to be accommodated by the appropriate Technical Community. 
 
+==== Guidance for establishing test environments on Cloud Infrastructure
+
+As Common Criteria testing requires unique test environments for each TOE that are isolated to prevent contamination of test results, testing on Public Cloud infrastructure raises some initial concerns. 
+
+In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized or not. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable. 
+
+A CC lab should be prepared to create and offer cloud testing infrastructure to TOE developers. 
 .ExamplesFromMDM
 ----
 PlaceHolder for Example AA modification
