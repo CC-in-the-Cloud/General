@@ -148,6 +148,24 @@ Please log definition as github issue.
 
 Modifications or other adaptions to Common Criteria work products such as Protection Profiles to accommodate CC evaluations in the cloud. As an example, a Cloud Module for a base PP.
 
+== Cloud Topology
+
+Placeholder for diagram discussed at workshop
+
+=== Cloud Equivalence Considerations
+
+We believe that, in general, products must be tested individually on each cloud platform. For example on Azure, On AWS, etc.
+
+The Cloud Service Offering (to include cloud region or datacenter) must be detailed in the TOE evaluated configuration details. CSOs can not inherently be assumed to be equivalent. For instance, CSPs may have separate environments between government or commercial customers. However, if existing cloud authorizations exist for multiple regions or datacenters this may inform equivalency claims. Especially if the Trusted Platform meets the assumptions and objectives of the PP and is consistent across multiple cloud regions
+
+==== CPU Equivalency 
+
+Applicable guidance shall be followed when labeling Operational Environments. (Reference to CAVP FAQ as an example). TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made. 
+
+E.g. CPU model / OS / Hypervisor / Guest OS / Container shall be defined where appropriate. 
+
+At this time, if a TOE is reliant on the OE for cryptographic operations, there is no need to leverage the related collateral that explicitly states operation for a given Cloud Provider. This equivalence rationale should also be considered when a TOE vendor is reliant upon a CSP for algorithm certification and many TOE platforms are claimed.
+
 == Contributors Roles in Product Evaluations
 
 === Roles Clarification
@@ -218,12 +236,14 @@ _\{example text}?_
 
 === High Level Process Overview
 
-* Review Guidance document and associated instructions
-* Map Assumptions, Security Objections, SFRs and SARs to the authorization scheme you wish to test on (FedRamp, C5, etc)
+* Review this guidance document and associated instructions
+* Map Assumptions, Security Objections for the Operational Environment, and Organizational Security Policies to applicable authorization scheme(s) as a reference implementation (FedRamp, C5, etc)
+** Summarize this mapping in generic language for wider Cloud Authorization adoption i.e. consideration in other authorization schemes
+*** Determine the extent to which SFRs and SARs in the PP can rely on the OE to be satisfied so that the extent to which the TSF may need to rely on cloud services can be determined. 
 * ID SFR "challenges" in a cloud operational environment
 * Address challenges with new/updated SFRs and/or determine if applicable
 * ID SAR "challenges with either new/updated SAR's and/or determine if applicable
-* Edit cPP/PP and add new optional SFRs/SARs for cloud or selection based
+* Edit cPP/PP and add new optional or selection based SFRs/SARs for cloud evaluations
 * Update cPPs supporting documents with new cloud requirements
 
 === Conformance Claims
@@ -312,25 +332,6 @@ FEDRamp PaaS OS images can be assumed to receive continuos vulnerability patchin
 Place output from TP group here
 ---
 
-[comment]
--- 
-FEDRamp to SARs Mapping could be leveraged to reuse trusted platform collateral.
---
-
-[OWASP Cloud Top 10]
-====
-CNAS-4: CI/CD pipeline & software supply chain flaws
-
-Examples:
-
-* Insufficient authentication on CI/CD pipeline systems
-* Use of untrusted images
-* Use of stale images
-* Insecure communication channels to registries
-* Overly-permissive registry access
-* Using a single environment to run CI/CD tasks for projects requiring different levels of security
-====
-
 === Security Target (TSS) Sub-Process
 
 This section shall discuss the expected changes to a Security Target for cloud evaluations. This also may be better suited to address SFR changes needed in a PP. For example, changes need to address SFRs that deal with credential management:
@@ -378,7 +379,7 @@ SFRs dealing with auditing:
 
 This section shall discuss the increased requirements of product configuration in cloud environments.
 
-It is important to distinguish here that not all expected elements of a traditional AGD document can be translated for Cloud Environments. It may be necessary to exclude or supplement these guidance requirements depending on the topology of the product and the cloud service provider. In some circumstances, the Cloud Provider is the only entity that may fulfill these guidance requirements to ensure that the TOE is deployed in the tested configuration. If the CSP is a Trusted Provider, this exclusion may be minimized. 
+It is important to distinguish here that not all expected elements of a traditional AGD document can be translated for Cloud Environments. It may be necessary to exclude or supplement these guidance requirements depending on the topology of the product and the cloud service provider. In some circumstances, the Cloud Provider is the only entity that may fulfill these guidance requirements to ensure that the TOE is deployed in the tested configuration. If a trusted platform is used, this exclusion may be minimized. 
 
 For example, auditing an on-prem resources versus an equivalent resource deployed to in a cloud environment presents a number of additional considerations. When developing guidance requirements, PP Authors must consider the following common pitfalls for auditing services in Cloud Environments and tailor appropriately as needed for the product technology type and Cloud topology:
 
@@ -402,7 +403,7 @@ CC Guide Modifications:
 *** This should explain how your cloud platform management plane is set up to allow for the TOE (esxi config/kubernetes config/etc)
 **** Container Orchestration settings
 *** Containerization Settings
-**** Privledge Container Settings
+**** Privilege Container Settings
 **** Network bridge settings
 *** Platform Isolation
 ** Env. Variables
@@ -468,7 +469,8 @@ As Common Criteria testing requires unique test environments for each TOE that a
 
 In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized or not. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable. 
 
-A CC lab should be prepared to create and offer cloud testing infrastructure to TOE developers. 
+A CC lab should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc on multi-tenant infrastructure. This information will need to be captured and presented to Certification Authorities as evaluation deliverables. 
+
 .ExamplesFromMDM
 ----
 PlaceHolder for Example AA modification
