@@ -220,31 +220,20 @@ This section would be useful for explaining the relationships possible between t
 
 A PP comprises of a number of sections and each should be reviewed and updated in order to give directions to ST authors for TOEs in a cloud environment:
 
-=== Introduction
-
-The introduction typically consists of a brief overview, a list of terms, a description of the TOE Boundary and TOE Platform, and Use Cases.
-
-If not already existing it may be useful to add the following terms for cloud
-
-_\{list of suggested terms}?_
-
-The TOE Boundary and TOE Platform descriptions and associated diagrams should be updated to consider a cloud platform. In particular, the TOE Platform should explicitly mention that a cloud platform is an option for the TOE.
-
-The Use Cases provided should include one for a cloud platform. Any existing text should be confirmed to be consistent with the approach taken for this document.
-
-_\{example text}?_
-
 === High Level Process Overview
 
 * Review this guidance document and associated instructions
 * Map Assumptions, Security Objections for the Operational Environment, and Organizational Security Policies to applicable authorization scheme(s) as a reference implementation (FedRamp, C5, etc)
 ** Summarize this mapping in generic language for wider Cloud Authorization adoption i.e. consideration in other authorization schemes
 *** Determine the extent to which SFRs and SARs in the PP can rely on the OE to be satisfied so that the extent to which the TSF may need to rely on cloud services can be determined. 
-* ID SFR "challenges" in a cloud operational environment
-* Address challenges with new/updated SFRs and/or determine if applicable
-* ID SAR "challenges with either new/updated SAR's and/or determine if applicable
+** Identify SFR challenges in a cloud operational environment
+*** For example certain requirements collecting test evidence may be complicated by the cloud operational environment and may not be directly accessible due to cloud isolation.
+**** Many TOEs that will operate in a cloud environment will utilize object storage as provided by the CSP. These objects will often be encrypted either by the TOE itself or by the CSP. For instances in which the CSP is providing encryption of the storage object, it is expected that the TOE vendor or evaluator will not be able to perform assurance activity tests with regards to Key Destruction. PP authors will be expected to make modifications to related SFRs to allow for CSP Key Destruction or Zeroization as additional selections.
+**** Such modifications may be made by iterating the underlying SFR in a base PP into a "Cloud" PP module which provides the cloud-specific selections and assurance activities.
+** Identify SAR challenges with either new/updated SAR's and/or determine if applicable
+*** For example AVA may have different considerations for a cloud operating environment depending on the TOE or PP. See <<Vulnerability Assessment Methodology>> for more information.
 * Edit cPP/PP and add new optional or selection based SFRs/SARs for cloud evaluations
-* Update cPPs supporting documents with new cloud requirements
+* Update cPPs supporting documents with new cloud requirements and applicable assurance activities.
 
 === Conformance Claims
 
@@ -345,36 +334,6 @@ Due to the fungible nature of compute resourcing in a Cloud Environment, traditi
 Put TP SFR details here
 ---
 
-.[OWASP Cloud Top 10]
-----
-CNAS-5: Insecure secrets storage
-
-Examples:
-
-* Orchestrator secrets stored unencrypted
-* API keys or passwords stored unencrypted inside containers
-* Hardcoded application secrets
-* Poorly encrypted secrets (e.g. use of obsolete encryption methods, use of encoding instead of encryption, etc.)
-* Mounting of storage containing sensitive information
-----
-
-SFRs deailing with protected communications:
-
-[OWASP Cloud Top 10]
-====
-CNAS-6: Over-permissive or insecure network policies
-
-Examples:
-
-* Over-permissive pod to pod communication allowed
-* Internal microservices exposed to the public Internet
-* No network segmentation defined
-* End-to-end communications not encrypted
-* Network traffic to unknown or potentially malicious domains not monitored and blocked
-====
-
-SFRs dealing with auditing:
-
 === Guidance Documentation Sub-Process
 
 This section shall discuss the increased requirements of product configuration in cloud environments.
@@ -418,41 +377,6 @@ CC Guide Modifications:
 
 This section may need a table to map the list items into a table for SaaS / PaaS / IaaS.
 
-[OWASP CLOUD TOP 10]
-====
-CNAS-1: Insecure cloud, container or orchestration configuration
-
-Examples:
-
-* Publicly open cloud storage buckets
-* Improper permissions set on cloud storage buckets
-* Container runs as root
-* Container shares resources with the host (network interface, etc.)
-* Insecure Infrastructure-as-Code (IaC) configuration
-
-CNAS-3: Improper authentication & authorization
-
-Examples:
-
-* Unauthenticated API access on a microservice
-* Over-permissive cloud IAM role
-* Lack of orchestrator node trust rules (e.g. unauthorized hosts joining the cluster)
-* Unauthenticated orchestrator console access
-* Unauthorized or overly-permissive orchestrator access
-====
-
-[OWASP Cloud Top 10]
-====
-CNAS-10: Ineffective logging & monitoring (e.g. runtime activity)
-
-Examples:
-
-* No container or host process activity monitoring
-* No network communications monitoring among microservices
-* No resource consumption monitoring to ensure availability of critical resources
-* Lack of monitoring on orchestration configuration propagation and stale configs
-====
-
 === Development / Tests Sub-Process
 
 This section shall discuss augmentations needed for assurance activities that are targeting cloud evaluations.
@@ -478,50 +402,15 @@ PlaceHolder for Example AA modification
 
 == Vulnerability Assessment Methodology
 
-This section shall discuss modifications to AVA activities for cloud evaluations.
+In general, the AVA methodology shall be sufficient for most TOE types. However, certain edge cases may present themselves. 
 
-[OWASP CLOUD TOP 10]
-====
-CNAS-2: Injection flaws
+As we have introduced a trusted platform concept, underlying vulnerabilities in the cloud operating environment can be treated as they are in traditional OE analysis.
 
-Examples:
-
-* SQL injection
-* XXE
-* NoSQL injection
-* OS command injection
-* Serverless event data injection
-====
+However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment the means in which evaluators are expected to shift negative test coverage must utilize cloud attack vectors. I.e. service portal, management plane, etc.
 
 === List of potential vulnerabilities
 
 Since a cloud stack will inherently contain many vulnerabilities, it would be useful for the iTC to provide guidance on risk management practices to minimize these factors.
-
-[OWASP Cloud Top 10]
-====
-CNAS-7: Using components with known vulnerabilities
-
-Examples:
-
-* Vulnerable 3rd party open source packages
-* Vulnerable versions of application components
-* Use of known vulnerable container images
-
-CNAS-8: Improper assets management
-
-Examples:
-
-* Undocumented microservices & APIs
-* Obsolete & un-managed cloud resources
-
-CNAS-9: Inadequate ‘compute’ resource quota limits
-
-Examples:
-
-* Resource-unbound containers
-* Over-permissive request quota set on APIs
-
-====
 
 === Defining penetration tests
 
