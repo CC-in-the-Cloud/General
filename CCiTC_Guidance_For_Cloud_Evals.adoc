@@ -7,6 +7,8 @@
 :iTC-longname: Common Criteria in the Cloud iTC
 :iTC-shortname: CCitC-iTC
 
+toc::[]
+
 == Preface
 
 The Common Criteria (CC) in the Cloud Technical Work Group (CCitC) has developed this guidance document that provides a complimentary framework to allow for TOE evaluations in Cloud Operating Environments. 
@@ -17,29 +19,27 @@ Such cloud environments may or may not conform to hybrid, public, or private clo
 
 The main intended audience of this document are Protection Profile authors (e.g. iTCs and national TCs), but it is also useful to evaluators, evaluation authorities, and end users of this type of products. 
 
-== Cloud Service and Product Presentation and Definitions
-
-=== Glossary
+== Glossary
 
 The following definitions are used throughout the document. It is important that each term be clearly understood in order that guidance documentation for the evaluation process be put in context. 
 
-==== Bare Metal 
+=== Bare Metal 
 
 A bare-metal server is a physical computer server that is used by one consumer, or tenant, only. Each server offered for rental is a distinct physical piece of hardware that is a functional server on its own.
 
-==== Product
+=== Product
 
 Part of the equipment (hardware, software and materials) for which usability is to be specified or evaluated.
 
 [NISTIR 8040 under Product from ISO 9241-11:1998]
 
-==== Service
+=== Service
 
 A set of related IT components provided in support of one or more business processes.
 
 [NISTIR 7693]
 
-==== Cloud
+=== Cloud
 
 A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
 
@@ -49,17 +49,17 @@ A model for enabling ubiquitous, convenient, on-demand network access to a share
 [NIST SP 1800-16D under Cloud Computing from NIST SP 800-145
 NISTIR 8401]
 
-==== Hosting Environment
+=== Hosting Environment
 
+The Hosting Environment consists of everything that is outside the TOE boundary and is equivalent to the CC term "Operational Environment."
 
-
-==== Hybrid Cloud
+=== Hybrid Cloud
 
 The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
 
 [NIST SP 1800-16B under Cloud Computing from NIST SP 800-145]
 
-==== Private Cloud
+=== Private Cloud
 
 The cloud infrastructure is provisioned for exclusive use by a single organization
 comprising multiple consumers (e.g., business units). It may be owned, managed, and
@@ -68,15 +68,48 @@ on or off premises.
 
 [NIST SP 800-145]
 
-==== Multi-Cloud
+=== Multi-Cloud
 
 A cloud deployment model in which a cloud service customer uses public cloud services provided by two or more cloud service providers
 
 [ISO/IEC 27465]
 
-==== Multi-Tenant
+=== Multi-Tenant
 
 Multi-Tenant uses a shared infrastructure to provide services for multiple cloud customers. Multi-Tenancy means that multiple customers of a cloud vendor are using the same computing resources. Despite the fact that they share resources, cloud customers are logically separated from each other, and their data is isolated.
+
+=== On-Premises (On-Prem)
+
+On-premises refers to IT infrastructure hardware and software applications that are administered on-site at the customer by the customer. The customer has direct control of on-premises IT assets including security, upkeep, and the physical location. Traditionally, Common Criteria has assumed on-premises environments.
+
+There are existing cloud deployment models in which a CSP will deploy infrastructure locally within a customer's physical control as an extension of a Cloud Service. As the CSP maintains administrative control of the infrastructure this shall not be considered an "on-premises" model.
+
+=== Cloud Service Provider (CSP)
+
+A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
+
+=== Trusted Cloud Service Provider (TCSP)
+
+Will define as a group.
+
+=== Trusted Platform
+
+A Trusted Platform is the underlying hosting environment for the TOE that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
+
+* The certificate authorizing scheme determines sufficiency and may publish a policy.
+* Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
+
+
+=== Cloud Authorization Scheme
+Please log definition as github issue.
+
+=== Cloud Protection Profile Extensions
+
+Modifications or other adaptions to Common Criteria work products such as Protection Profiles to accommodate CC evaluations in the cloud. As an example, a Cloud Module for a base PP.
+
+== Cloud Topology
+
+=== Cloud Use Cases
 
 ==== Software as a Service (SaaS)
 
@@ -118,49 +151,33 @@ For example, if the Protection Profile for Virtualization were to be used as a b
 image::images/iaas.png[IaaS Example]
 
 In this example, the IaaS hypervisor provided by the IaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional requirements and assurance activities could be prescribed to expand the evaluated configuration to include a Cloud Operating Environment. 
-x
-==== On-Premises (On-Prem)
-
-On-premises refers to IT infrastructure hardware and software applications that are administered on-site at the customer by the customer. The customer has direct control of on-premises IT assets including security, upkeep, and the physical location. Traditionally, Common Criteria has assumed on-premises environments.
-
-There are existing cloud deployment models in which a CSP will deploy infrastructure locally within a customer's physical control as an extension of a Cloud Service. As the CSP maintains administrative control of the infrastructure this shall not be considered an "on-premises" model.
-
-==== Cloud Service Provider (CSP)
-
-A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
-
-==== Trusted Cloud Service Provider (TCSP)
-
-Will define as a group.
-
-==== Trusted Platform
-
-A Trusted Platform is the underlying hosting environment for the TOE that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
-
-* The certificate authorizing scheme determines sufficiency and may publish a policy.
-* Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
-
-
-==== Cloud Authorization Scheme
-Please log definition as github issue.
-
-==== Cloud Extensions
-
-Modifications or other adaptions to Common Criteria work products such as Protection Profiles to accommodate CC evaluations in the cloud. As an example, a Cloud Module for a base PP.
-
-== Cloud Topology
-
-Placeholder for diagram discussed at workshop
 
 === Cloud Equivalence Considerations
 
-We believe that, in general, products must be tested individually on each cloud platform. For example on Azure, On AWS, etc.
+In general, products must be tested individually on each desired cloud service offering.
 
-The Cloud Service Offering (to include cloud region or datacenter) must be detailed in the TOE evaluated configuration details. CSOs can not inherently be assumed to be equivalent. For instance, CSPs may have separate environments between government or commercial customers. However, if existing cloud authorizations exist for multiple regions or datacenters this may inform equivalency claims. Especially if the Trusted Platform meets the assumptions and objectives of the PP and is consistent across multiple cloud regions
+The Cloud Service Offering (to include cloud region or datacenter) must be detailed in the TOE evaluated configuration details. CSOs can not inherently be assumed to be equivalent. For instance, CSPs may have separate environments between government or commercial customers. However, if existing cloud authorizations exist for multiple regions or datacenters this may inform equivalency claims. Especially if the Trusted Platform meets the assumptions and objectives of the PP and is consistent across multiple cloud regions. CC Scheme policy may define acceptance criteria.
 
 ==== CPU Equivalency 
 
-Applicable guidance shall be followed when labeling Operational Environments. (Reference to CAVP FAQ as an example). TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made. 
+Applicable guidance shall be followed when labeling Operational Environments. Such as:
+
+For a Type 1 (or native) hypervisor, where the hypervisor runs directly on the hardware, the OE
+listing shall include the guest OS, hypervisor, and processor using the following format: “Guest
+OS on hypervisor on Processor.” An example is “Microsoft Windows 11 on VMWare ESXi 7.0
+on Intel Xeon W (Rocket Lake).”
+
+For a Type 2 (or hosted) hypervisor, where the hypervisor runs on a host operating system (OS),
+the OE listing shall include the guest OS, hypervisor, host OS, and processor using the following
+format: “Guest OS on hypervisor on Host OS on Processor.” An example is “Microsoft
+Windows 11 on Parallels Desktop 17 on macOS Monterey on Intel Core i7 (Kaby Lake).”
+
+Algorithm tests may also be performed using containers. The OE listing shall include the
+container, runtime, host OS, and processor using the following format: “container on runtime on
+host OS on processor.” An example is “Ubuntu 20.04 Docker Image on Docker Engine 20 on
+Ubuntu 20.04 on Intel Xeon W (Rocket Lake).”
+
+TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made. 
 
 E.g. CPU model / OS / Hypervisor / Guest OS / Container shall be defined where appropriate. 
 
@@ -176,9 +193,7 @@ Organization responsible for the development of the TOE.
 
 ==== Cloud Service Provider (CSP)
 
-A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
-
-[CloudSecurityAlliance]
+A cloud service provider, or CSP, is an entity that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
 
 ==== Sponsor
 
@@ -204,7 +219,10 @@ Body operating an evaluation scheme
 [CC:2022 Part 1]
 
 ==== Cloud Authorization Scheme
-Will define role as TC.
+
+A regulatory body or entity that authorizes cloud service offerings for use by their respective governmental agencies or regulated industries. 
+
+Issue #93
 
 ==== End User
 
