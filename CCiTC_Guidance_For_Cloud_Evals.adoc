@@ -11,9 +11,7 @@ toc::[]
 
 == Preface
 
-The Common Criteria (CC) in the Cloud Technical Work Group (CCitC) has developed this guidance document that provides a complimentary framework to allow for TOE evaluations in Cloud Operating Environments. 
-
-It will include instructions and examples of how to extend or develop protection profiles to include cloud environments.
+The Common Criteria (CC) in the Cloud Technical Work Group (CCitC) has developed this guidance document that provides a complimentary framework to allow for IT product evaluations in Cloud Operating Environments. It will include instructions and examples of how to extend or develop protection profiles to include cloud environments. The  scope of the CCiTC is to provide for CC evaluations of IT products and not for the evaluation of <<Cloud Services>>.  
 
 Such cloud environments may or may not conform to hybrid, public, or private cloud topologies and the associated Cloud Service Providers (CSP). These topologies can all be accommodated in this approach, with the distinction of administrator access and capability informing their inclusion.  This effort is not meant to replace solution or service oriented frameworks or certification processes such as FedRAMP or other Cloud Authorization schemes.
 
@@ -88,6 +86,10 @@ There are existing cloud deployment models in which a CSP will deploy infrastruc
 
 A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
 
+=== Cloud Service
+
+A Cloud Service is any system that provides on-demand availability of computer system resources, e.g; data storage and computing power, without direct active management by the user.
+
 === Trusted Cloud Service Provider (TCSP)
 
 Will define as a group.
@@ -101,7 +103,8 @@ A Trusted Platform is the underlying hosting environment for the TOE that is suf
 
 
 === Cloud Authorization Scheme
-Please log definition as github issue.
+
+A regulatory body or entity that authorizes cloud service offerings for use by their respective governmental agencies or regulated industries.
 
 === Cloud Protection Profile Extensions
 
@@ -405,7 +408,7 @@ A product that operates identically outside of a cloud operating environment may
 
 A product that is only designed to operate in a cloud-native context may need refinements to test cases to be accommodated by the appropriate Technical Community. 
 
-==== Guidance for establishing test environments on Cloud Infrastructure
+==== Guidance For Establishing Test Environments on Cloud Infrastructure
 
 As Common Criteria testing requires unique test environments for each TOE that are isolated to prevent contamination of test results, testing on Public Cloud infrastructure raises some initial concerns. 
 
