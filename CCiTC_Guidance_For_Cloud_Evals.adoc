@@ -15,7 +15,7 @@ The Common Criteria (CC) in the Cloud Technical Work Group (CCitC) has developed
 
 Such cloud environments may or may not conform to hybrid, public, or private cloud topologies and the associated Cloud Service Providers (CSP). These topologies can all be accommodated in this approach, with the distinction of administrator access and capability informing their inclusion.  This effort is not meant to replace solution or service oriented frameworks or certification processes such as FedRAMP or other Cloud Authorization schemes.
 
-The main intended audience of this document are Protection Profile authors (e.g. iTCs and national TCs), but it is also useful to evaluators, evaluation authorities, and end users of this type of products. 
+The main intended audience of this document are Protection Profile authors (e.g. iTCs and national TCs), but it is also useful to evaluators, evaluation authorities, and customers of this type of products. 
 
 == Glossary
 
@@ -92,7 +92,7 @@ A Cloud Service is any system that provides on-demand availability of computer s
 
 === Trusted Cloud Service Provider (TCSP)
 
-Will define as a group.
+Proposed to delete.
 
 === Trusted Platform
 
@@ -227,10 +227,6 @@ A regulatory body or entity that authorizes cloud service offerings for use by t
 
 Issue #93
 
-==== End User
-
-The entity that is consuming the resources or information capability provided by the TOE in an operational capacity.
-
 === Contributors Involvement
 
 This section would be useful for explaining the relationships possible between the TOE Vendor, CSP, and Trusted Platform. 
@@ -331,7 +327,7 @@ This section in the JIL guidance is meant to help vendors "anticipate their deve
 
 === Development Environment Sub-Process
 
-It may be necessary for the iTC to provide additional assurance strategies for PP authors to incorporate more development environment review. The goal of which is to support Dev Ops practices and facilitate cloud evaluations that allow the end user some assurance apart from fixed version evaluations.
+It may be necessary for the iTC to provide additional assurance strategies for PP authors to incorporate more development environment review. The goal of which is to support Dev Ops practices and facilitate cloud evaluations that allow the customer some assurance apart from fixed version evaluations.
 
 For example if a TOE vendor is leveraging a cloud providers container images to deploy a software product, the Development Environment sub-process should require additional collateral to demonstrate that the cloud provider is providing assurance to the TOE vendor for the image that it is appropriately signed and/or updated.
 
