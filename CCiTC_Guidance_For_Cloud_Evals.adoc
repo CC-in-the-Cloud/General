@@ -98,7 +98,7 @@ Proposed to delete.
 
 A Trusted Platform is the underlying hosting environment for the TOE that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
 
-* The certificate authorizing scheme determines sufficiency and may publish a policy.
+* The evaluation authority determines sufficiency and may publish a policy.
 * Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
 
 
@@ -217,42 +217,34 @@ At this time, if a TOE is reliant on the OE for cryptographic operations, there 
 
 === Roles Clarification
 
-==== TOE Developer
+==== administrator
 
-Organization responsible for the development of the TOE.
+entity that has a level of trust with respect to all policies implemented by the TOE security functionality [CC:2022 Part 1]
+
+==== Developer
+
+Organization responsible for the development of the TOE [CC:2022 Part 1]
 
 ==== Cloud Service Provider (CSP)
 
 A cloud service provider, or CSP, is an entity that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
 
-==== Sponsor
-
-Any entity that is responsible for requesting and/or supporting an evaluation. 
-
-[CCPart1]
 
 ==== Evaluator
 
-individual assigned to perform evaluations in accordance with a given evaluation standard and
-associated evaluation methodology
+individual assigned to perform evaluations in accordance with a given evaluation standard and associated evaluation methodology [CC:2022 Part 1]
 
-===== Evaluator Guidance
+==== Evaluator Guidance
 
 Placeholder for Issue #74
 
 [From CC:2022 Part 1 for Evaluator]
 
-==== Certification Body (CB) or Evaluation Authority (EA)
+==== Evaluation Authority (EA)
 
-Body operating an evaluation scheme
+Body operating an evaluation scheme [CC:2022 Part 1]
 
-[CC:2022 Part 1]
 
-==== Cloud Authorization Scheme
-
-A regulatory body or entity that authorizes cloud service offerings for use by their respective governmental agencies or regulated industries. 
-
-Issue #93
 
 === Contributors Involvement
 
@@ -437,7 +429,7 @@ As Common Criteria testing requires unique test environments for each TOE that a
 
 In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized or not. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable. 
 
-A CC lab should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc on multi-tenant infrastructure. This information will need to be captured and presented to Certification Authorities as evaluation deliverables. 
+An evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. 
 
 .ExamplesFromMDM
 ----
@@ -466,7 +458,8 @@ The JIL Guidance uses this section to allow for attacker potential mitigation. T
 
 == References
 
-* [[[nist_cloud]]] NIST SP 800-145 "The NIST Definition of Cloud
+* [nist_cloud] NIST SP 800-145 "The NIST Definition of Cloud
+* [CC_2022] Common Criteria for Information Technology Security Evaluation, November 2022
 
 == Appendix A: Threats, Assumptions and Security Objectives for each PP.
 
