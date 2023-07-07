@@ -23,7 +23,7 @@ The following definitions are used throughout the document. It is important that
 
 === Bare Metal 
 
-A bare-metal server is a physical computer server that is used by one consumer, or tenant, only. Each server offered for rental is a distinct physical piece of hardware that is a functional server on its own.
+A bare-metal server is a physical computer server that is used by one customer, or tenant, only. Each server offered for rental is a distinct physical piece of hardware that is a functional server on its own.
 
 === Product
 
@@ -60,7 +60,7 @@ The cloud infrastructure is a composition of two or more distinct cloud infrastr
 === Private Cloud
 
 The cloud infrastructure is provisioned for exclusive use by a single organization
-comprising multiple consumers (e.g., business units). It may be owned, managed, and
+comprising multiple customers (e.g., business units). It may be owned, managed, and
 operated by the organization, a third party, or some combination of them, and it may exist
 on or off premises.
 
@@ -116,7 +116,7 @@ Modifications or other adaptions to Common Criteria work products such as Protec
 
 ==== Software as a Service (SaaS)
 
-The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. <<nist_cloud, NIST SP800-145>>
+The capability provided to the customer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The customer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user specific application configuration settings. <<nist_cloud, NIST SP800-145>>
 
 The following PPs are examples which might be extended with CCitC methodology to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM
 
@@ -129,7 +129,7 @@ In this example, the SaaS Application provided by the SaaS provider relies on a 
 
 ==== Platform as a Service (PaaS)
 
-Platform as a Service (PaaS). The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. <<nist_cloud, NIST SP800-145>>
+Platform as a Service (PaaS). The capability provided to the customer is to deploy onto the cloud infrastructure customer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The customer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment. <<nist_cloud, NIST SP800-145>>
 
 
 The following PPs are examples which might be extended with CCitC methodology to cover the above use case: PP_OS, cPP_ND
@@ -143,7 +143,7 @@ In this example, the PaaS OS provided by the PaaS provider relies on a Cloud Ope
 
 ==== Infrastructure as a Service (Iaas)
 
-Infrastructure as a Service (IaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) <<nist_cloud, NIST SP800-145>>
+Infrastructure as a Service (IaaS). The capability provided to the customer is to provision processing, storage, networks, and other fundamental computing resources where the customer is able to deploy and run arbitrary software, which can include operating systems and applications. The customer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) <<nist_cloud, NIST SP800-145>>
 
 
 The following PPs are examples which might be extended with CCitC methodology to cover the above use case: PP_BASE_VIRTUALIZATION
@@ -217,9 +217,13 @@ At this time, if a TOE is reliant on the OE for cryptographic operations, there 
 
 === Roles Clarification
 
-==== administrator
+==== Administrator
 
-entity that has a level of trust with respect to all policies implemented by the TOE security functionality [CC:2022 Part 1]
+Entity that has a level of trust with respect to all policies implemented by the TOE security functionality [CC:2022 Part 1]
+
+==== Customer
+
+A customer of the Cloud Service Provier. Also may be the administrator for the TOE 
 
 ==== Developer
 
@@ -229,6 +233,9 @@ Organization responsible for the development of the TOE [CC:2022 Part 1]
 
 A cloud service provider, or CSP, is an entity that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
 
+==== Evaluation Authority (EA)
+
+Body operating an evaluation scheme [CC:2022 Part 1]
 
 ==== Evaluator
 
@@ -239,12 +246,6 @@ individual assigned to perform evaluations in accordance with a given evaluation
 Placeholder for Issue #74
 
 [From CC:2022 Part 1 for Evaluator]
-
-==== Evaluation Authority (EA)
-
-Body operating an evaluation scheme [CC:2022 Part 1]
-
-
 
 === Contributors Involvement
 
