@@ -292,7 +292,7 @@ Body operating an evaluation scheme [CC:2022 Part 1]
 
 individual assigned to perform evaluations in accordance with a given evaluation standard and associated evaluation methodology [CC:2022 Part 1]
 
-==== Evaluator Guidance
+===== Evaluator Guidance
 
 Placeholder for Issue #74
 
