@@ -1,1 +1,29 @@
+A.TRUSTED_PLATFORM_SERVICE
+The TOE relies upon a trustworthy platform and local network from which it provides administrative capabilities.
+
+The TOE relies on this platform to provide a range of security-related services including reliable timestamps, user and group account management, logon and logout services via a local or network directory service, remote access control, and audit log management services to include offloading of audit logs to other servers. The platform is expected to be configured specifically to provide TOE services, employing features such as a host-based firewall, which limits its network role to providing TOE functionality.
+
+A.TRUSTED_PLATFORM_RESIDUAL_INFORMATION
+The Trusted Platform Administrator must ensure that there is no unauthorized access possible for sensitive residual information (e.g. cryptographic keys, keying material, PINs, passwords etc.) on platform equipment when the equipment is discarded or removed from its operational environment.
+
+A.TRUSTED_PLATFORM_ADMINISTRATOR 
+The Security Administrators for the Trusted Platform are assumed to be trusted and to act in the best interest of security for the organization. This includes not interfering with the correct operation of the TOE. The TOE is not expected to be capable of defending against a malicious Trusted Platform Administrator that actively works to bypass or compromise the security of the TOE.
+
+A.TRUSTED_PLATFORM_PHYSICAL_PROTECTION
+The TOE is assumed to be physically protected in its Trusted Platform environment and not subject to physical attacks that compromise the security or interfere with the TOEs physical interconnections and correct operation. This protection is assumed to be sufficient to protect the TOE and the data it contains. As a result, there are no furhter requirements on physical tamper protection or other physical attack mitigations. The TOE is not expected to defend against physical access to the TOE that allows unauthorized entities to extract data, bypass other controls, or otherwise manipulate the TOE. 
+
+A.TRUSTED_PLATFORM_REGULAR_UPDATES 
+The Trusted Platform software/firmware is assumed to be updated by the Trusted Platform Administrator on a regular basis in response to the release of product updates due to known vulnerabilities.
+
+A.TRUSTED_PLATFORM_ISOLATON
+It is assumed that the Trusted Platform provides, and is configured to provide, sufficient isolation between software running in Trusted Platforms on the same physical platform. Furthermore, it is assumed that the Trusted Platform adequately protects itself from software running inside Trusted Platforms on the same physical platform.
+
+A.TRUSTED_PLATFORM_CORRECT_CONFIGURATION
+It is assumed that the Trusted Platform is correctly configured to support TOE functionality implemented in the Trusted Platform.
+
+A.TRUSTED_PLATFORM_CONNECTIVITY
+All connections to and from Trusted Platforms and between separate parts of the TSF are physically and/or logically protected within
+the Trusted Platforms to ensure the integrity and confidentiality of the data transmitted and to ensure the authenticity of the communication end points.
+
+
 
