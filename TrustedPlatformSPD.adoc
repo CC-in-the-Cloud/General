@@ -49,7 +49,7 @@ Reliable timestamp is provided by the operational environment for the TOE.
 
 
 .Rationale for Environmental Security Objectives and Cloud Authorization Scheme Controls
-[options="header,footer"]
+[options="header"]
 |=======================
 |Assumption|Environmental Objective Addressing
 the Assumption      |Cloud Authorization Scheme Controls - Cisco CCF v2.0
@@ -59,6 +59,7 @@ the Assumption      |Cloud Authorization Scheme Controls - Cisco CCF v2.0
 |A.TRUSTED_PLATFORM_PHYSICAL_PROTECTION    |OE.TRUSTED_PLATFORM_PHYSICAL_PROTECTION      |42,43,44,59,60,207
 |A.TRUSTED_PLATFORM_REGULAR_UPDATES    |OE.TRUSTED_PLATFORM_REGULAR_UPDATES      |310,314,315
 |A.TRUSTED_PLATFORM_RESIDUAL_INFORMATION    |OE.TRUSTED_PLATFORM_RESIDUAL_INFORMATION      |63,80,81,82,83
-|A.TRUSTED_PLATFORM_SERVICE .2+|OE.TRUSTED_PLATFORM_SERVICE      |70,76,107,108,117,140,160,276,280,310,311,318
+.2+|A.TRUSTED_PLATFORM_SERVICE 
+|OE.TRUSTED_PLATFORM_SERVICE      |70,76,107,108,117,140,160,276,280,310,311,318
 | OE.TIMESTAMP      |212
 |=======================
