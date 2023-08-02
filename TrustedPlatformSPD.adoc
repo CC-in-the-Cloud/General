@@ -1,4 +1,4 @@
-== Suggested inputs to a Security Problem Description for Cloud evaluations
+== Suggested inputs to a Security Problem Definition for Cloud evaluations
 
 In the case where a TOE is hosted on a Trusted Platform, platform related Assumptions and associated Security Objectives for the Operating Environment should be fulfilled by that Trusted Platform.
 
