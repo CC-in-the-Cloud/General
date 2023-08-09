@@ -235,9 +235,10 @@ By utilizing unique identifiers, resource tags, naming conventions, and metadata
 
 == Cloud Equivalence Considerations
 
-In general, products must be tested individually on each desired cloud service offering.
+Common Criteria is about products not systems or services. This guidance operates on the principle that products must be tested individually on each desired cloud service offering.
 
-The Cloud Service Offering (to include cloud region or datacenter) must be detailed in the TOE evaluated configuration details. CSOs can not inherently be assumed to be equivalent. For instance, CSPs may have separate environments between government or commercial customers. However, if existing cloud authorizations exist for multiple regions or datacenters this may inform equivalency claims. Especially if the Trusted Platform meets the assumptions and objectives of the PP and is consistent across multiple cloud regions. CC Scheme policy may define acceptance criteria.
+When writing Security Targets, the Cloud Service Offering (including the cloud region or datacenter) must be detailed in the TOE
+evaluated configuration details. CSOs cannot inherently be assumed to be equivalent. For instance, CSPs may have separate environments between government or commercial customers. However, if existing cloud authorizations exist for multiple regions or datacenters this may inform equivalency claims. Especially if the Trusted Platform meets the assumptions and objectives of the PP and is consistent across multiple cloud regions. Each CC scheme has the option to define a policy for acceptance criteria.
 
 === CPU Equivalency 
 
