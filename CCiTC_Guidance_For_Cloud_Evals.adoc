@@ -103,6 +103,12 @@ A Trusted Platform is the underlying hosting environment for the TOE that is suf
 * The evaluation authority determines sufficiency and may publish a policy.
 * Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
 
+=== TOE Platform
+
+A TOE Platform is the underlying combination of software, firmware, or hardware required for TOE operation that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
+
+Standalone physical devices will not utilize a TOE Platform in their respective protection profiles.
+
 == Cloud Topology
 
 === Cloud Use Cases
