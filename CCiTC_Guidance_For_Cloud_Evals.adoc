@@ -3,11 +3,12 @@
 :icons: font
 :revnumber: 0.1
 :revdate: 2022-08-17
-
 :iTC-longname: Common Criteria in the Cloud iTC
 :iTC-shortname: CCitC-iTC
+image::images/CCiTCLogo.png[CC in the Cloud Logo]
 
-toc::[]
+== Table of Contents
+:toc:
 
 == Preface
 
