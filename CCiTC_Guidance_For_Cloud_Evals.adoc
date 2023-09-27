@@ -49,6 +49,7 @@ An offering provided to a customer by a Cloud Service Provider
 === Cloud Service Provider (CSP)
 
 A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS) or platform as a service (PaaS) to other businesses or individuals.
+
 === Hosting Environment
 
 The Hosting Environment consists of everything that is outside the TOE boundary and is equivalent to the CC term "Operational Environment."
@@ -138,7 +139,7 @@ By adapting the TSS and AGD requirements in this manner, the authors of protecti
 
 When conducting Common Criteria evaluations for IT products in cloud environments, it is crucial to recognize that the Target of Evaluation (TOE) will often encompass products designed for the cloud's unique demands. In this context, the TOE is most likely to consist of products that are capable of "lifting and shifting," meaning they can seamlessly migrate and operate in cloud environments. These types of TOEs typically fall within the three primary cloud service models: Software as a Service (SaaS), Platform as a Service (PaaS), or Infrastructure as a Service (IaaS). 
 
-To futher advance this concept, the following protection profiles are an example of how such TOEs may be evaluated in a cloud context:
+To further advance this concept, the following protection profiles are an example of how such TOEs may be evaluated in a cloud context:
 
 === Software as a Service (SaaS)
 
@@ -507,7 +508,7 @@ None for Cloud
 ==== Threats
 
 T.DATA_LEAKAGE +
-T.UNAUTHORISED_UPDATE +
+T.UNAUTHORIZED_UPDATE +
 T.UNAUTHORIZED_MODIFICATION +
 T.USER_ERROR +
 T.3P_SOFTWARE +
@@ -638,8 +639,6 @@ on a Server.
 ____
 *(PP for General Purpose Computing Platform)*
 ____
-
- 
 
 It can be observed that for each PP higher in the stack, it may rely on security services that may or may not be provided by PP’s lower in the stack. It can also generally be observed that the ‘Platform’ for any PP tends to the be PP immediately below in the stack.
 
