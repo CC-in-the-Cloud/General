@@ -32,8 +32,8 @@ A model for enabling ubiquitous, convenient, on-demand network access to a share
 [CNSSI 4009-2015 from NIST SP 800-145]
 [NIST SP 1800-16B under Cloud Computing from NIST SP 800-145]
 [NIST SP 1800-16C under Cloud Computing from NIST SP 800-145]
-[NIST SP 1800-16D under Cloud Computing from NIST SP 800-145
-NISTIR 8401]
+[NIST SP 1800-16D under Cloud Computing from NIST SP 800-145]
+[NISTIR 8401]
 
 === Cloud Authorization Scheme
 
@@ -185,7 +185,7 @@ In this example, the IaaS hypervisor provided by the IaaS provider relies on a C
 
 When deploying a Target of Evaluation (TOE) to public cloud infrastructure, proper identification and distinction of the TOE instances are crucial. This ensures accurate tracking, management, and application of security controls specific to each TOE instance within the cloud environment. In this section, we will explain how TOE identification can be established when deploying TOE instances on popular public cloud platforms such as AWS, Azure, and Oracle Cloud Infrastructure.
 
-AWS (Amazon Web Services):
+=== AWS (Amazon Web Services):
 
 In AWS, TOE instances can be provisioned as either bare metal instances or virtual machines (VMs) based on the specific requirements. AWS offers different services such as Amazon EC2 (Elastic Compute Cloud) for VM instances and Amazon EC2 Bare Metal instances for bare metal deployment. During the provisioning process, unique identifiers such as instance IDs, resource tags, and naming conventions can be utilized to supplement TOE identification. By assigning descriptive tags and naming conventions, TOE administrators can easily distinguish and manage each TOE instance.
 
@@ -198,7 +198,7 @@ image::images/aws2.png[AWS Example]
 .AWS Example
 image::images/aws3.png[AWS Example]
 
-Azure:
+=== Azure:
 
 In Azure, TOE instances can be created using Virtual Machines or Azure Dedicated Hosts for bare metal deployment. When deploying VM instances, Azure assigns a unique resource ID, which can be used for TOE identification. Additionally, Azure Resource Manager (ARM) tags and labels can be assigned to each TOE instance for effective identification and categorization. These tags can include metadata such as TOE name, version, environment, or any other relevant information that aids in TOE management and identification.
 
@@ -217,7 +217,7 @@ image::images/azure4.png[AWS Example]
 .Azure Example
 image::images/azure5.png[AWS Example]
 
-Oracle Cloud Infrastructure:
+=== Oracle Cloud Infrastructure:
 
 Oracle Cloud Infrastructure (OCI) enables the deployment of TOE instances using Oracle VMs or bare metal compute shapes. OCI assigns a unique OCID (Oracle Cloud Identifier) to each compute instance, serving as a reliable identifier for TOE instances. Administrators can further enhance TOE identification by leveraging OCI's tagging system, which allows the assignment of user-defined tags. These tags can be utilized to categorize and identify TOE instances based on their specific attributes and requirements.
 
@@ -265,11 +265,15 @@ E.g. CPU model / OS / Hypervisor / Guest OS / Container shall be defined where a
 
 At this time, if a TOE is reliant on the OE for cryptographic operations, there is no need to leverage the related collateral that explicitly states operation for a given Cloud Provider. This equivalence rationale should also be considered when a TOE vendor is reliant upon a CSP for algorithm certification and many TOE platforms are claimed.
 
-== Steps to optimize a PP for TOEs in a cloud environment.
+== Protection Profile Considerations
 
-A PP comprises of a number of sections and each should be reviewed and updated in order to give directions to ST authors for TOEs in a cloud environment:
+The following section provides both a high level overview as well as a detailed example for adapting CCiTC methodology to existing Protection Profiles. This approach is predicated on mapping the assumptions, security objectives, and security requirements of the PP to the cloud environment.
 
-=== Process Overview
+=== Steps to optimize a PP for TOEs in a cloud environment.
+
+The list below encompasses a structured process for the essential task of updating Protection Profiles to align with the unique requirements of cloud-based evaluations.
+
+==== Process Overview
 
 * Review this guidance document and associated instructions
 * Map Assumptions, Security Objections for the Operational Environment, and Organizational Security Policies to applicable authorization scheme(s) as a reference implementation (FedRamp, C5, etc)
@@ -284,13 +288,13 @@ A PP comprises of a number of sections and each should be reviewed and updated i
 * Edit cPP/PP and add new optional or selection based SFRs/SARs for cloud evaluations
 * Update cPPs supporting documents with new cloud requirements and applicable assurance activities.
 
-=== Conformance Claims
+==== Conformance Claims
 
 It is not expected that changes would be required to the Conformance Claims chapter. 
 
 PP editors may consider including a reference to this guidance document within the updated PP.
 
-=== Security Problem Definition
+==== Security Problem Definition
 
 This chapter describes security problems in terms of threats, assumptions and organizational security policies.
 
@@ -302,7 +306,7 @@ In Appendix B specific aspects of the Assumptions and Security Objectives for th
 
 It is not necessarily expected that a cloud environment will introduce new threats, assumptions or organizational security policies, although the PP writers may wish to consider whether existing threats, assumptions and organization security policies should be refined to provide more explanation in the case of cloud.  For example, threat models may consider the impact of potential ubiquitous access and multi-tenancy to either add to existing threats, assumptions and organizational security policies or refine them.
 
-=== Security Objectives
+==== Security Objectives
 
 Security Objectives for the TOE map to security functionalities/services of the TOE itself so it is not expected that changes would be required.
 
@@ -310,7 +314,7 @@ As described in Appendix B of this document, the Security Objectives of the Oper
 
 The Security Objectives rationale is not expected to change, unless additional threats, assumptions or security objectives have been added.
 
-=== Security Requirements.
+==== Security Requirements.
 
 It is expected that some additional application notes would be appended to a PP regarding Security Requirements.
 
@@ -324,12 +328,7 @@ A product that operates identically outside of a cloud operating environment may
 
 A product that is only designed to operate in a cloud-native context may need refinements to requirements to the PP.
 
-.MDMExample
-----
-Place example here
-----
-
-=== Security Assurance Requirements.
+==== Security Assurance Requirements.
 
 Classes ASE and ADV are not expected to require change.
 
@@ -347,7 +346,7 @@ Class ATE will require some additional application notes required around ‘prov
 
 Class AVA would not be expected to require significant additional application notes.
 
-=== Other considerations
+==== Other considerations
 
 A text search of the term ‘platform’ is likely to highlight areas of a PP that will require modification in order to support evaluations in a Cloud environment (if not already resolved with the activities in sections 3.1-3.6
 
@@ -360,18 +359,13 @@ A product that operates identically outside of a cloud operating environment may
 
 A product that is only designed to operate in a cloud-native context may need refinements to test cases to be accommodated by the appropriate Technical Community. 
 
-==== Guidance For Establishing Test Environments on Cloud Infrastructure
+== Guidance For Establishing Test Environments on Cloud Infrastructure
 
 As Common Criteria testing requires unique test environments for each TOE that are isolated to prevent contamination of test results, testing on Public Cloud infrastructure raises some initial concerns. 
 
 In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized or not. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable. 
 
 An evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. 
-
-.ExamplesFromMDM
-----
-PlaceHolder for Example AA modification
-----
 
 == Contributors Roles in Product Evaluations
 
@@ -423,18 +417,20 @@ However, when applicable vulnerabilities are discovered or suspected for TOEs op
 
 Since a cloud stack will inherently contain many vulnerabilities, it would be useful for the iTC to provide guidance on risk management practices to minimize these factors.
 
-=== Defining penetration tests
-
-The JIL Guidance uses this section on how to compose the penetration testing coverage needed. This may need to be expanded given the content above or removed entirely from the CCiTC guidance.
-
-=== List of attacks and strategies
-
-The JIL Guidance uses this section to allow for attacker potential mitigation. The iTC will need to provide some language here to adapt for cloud evaluations.
-
 == References
 
 * [nist_cloud] NIST SP 800-145 "The NIST Definition of Cloud
 * [CC_2022] Common Criteria for Information Technology Security Evaluation, November 2022
+* [NISTIR 7693] NIST Specification for Asset Identification 1.1
+* [NISTIR 8040 under Product from ISO 9241-11:1998] NIST Measuring the Usability and Security of Permuted Passwords on Mobile Platforms
+* [NIST SP 800-145] The NIST Definition of Cloud Computing
+* [ISO/IEC 27465] Systems and software engineering — Vocabulary
+* [NIST SP 800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [CNSSI 4009-2015 from NIST SP 800-145] Committee on National Security Systems
+* [NIST SP 1800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [NIST SP 1800-16C under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [NIST SP 1800-16D under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [NISTIR 8401] Satellite Ground Segment: Applying the Cybersecurity Framework to Satellite Command and Control
 
 == Appendix A: Threats, Assumptions and Security Objectives for each PP.
 
@@ -488,10 +484,6 @@ O.TRUSTED_CHANNELS +
 O.CONFIGURATION_INTEGRITY +
 O.AUTHORIZED_ADMINISTRATOR
 
-==== 
-
-==== 
-
 ==== Security Objectives for the Operational Environment
 
 OE.PHYSICAL_PROTECTION +
@@ -525,7 +517,6 @@ A.PLATFORM_INTEGRITY +
 A.PHYSICAL +
 A.TRUSTED_ADMIN +
 A.NON_MALICIOUS_USER
- 
 
 ==== Security Objectives for the TOE
 
@@ -539,8 +530,6 @@ O.VM_ENTROPY +
 O.AUDIT +
 O.CORRECTLY_APPLIED_CONFIGURATION +
 O.RESOURCE_ALLOCATION
-
-
 
 ==== Security Objectives for the Operational Environment
 
@@ -608,8 +597,6 @@ OE.PLATFORM +
 OE.PROPER_USER +
 OE.PROPER_ADMIN
 
-
-
 == Appendix B. Analysis of the Assumptions and Security Objectives of the Operating Environment for an example stack of PP’s
 
 As a way of gaining understanding of how existing PP’s may work within the cloud environment, a ‘composition stack’ of PP’s is considered.
@@ -639,10 +626,7 @@ ____
 *(PP for General Purpose Computing Platform)*
 ____
 
- 
-
 It can be observed that for each PP higher in the stack, it may rely on security services that may or may not be provided by PP’s lower in the stack. It can also generally be observed that the ‘Platform’ for any PP tends to the be PP immediately below in the stack.
-
 
 image::images/ppstack.png[]
 
