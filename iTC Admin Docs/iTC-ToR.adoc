@@ -1,36 +1,37 @@
-= Common Criteria in the Cloud International Technical Community Terms of Reference
+= Common Criteria in the Cloud Technical Community Terms of Reference
 :showtitle:
 :sectnumlevels: 3
 :table-caption: Table
 :imagesdir: images
 :icons: font
-:revnumber: 0.4
-:revdate: 2019-10-21
+:revnumber: 0.5
+:revdate: 2023-11-20
 :xrefstyle: full
 
-:iTC-longname: Common Criteria in the Cloud iTC
-:iTC-shortname: Cloud-iTC
+:iTC-longname: Common Criteria in the Cloud TC
+:iTC-shortname: CCitC
 :iTC-email: TBD
 :iTC-website: https://ccinthecloud.github.io/
 :iTC-GitHub: https://github.com/CC-in-the-Cloud/Admin
 
 :sectnums:
+
 == Identification
 Name: {iTC-longname} International Technical Community
 
 Abbreviation: {iTC-shortname}
 
 == Technology Area and Scope
-The scope of this international Technical Community (iTC) are all products utilizing a cloud platform or environment. 
+The scope of this Technical Community (TC) are products and services utilizing a cloud platform or environment. 
 
-The {iTC-shortname} will develop evaluation collateral and guidance to extend CC product evaluations into cloud scenarios.
+The {iTC-shortname} will develop evaluation collateral and guidance to extend CC evaluations into cloud scenarios.
 
-The initial aim is to consider the Essential Security Requirements (ESR) <<1>>. It is anticipated that the scope of the first version of any work proudcts is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first collection of work products, associated Supporting Documents, the {iTC-shortname} may consider to expanding the scope of subsequent works.
+The initial aim is to consider the Essential Security Requirements (ESR) <<1>>. It is anticipated that the scope of the first version of any work products is limited to solve the security problem as defined in the ESR in order to be completed in a timely manner. After the completion of the first collection of work products, associated Supporting Documents, the {iTC-shortname} may consider to expanding the scope of subsequent works.
 
 == Key Persons / Affiliations
 Key roles are defined in <<Roles>>.
 
-In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {iTC-longname} International Technical Community Key persons and affiliations <<2>> provided separately at the Team lab file area of the iTC.
+In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {iTC-longname} Technical Community Key persons and affiliations <<2>> provided separately at the Team lab file area of the iTC.
 
 == Collaboration Infrastructure
 To enable collaboration, the {iTC-shortname} uses collaboration services including email notification, discussion forums, and file storage that are accessible to {iTC-shortname} members. 
@@ -39,16 +40,14 @@ The {iTC-shortname} is using a combination of hosted collaboration services prov
 
 == iTC Development Process
 === Application of the White Paper
-This {iTC-shortname} follows the processes defined in Establishing International Technical Communities and Developing Collaborative Protection Profiles <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB {iTC-shortname} Working Group, or the CCRA CCDB as applicable. 
+This {iTC-shortname} follows the processes defined in Establishing Technical Communities and Developing Collaborative Protection Profiles <<3>> with the version agreed with the CCDB Liaison. The version should normally be the latest version approved by the CCRA CCDB {iTC-shortname} Working Group, or the CCRA CCDB as applicable. 
 
 === Maintenance
 The {iTC-shortname} remains in place to answer inquiries and update the work products as may be requested by CCDB, {iTC-shortname} members and/or others stakeholders. The {iTC-shortname} Chair is responsible for establishing an appropriate periodic schedule and organizing the {iTC-shortname} to review, and if needed, update the iTC work products.
 
 == Policies
 === Membership
-This iTC is open to all interested persons who have an active role in this technology area and in CC evaluation. To join the iTC, each person sends a request to:
-
-{iTC-email}
+This iTC is open to all interested persons who have an active role in this technology area and in CC evaluation. To join the iTC, each must submit an application located https://docs.google.com/forms/d/1hQ6c1Zsr7rO3OT6B0GvNPrX5IeC7RPZxjC8Z1XcJQC4[here].
 
 === Principles
 The {iTC-shortname} should be working in manners that promote fair competition and meet the six principles of international standardisation determined by the WTO-TBT. See G/TBT/1/Rev.13 (8 March 2017) "DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995" <<5>> or later revision.
@@ -84,7 +83,7 @@ The {iTC-shortname} draws from the ISO Code of Conduct for the technical Work <<
 |We will identify and escalate disputes in a timely manner to ensure rapid resolution. We will uphold the agreed dispute resolution processes.
 
 |Behave ethically
-|We will act in good faith and with due care and diligence. We will avoid collusive or anticompetitive behaviour. We will promote a culture of fair and ethical behaviour.
+|We will act in good faith and with due care and diligence. We will avoid collusive or anti-competitive behavior. We will promote a culture of fair and ethical behavior.
 
 |Follow a Code of Conduct
 a|We are committed to following a code of conduct in an open, welcoming and inclusive manner. In meetings we are committed to:
@@ -113,7 +112,7 @@ Ideally, technical decisions are made by reaching group consensus (see <<Voting>
 
 As a guideline, decisions are made according to the following process:
 
-* Major Decisions shall be made via the iTC collaboration tools. The {iTC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.
+* Major Decisions shall be made via the iTC collaboration tools in github. The {iTC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft iTC documents, may be made by acclimation during scheduled iTC meetings.
 * Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.
 * If there are members that disagree with a decision, they can request the reason for the objection to be documented.
 * Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
@@ -283,7 +282,7 @@ Other SMEs can come from a wide range of background, including government techni
 
 == References
 * [#1]#[1]# {iTC-longname} Essential Security Requirements, {iTC-website}[Online] (https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf)
-* [#2]#[2]# {iTC-longname} International Technical Community - Key Persons and Affiliations, {iTC-website}[Online] (link when available)
+* [#2]#[2]# {iTC-longname} Technical Community - Key Persons and Affiliations, {iTC-website}[Online] (link when available)
 * [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, http://www.commoncriteriaportal.org/files/communities/Establishing%20iTCs%20and%20cPP%20development%20-%20v0-7.pdf[Online]
 * [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/publication/PUB100397.html[Online]
 * [#5]#[5]#  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&Language=ENGLISH&Context=FomerScriptedSearch&languageUIChanged=true#[Online Search]
