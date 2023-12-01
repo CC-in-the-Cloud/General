@@ -9,7 +9,7 @@
 :revdate: 2023-11-20
 :xrefstyle: full
 
-:TC-longname: Common Criteria in the Cloud TC
+:TC-longname: Common Criteria in the Cloud
 :TC-shortname: Cloud-TC
 :TC-email: TBD
 :TC-website: https://ccinthecloud.github.io/
@@ -18,7 +18,7 @@
 :sectnums:
 
 == Identification
-Name: {TC-longname} International Technical Community
+Name: Common Criteria in the Cloud Technical Community
 
 Abbreviation: {TC-shortname}
 
