@@ -219,22 +219,11 @@ At this time, if a TOE is reliant on the OE for cryptographic operations, there 
 
 The following section provides a high-level overview for adapting CCiTC methodology to existing PPs, including examples where appropriate. This approach is predicated on determining the suitability of a PP for cloud evaluations, considerations for how the security problem definition, security objectives, and security requirements are affected by cloud evaluations, and how these evaluations may relate to other cloud authorization schemes recognized by national certification bodies.
 
-=== General procedure for deriving cloud evaluation guidance for a Protection Profile of PP-Module
+=== General Procedure for Deriving Cloud Evaluation Guidance for a Protection Profile or PP-Module
 
 ==== Process Overview
 
-* Review this guidance document and associated instructions
-* Map Assumptions, Security Objections for the Operational Environment, and Organizational Security Policies to applicable authorization scheme(s) as a reference implementation (FedRamp, C5, etc)
-** Summarize this mapping in generic language for wider Cloud Authorization adoption i.e. consideration in other authorization schemes
-*** Determine the extent to which SFRs and SARs in the PP can rely on the OE to be satisfied so that the extent to which the TSF may need to rely on cloud services can be determined. 
-** Identify SFR challenges in a cloud operational environment
-*** For example certain requirements collecting test evidence may be complicated by the cloud operational environment and may not be directly accessible due to cloud isolation.
-**** Many TOEs that will operate in a cloud environment will utilize object storage as provided by the CSP. These objects will often be encrypted either by the TOE itself or by the CSP. For instances in which the CSP is providing encryption of the storage object, it is expected that the TOE developer or evaluator will not be able to perform assurance activity tests with regards to Key Destruction. PP authors will be expected to make modifications to related SFRs to allow for CSP Key Destruction or Zeroization as additional selections.
-**** Such modifications may be made by iterating the underlying SFR in a base PP into a "Cloud" PP module which provides the cloud-specific selections and assurance activities.
-** Identify SAR challenges with either new/updated SAR's and/or determine if applicable
-*** For example AVA may have different considerations for a cloud operating environment depending on the TOE or PP. See <<Vulnerability Assessment Methodology>> for more information.
-* Edit cPP/PP and add new optional or selection based SFRs/SARs for cloud evaluations
-* Update cPPs supporting documents with new cloud requirements and applicable assurance activities.
+To adapt a Protection Profile to Cloud Evaluations there are several things that a PP author must consider. These include determining whether the technology has a cloud use case to begin with (suitability check), the extent to which a conformant TOE aligns to national or international requirements for cloud security, whether any SFRs or evaluation activities need to be added or modified for cloud use cases, and how the chosen cloud requirements can be leveraged to ensure that the TOE is deployed in an environment that adequately meets the PP's assumptions and organizational security policies. Guidelines for this process are outlined below:
 
 ==== Suitability Check
 
@@ -245,6 +234,7 @@ Identify whether the product type can reasonably operate in a cloud context and 
 * The Hardcopy Device collaborative Protection Profile (HCD cPP) defines the capabilities of a specific multifunction device such as a printer. Since this exists solely as a physical device, there is no cloud use case for it.
 
 Note that most existing Protection Profiles do not currently define cloud use cases. This will need to be done on a per-PP basis so that it is clear which types of products can be deployed in cloud settings and so that the Technical Community can make clear what the expectations are for the product’s intended usage and environmental protections should be in these settings. For example, with respect to the NDcPP, the existing security problem definition and environmental security objectives may not cover the case where a network device is deployed as a cloud platform or infrastructure device. The potential cloud use cases for individual product types must be considered as part of determining a PP’s suitability for supporting cloud evaluations. It is recommended that PP authors consult with product vendors for the technology type to determine whether cloud use cases for that type of product exists.
+
 Note that the mapping activities below may help a Technical Community determine whether a PP is capable of supporting cloud evaluations as-is or whether changes to that PP would be needed. This in turn would help determine whether evaluating a particular product type in a cloud setting is actually feasible.
 
 ==== Choose Cloud Standard/Security Controls for Mapping 
@@ -253,9 +243,7 @@ Different nations use different standards, methodologies, and assessment schemes
 
 The goal of this exercise is to attempt to answer the following questions:
 
-* Is the environment the TOE is being deployed into capable of meeting the assumptions for the operational environment that the PP or PP-Module defines? That is, if the TOE is deployed on a platform or infrastructure that has been ‘certified’ through some separate cloud validation program, is that sufficient to say the operational environment is also suitable for CC, or would additional assurances be needed?
-
-* If the TOE itself has already been certified through some separate cloud validation program, what is the extent to which the evidence from that certification can be reused for a CC evaluation (if any)? 
+* Is the environment the TOE is being deployed into capable of meeting the assumptions for the operational environment that the PP or PP-Module defines? That is, if the TOE is deployed on a platform or infrastructure that has been ‘certified’ through some separate cloud validation program, is that sufficient to say the operational environment is also suitable for CC, or would additional assurances be needed? 
 
 * Are there any obvious gaps in the PP or PP-Module where requirements or tests would need to be added or modified specifically for the case of a cloud deployment?
 
@@ -289,6 +277,10 @@ Each SFR in the PP or PP-Module is likely written in such a way that assumes on-
 ** It may be the case that a requirement simply does not apply to a cloud environment, in which case the PP author could consider defining that requirement as an implementation-based SFR that applies only to the on-premise use case.
 
 * Are there any critical functions that are missing because of the PP or PP-Module’s current expectation that the TOE is deployed in an on-premise environment? If so, PP authors should work with technical subject matter experts to define implementation-based SFRs that apply only to the cloud use case such that the desired functionality can be covered in this situation.
+
+////
+Placeholder for example SFR
+////
 
 Note that mappings to the desired cloud validation scheme are not critical here, at least not from a CC perspective. The expectation is that if the TOE has already been validated against a cloud validation scheme, there will be little to no re-use of that evidence because of how tailored the CC requirements are to specific tests. There may be some value to vendors pursuing cloud certification *after* a CC evaluation because the specific evidence could be reusable in a more general context, but the relationship likely does not flow both ways.
 
@@ -329,7 +321,7 @@ In the context of software, if one reviews the SPD and can determine that all as
 
 Many PP assumptions are similar if not identical between PPs. For example, assumptions regarding trusted administrators or physical protection of the TOE are generally present in PPs with very similar wording between them. The MDM PP is no exception. The decomposition and mappings done for this PP could potentially be usable in other PPs without needing to come up with separate rationale for what is essentially the same process.
 
-Additionally, there are some assumptions (addressed by operational environment objectives) that are specific to cloud environments and do not apply to on-premise use cases. Existing PPs, therefore, do not have any reference to these since they were not written with cloud evaluations in mind. The CCitC working group has compiled some sample assumptions and environmental objectives that could be considered for inclusion in PPs that support cloud evaluations; these are listed in Appendix A  below. Note that this approach is similar to the NDcPP, which has assumptions and environmental security objectives that only apply in certain situations, such as when the TOE is distributed or when the TOE is virtualized. 
+Additionally, there are some assumptions (addressed by operational environment objectives) that are specific to cloud environments and do not apply to on-premise use cases. Existing PPs, therefore, do not have any reference to these since they were not written with cloud evaluations in mind. The CCitC working group has compiled some sample assumptions and environmental objectives that could be considered for inclusion in PPs that support cloud evaluations; these are listed in <<Appendix A: Threats, Assumptions and Security Objectives for each PP.>>  below. Note that this approach is similar to the NDcPP, which has assumptions and environmental security objectives that only apply in certain situations, such as when the TOE is distributed or when the TOE is virtualized. 
 
 Note also that the shared security model must be considered when looking at assumptions. Responsibility for secure deployment and configuration of the TOE may involve collaboration of up to four different groups (infrastructure vendor, platform vendor, software vendor, end user). The roles and responsibilities must be considered on a PP or PP-Module level because the trusted personnel will differ based on what layer of the cloud stack the TOE sits on. This may also vary from vendor to vendor or from product to product. For example, a CSP deploying its own software on its own cloud infrastructure may only have a single point of contact on their end and there are no cross-organizational concerns.
 
@@ -354,51 +346,11 @@ On an individual SFR level, if the method by which the TOE meets an SFR differs 
 
 * Class AVA (Vulnerability Analysis) – A vulnerability analysis of a cloud product may involve many dependencies that the TOE relies on in a way that an on-premise TOE may not be able to. Frequent changes to environmental configuration on the CSP side may not be in the control of end users and will continually change the versions of dependent components that the TOE relies upon. PP authors should provide guidance to evaluators to identify the dependencies that the TOE has in the cloud (for each claimed CSP) and conduct vulnerability research on the latest versions of those dependencies, as well as any potential vulnerabilities that are specific to the claimed CSPs. Additionally, guidance for penetration testing should be given with the understanding that the TOE may not be deployed in a fully closed environment and as such there may be limitation on the rules of engagement that must be followed with the CSP. It is expected that validation schemes will provide guidance on the penetration test efforts that will be accepted for cloud evaluations, and PP authors should incorporate such guidance into PPs for consistency.
 
-An example of this as applied to recommendations for the MDM PP is listed below.
-
-* ADV_FSP.1 – generally, the evidence used to satisfy ADV_FSP.1 in the current generation of PPs and PP-Modules is the Security Target itself, with the occasional need for additional domain-specific documentation on a per-technology basis. This may be impacted by a TOE being deployed in the cloud if the cloud deployment affects the external interfaces that the TOE has.
-
-* AGD_OPE.1 – the evidence used for operation of the TOE may be affected by the TOE being deployed in a cloud environment. However, the CCitC working group is expected to create universal guidance for how this evidence is affected by cloud deployments, independent of any specific type of product. It is strongly recommended to make use of this guidance so that the presentation of admin guidance intended for use in cloud settings is consistent across vendors and product types.
-
-* AGD_PRE.1 – the evidence used for initial setup of the TOE may be affected by the TOE being deployed in a cloud environment. However, the CCitC working group is expected to create universal guidance for how this evidence is affected by cloud deployments, independent of any specific type of product. It is strongly recommended to make use of this guidance so that the presentation of admin guidance intended for use in cloud settings is consistent across vendors and product types.
-
-* ALC_CMC.1 – this is not impacted by a cloud deployment because the method by which the TOE is identified and labeled will not change based on this. 
-
-* ALC_CMS.1 – this is not impacted by a cloud deployment because the method by which the TOE is identified and labeled will not change based on this.
-
-* ATE_IND.1 – this is not impacted by a cloud deployment except to the extent that the TOE being deployed in a cloud affects how the actual tests are performed.
-
-* AVA_VAN.1 – the vulnerability assessment process for the TOE and its dependencies will not be affected by the environment it is deployed in. 
-
-However, in the cloud context specifically, it may be appropriate to require that the operational environment does have some safeguards in place that are assessed through a vulnerability assessment and penetration testing process. Additionally, a cloud deployment of the TOE may involve third-party dependencies that must be considered, and penetration testing of the TOE in the cloud environment may require special accommodation from the cloud service provider. 
-
 The high-level takeaways from this are as follows:
 
 * The same notion of needing the operational environment to be a “trusted platform” applies here – deploying the TOE in a cloud platform and infrastructure that has had some sort of third-party validation is important because it helps the evaluator understand the extent to which the TOE relies on the platform and gives assurance that a vulnerable platform does not introduce any significant potential exploits of the TOE itself.
 
 * The impact of a cloud deployment on how the TOE is evaluated is generally not going to be specific to a particular PP or PP-Configuration; following general CCitC guidance for this should be suitable in most cases.
-
-==== Determine Impact on SFRs
-
-Depending on the PP or PP-Module, it may be required for the TSF to implement all of the claimed SFRs or that some claims of reliance on platform functionality are allowed.
-
-Regardless of where an SFR is actually implemented, deployment in a cloud environment versus on-prem may affect how that SFR is tested. For example, cryptographic algorithm validation for a given function would require the evaluator to know what specific hardware devices the TOE can run on when deployed in a cloud, which would require an inventory of all of the hardware used by the cloud service provider for the desired cloud to be provided to the evaluator. Low-level protocol testing may also be affected if a given cloud service provider implements network boundary protection that either requires special permission to disable or cannot be disabled altogether. 
-
-To determine how a PP or PP-Module can fit in with a cloud environment, it is necessary for technical subject matter experts to review the evaluation activities for each SFR to determine whether:
-
-* The test activity can be performed as-is if the TOE is deployed in a cloud environment
-* The test activity can be performed if the TOE is deployed in a cloud environment, but some modifications or other special conditions are needed.
-** What modifications would these be and does this depend on the cloud service provider? e.g., different providers may have different constraints.
-* The test activity cannot be performed if the TOE is deployed in a cloud environment.
-** Why is the activity not doable and does this depend on the cloud service provider? e.g., different providers may have different constraints.
-
-The goal of this should be to determine what technical hurdles exist, if any, to performing the existing tests in a cloud deployment. If any tests require modification for cloud-specific scenarios, a consensus will need to be reached within the technical community as to what modifications are needed and whether or not this still provides an acceptable level of product assurance. The national schemes that approve the PP or PP-Module for use must also approve of this; it should not be assumed that any such changes are automatically acceptable. 
-
-Note that mappings to the desired cloud validation baseline is not critical here, at least not from a CC perspective. The expectation is that there will be minimal re-use of existing validation evidence because of how tailored the CC requirements are to specific tests. There may be some value to vendors pursuing cloud certification *after* a CC evaluation because the specific evidence could be reusable in a more general context, but the relationship likely does not flow both ways. 
-
-==== Determine the Need for New SFRs
-
-There is no guarantee that the existing PP or PP-Module SFRs are sufficient to cover the required security functionality. Technical community consultation with subject matter experts will be needed to determine whether any additional SFRs are needed specifically for the cloud use case. Specific examples of these will be provided in the future as they are developed, and can be incorporated into PPs to address security functionality not covered in a current evaluation.  
 
 ==== Map to Other Applicable Cloud Programs
 
@@ -545,6 +497,16 @@ In general, the AVA methodology shall be sufficient for most TOE types. However,
 As we have introduced a trusted platform concept, underlying vulnerabilities in the cloud operating environment can be treated as they are in traditional OE analysis.
 
 However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment the means in which evaluators are expected to shift negative test coverage must utilize cloud attack vectors. I.e. service portal, management plane, etc.
+
+////
+
+Placeholder for later addition
+ 
+ == Scheme Considerations
+
+* If the TOE itself has already been certified through some separate cloud validation program, what is the extent to which the evidence from that certification can be reused for a CC evaluation (if any)?
+
+////
 
 == Contributors Roles in Product Evaluations
 
