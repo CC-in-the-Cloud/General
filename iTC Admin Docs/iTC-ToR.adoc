@@ -33,7 +33,7 @@ The initial aim is to consider the Essential Security Requirements (ESR) <<1>>. 
 
 Key roles are defined in <<Roles>>.
 
-In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {TC-longname} Technical Community Key persons and affiliations <<2>> provided separately in the management group repository of the TC.
+In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {TC-longname} Key persons and affiliations <<2>> provided separately in the management group repository of the TC.
 
 == Collaboration Infrastructure
 To enable collaboration, the {TC-shortname} uses collaboration services including email notification, discussion forums, and file storage that are accessible to {TC-shortname} members. 
