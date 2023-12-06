@@ -1,12 +1,10 @@
-= Common Criteria in the Cloud Technical Community Terms of Reference
-
 :showtitle:
 :sectnumlevels: 3
 :table-caption: Table
 :imagesdir: images
 :icons: font
-:revnumber: 0.5
-:revdate: 2023-11-20
+:revnumber: 1.0
+:revdate: 5 December 2023
 :xrefstyle: full
 
 :TC-longname: Common Criteria in the Cloud
@@ -17,10 +15,22 @@
 
 :sectnums:
 
-== Identification
-Name: Common Criteria in the Cloud Technical Community
+= Common Criteria in the Cloud Technical Community Terms of Reference
+{revnumber}, {revdate}
+***
+:toc: auto
 
-Abbreviation: {TC-shortname}
+== Identification
+
+Name: Common Criteria in the Cloud Technical Community Terms of Reference
+
+Version: {revnumber}
+
+Date: {revdate}
+
+Technical Community: {tc-longname}
+
+Technical Community Abbreviation: {TC-shortname}
 
 == Technology Area and Scope
 The scope of this Technical Community (TC) are products and services utilizing a cloud platform or environment. 
@@ -32,8 +42,6 @@ The initial aim is to consider the Essential Security Requirements (ESR) <<1>>. 
 == Key Persons / Affiliations
 
 Key roles are defined in <<Roles>>.
-
-In order to avoid updating this ToR, and potentially requiring another submission for approval, the key persons are defined in {TC-longname} Key persons and affiliations <<2>> provided separately in the management group repository of the TC.
 
 == Collaboration Infrastructure
 To enable collaboration, the {TC-shortname} uses collaboration services including email notification, discussion forums, and file storage that are accessible to {TC-shortname} members. 
@@ -52,7 +60,7 @@ The {TC-shortname} remains in place to answer inquiries and update the work prod
 This TC is open to all interested persons who have an active role in this technology area and in CC evaluation. To join the TC, each must submit an application located https://docs.google.com/forms/d/1hQ6c1Zsr7rO3OT6B0GvNPrX5IeC7RPZxjC8Z1XcJQC4[here].
 
 === Principles
-The {TC-shortname} should be working in manners that promote fair competition and meet the six principles of international standardisation determined by the WTO-TBT. See G/TBT/1/Rev.13 (8 March 2017) "DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995" <<5>> or later revision.
+The {TC-shortname} should be working in manners that promote fair competition and meet the six principles of international standardization determined by the WTO-TBT. See G/TBT/1/Rev.15 (24 September 2019) "DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995" <<5>> or later revision.
 
 * Transparency
 * Openness
@@ -116,7 +124,7 @@ Ideally, technical decisions are made by reaching group consensus (see <<Voting>
 As a guideline, decisions are made according to the following process:
 
 * Major Decisions shall be made via the TC collaboration tools in github. The {TC-shortname} will provide one or two weeks to make the decision. Minor decisions, such as regular commitments to draft TC documents, may be made by acclimation during scheduled TC meetings.
-* Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then majority voting should be implemented.
+* Consensus is the default and strongly preferred method for resolution. However, if after a month consensus cannot be reached for a particular issue, then voting should be implemented.
 * If there are members that disagree with a decision, they can request the reason for objection to be documented by Cloud-TC Management.
 * Once a decision has been made by the group it will be adopted and implemented. However, as a means to change direction or scope, any member can try to build a consensus for reversing a prior decision.
 
@@ -125,7 +133,7 @@ Other {TC-shortname} members are encouraged to post comments in response to issu
 A typical issue should be resolved within a two week period. Some issues may require more time for study and deliberation or due to holidays or other events. 
 
 === Voting
-Decisions shall be taken on the basis of the consensus principle whenever possible.
+Decisions shall be taken based on of the consensus principle whenever possible.
 
 [quote,ISO/IEC Guide 2:2004]
 ____
@@ -136,7 +144,7 @@ ____
 
 The {TC-shortname} may define different classes of voting, but for votes related to the TC itself, the process here defines how the voting will proceed. If the class of vote needed has not been defined, then the process here will be used by default.
 
-Voting is used infrequently as a way to formally decide on a particular TC issue. The following would be considered TC issues to require a formal vote:
+Voting is used infrequently to formally decide on a particular TC issue. The following would be considered TC issues to require a formal vote:
 
 * Establishing formal working groups within the TC (such as the Interpretation Team or special interest groups to work on specific areas)
 * Changes to the TC governing documents (such as the Essential Security Requirements or Terms of Reference)
@@ -286,7 +294,7 @@ Other SMEs can come from a wide range of background, including government techni
 == References
 * [#1]#[1]# {TC-longname} Essential Security Requirements, {TC-website}[Online] (https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf)
 * [#2]#[2]# {TC-longname} Technical Community - Key Persons and Affiliations, {TC-website}[Online] (link when available)
-* [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, http://www.commoncriteriaportal.org/files/communities/Establishing%20TCs%20and%20cPP%20development%20-%20v0-7.pdf[Online]
+* [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, https://www.commoncriteriaportal.org/files/supdocs/CCMC-015-v1.0-2023-Oct-30-Final-Establishing_iTCs_and_Developing_cPPs.pdf[Online]
 * [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/publication/PUB100397.html[Online]
 * [#5]#[5]#  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&Language=ENGLISH&Context=FomerScriptedSearch&languageUIChanged=true#[Online Search]
 * [#6]#[6]# Contributor Covenant Code of Conduct,  https://www.contributor-covenant.org/version/2/0/code_of_conduct/[Online]
