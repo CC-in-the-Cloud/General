@@ -153,6 +153,7 @@ Voting is used infrequently to formally decide on a particular TC issue. The fol
 As determined by the TC, additional voting classes will be defined in the documents where they will be used.
 
 ==== Vote Eligibility
+
 Voting is limited specifically to the members defined at the time the vote is called. Membership in the {TC-shortname} is defined as inclusion on the {TC-shortname} roster on the CCUF approved collaboration tool.
 
 One vote is allowed for each member organization, not for each individual member, regardless of membership within the {TC-shortname}. _Organization_ is defined according to the definition adopted by the CCUF; for commercial enterprises, a parent company and all of its divisions and subsidiaries comprise one organization. It is the responsibility of each organization to determine which individual member will cast a vote on its behalf.
@@ -194,7 +195,8 @@ Votes submitted shall be explicit: positive, negative, or abstention. A positive
 
 A vote is approved if:
 
-* A two-thirds majority of the Counted votes of the {TC-shortname} are positive
+* A two-thirds majority of the Counted votes of the {TC-shortname} are positive.
+* At least five votes are cast.
 * For elections of TC roles, only a simple majority is required when voting is needed.
 
 Counted votes are determined by the following conditions:

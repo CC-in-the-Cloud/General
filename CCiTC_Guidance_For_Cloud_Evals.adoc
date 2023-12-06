@@ -129,9 +129,24 @@ If the TOE is a General Purpose Operating System (GPOS) then the TOE Platform wo
 
 If the TOE is a General Purpose Compute Platform (GPCP) then no TOE Platform is applicable and the Trusted Platform would be the power, cooling, and physical security provided by the CSP.
 
-== Scheme Guidance for Trusted Platforms
+== Scheme Guidance
 
-Placeholder for issue #106
+Evaluation Authorities for schemes should review carefully this guidance and any PP that is being used for an evaluation of a TOE in a cloud environment, and confirm that there are no conflicts with existing Evaluation Authority policies (for example, a requirement for the evaluator have the the TOE physically located or tested in their own facility). Although physical control is not pragmatic for cloud evaluations, this does not mean that the lab is not in control of the cloud testing environment. If a lab provisions cloud platforms for Common Criteria testing purposes, the appropriate controls for accreditation can be extended to their cloud testing environment.
+
+Evaluation Authorities should consider to provide their own policies regarding Trusted Platform acceptance criteria in order to support the evaluation efforts. The Protection Profile should provide guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the Security Objectives of the Operating Environment of the PP. This may likely include a mapping to Cloud Authorization Scheme(s) that the Evaluation Authority may recognize as providing assurance that the requirements are met, and may provide input for an Evaluation Authority policy.
+
+Evaluation Authorities should review the evaluator evidence provided regarding the establishment of their test environment for the cloud. The evidence provided by the evaluator (that their environment establishes controls provided by the CSP to ensure effective isolation equivalent to on-prem testing to maintain the integrity of results) should be carefully reviewed.
+
+Evaluation Authorities should also review the PP's guidance around vulnerability testing and confirm that the evaluator has considered that guidance. The evaluator evidence should demonstrate that the evaluator was able to utilize cloud attack vectors. I.e. service portal, management plane, etc. to complete the testing.
+
+== Guidance for Evaluators
+
+A PP should provide an evaluator with clear explanations tailored to evaluators perhaps limited experience of cloud infrastructure and security. Evaluators should aim to develop their knowledge and techniques for TOEs in the cloud to a comparable level to that for traditional 'on-prem' TOEs.
+Evaluators should read the explicit guidance provided within the PP for TOEs in a cloud environment. This may include an appendix as guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the Security Objectives of the Operating Environment of the PP. This will likely include a mapping that may be used by an evaluator to confirm that the selected Trusted Platform has been validated by an appropriate Cloud Authorization Scheme to have controls fulfilling the Assumptions and associated Security Objectives for the Operating Environment. This material should be reviewed and considered carefully. In the case where an evaluator considers that the material provided is insufficient or in error, the evaluator should contact the PP author for further discussion.
+
+Evaluators should also consider guidance in the Protection Profile regarding testing. An evaluator should prepare cloud testing infrastructure for the evaluation. This environment will establish controls provided by the CSP to ensure effective isolation equivalent to on-prem testing to maintain the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables.
+
+Evaluators should also consider guidance in the PP regarding vulnerability testing. It may the case that when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the evaluators may be required to utilize cloud attack vectors. I.e. service portal, management plane, etc. to complete the testing.
 
 == TOE Identification
 
