@@ -1,6 +1,6 @@
 = _CC in the Cloud_ Guidance for Cloud Evaluations
 :doctype: book
-:title-logo-image: image:images/CCitCLogo.png[align=center]
+:title-logo-image: image:images/CCitCLogo-bak.png[align=center]
 :icons: font
 :toc:
 :revnumber: 1.0
@@ -30,7 +30,7 @@ When conducting Common Criteria evaluations for IT products in cloud environment
 To further advance this concept, the following cloud architectures may be composed of Protection Profiles that are extended for a cloud context as shown below:
 
 === Software as a Service (SaaS)
-
+[options=unbreakable]
 This topology enables the SaaS Application (TOE) to run on cloud infrastructure where it is accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The TOE does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage.
 
 The following PPs are examples which might be extended with CCitC methodology to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM.
@@ -43,7 +43,7 @@ image::images/saas.png[SaaS Example]
 In this example, the TOE relies on a TOE platform from an OS Vendor which is hosted by the Cloud Service Provider on the CSP's hardware. In this Cloud evaluation scenario, additional requirements and assurance activities could be prescribed to expand the evaluated configuration in a Cloud Operating Environment. 
 
 === Platform as a Service (PaaS)
-
+[options=unbreakable]
 This topology enables the deployment of customer applications onto cloud infrastructure(s). The TOE does not manage or control the underlying cloud infrastructure(s) including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
 
 
@@ -57,7 +57,7 @@ image::images/paas.png[PaaS Example]
 In this example, the TOE relies on a cloud operating environment which is hosted by the Cloud Service Provider on the CSPs hardware. In this Cloud evaluation scenario, additional requirements and assurance activities could be prescribed to expand the evaluated configuration to include a Cloud Operating Environment. 
 
 === Infrastructure as a Service (IaaS)
-
+[options=unbreakable]
 For this topology, the TOE is capable of provisioning processing, storage, network, and other fundamental computing resources where the TOE is able to deploy and run arbitrary software, such as operating systems and applications. The TOE does not manage or control the underlying platform but has control over operating systems, storage, deployed applications, and limited control of some networking components.
 
 The following PPs are examples which might be extended with CCitC methodology to cover the above use case: PP_BASE_VIRTUALIZATION.
@@ -68,6 +68,7 @@ For example, if the Protection Profile for Virtualization were to be used as a b
 image::images/iaas.png[IaaS Example]
 
 In this example, the TOE provided by the IaaS provider relies on a Cloud Operating Environment which is hosted by the Cloud Service Provider. In this Cloud evaluation scenario, additional requirements and assurance activities could be prescribed to expand the evaluated configuration to include a Cloud Operating Environment. 
+***
 
 == Shared Security Model
 
@@ -209,24 +210,11 @@ In the process of evaluating IT products within a cloud context, precision and c
 
 Applicable guidance shall be followed when labeling Operational Environments. Such as:
 
-For a Type 1 (or native) hypervisor, where the hypervisor runs directly on the hardware, the OE
-listing shall include the guest OS, hypervisor, and processor using the following format: “Guest
-OS on hypervisor on Processor.” An example is “Microsoft Windows 11 on VMWare ESXi 7.0
-on Intel Xeon W (Rocket Lake).”
+* TOE version XX.YY on OS version X.Y on CPU model Z
+* TOE version XX.YY on Hypervisor version X.Y on CPU model Z
+* TOE version XX.YY on Hypervisor version X.Y on OS version X.Y on CPU model Z
 
-For a Type 2 (or hosted) hypervisor, where the hypervisor runs on a host operating system (OS),
-the OE listing shall include the guest OS, hypervisor, host OS, and processor using the following
-format: “Guest OS on hypervisor on Host OS on Processor.” An example is “Microsoft
-Windows 11 on Parallels Desktop 17 on macOS Monterey on Intel Core i7 (Kaby Lake).”
-
-Algorithm tests may also be performed using containers. The OE listing shall include the
-container, runtime, host OS, and processor using the following format: “container on runtime on
-host OS on processor.” An example is “Ubuntu 20.04 Docker Image on Docker Engine 20 on
-Ubuntu 20.04 on Intel Xeon W (Rocket Lake).”
-
-TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made. 
-
-E.g. CPU model / OS / Hypervisor / Guest OS / Container shall be defined where appropriate. 
+TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made such as when all entropy is utilizing a Jitter entropy source which exists only in the OS Userland. However, if the TOE is relying on the TOE Platform for any SFR enforcing functionality, then the TOE must be able to conclusively demonstrate knowledge of the underlying TOE Platform for these specifics.
 
 At this time, if a TOE is reliant on the OE for cryptographic operations, there is no need to leverage the related collateral that explicitly states operation for a given Cloud Provider. This equivalence rationale should also be considered when a TOE developer is reliant upon a CSP for algorithm certification and many TOE platforms are claimed.
 
@@ -581,7 +569,7 @@ A regulatory body or entity that authorizes cloud service offerings for use by t
 
 A Cloud Service is any system that provides on-demand availability of computer system resources, e.g; data storage and computing power, without direct active management by the user.
 
-=== Cloud Service Offering (CSP)
+=== Cloud Service Offering (CSO)
 An offering provided to a customer by a Cloud Service Provider
 
 === Cloud Service Provider (CSP)
