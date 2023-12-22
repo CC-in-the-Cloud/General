@@ -294,9 +294,9 @@ Common Criteria certification bodies provide knowledge and experience in the exp
 Other SMEs can come from a wide range of background, including government technical experts, end user representatives, as well as consultants or those from academia.
 
 == References
-* [#1]#[1]# {TC-longname} Essential Security Requirements, {TC-website}[Online] (https://github.com/CC-in-the-Cloud/Admin/blob/Working/ESR/CC_in_the_Cloud_ESR.pdf)
-* [#2]#[2]# {TC-longname} Technical Community - Key Persons and Affiliations, {TC-website}[Online] (link when available)
+* [#1]#[1]# {TC-longname} Essential Security Requirements, https://cc-in-the-cloud.github.io/ESR/CC_in_the_Cloud_ESR.html[Online]
+* [#2]#[2]# {TC-longname} Technical Community - Key Persons and Affiliations, https://cc-in-the-cloud.github.io/ITC/KeyMember.html[Online]
 * [#3]#[3]# Establishing International Technical Communities and collaborative Protection Profiles development, https://www.commoncriteriaportal.org/files/supdocs/CCMC-015-v1.0-2023-Oct-30-Final-Establishing_iTCs_and_Developing_cPPs.pdf[Online]
-* [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/publication/PUB100397.html[Online]
-* [#5]#[5]#  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&Language=ENGLISH&Context=FomerScriptedSearch&languageUIChanged=true#[Online Search]
+* [#4]#[4]# ISO CODE OF CONDUCT FOR THE TECHNICAL WORK, https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100011.pdf[Online]
+* [#5]#[5]#  DECISIONS AND RECOMMENDATIONS ADOPTED BY THE WTO COMMITTEE ON TECHNICAL BARRIERS TO TRADE SINCE 1 JANUARY 1995, https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?Query=(%20@Symbol=%20g/tbt/1/rev*)&Language=ENGLISH&Context=FomerScriptedSearch&languageUIChanged=true#[Online]
 * [#6]#[6]# Contributor Covenant Code of Conduct,  https://www.contributor-covenant.org/version/2/0/code_of_conduct/[Online]
