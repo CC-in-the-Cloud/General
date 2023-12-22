@@ -279,7 +279,7 @@ The record manager is a role that primarily supports the {TC-shortname} Chair. U
 Technical Editors serve as the primary author for the TC work products: create and update documents to reflect the decisions of the {TC-shortname}, post drafts for access by {TC-shortname} members, and finalize drafts for approval. 
 
 === Core SMEs
-Core Subject Matter Experts comprise a team that develops the initial drafts of cPPs and SDs, evaluates issues and comments, and proposes appropriate and equitable resolutions to the {TC-shortname}. The Core SME team is composed of a balance of industry, end user, and Common Criteria experts who can work effectively with the rest of the {TC-shortname} members. Core SMEs should have adequate competence, time and resources available in order to contribute to provide timely resolutions to the {TC-shortname}.
+Core Subject Matter Experts comprise a team that develops the initial drafts of work products, evaluates issues and comments, and proposes appropriate and equitable resolutions to the {TC-shortname}. The Core SME team is composed of a balance of industry, end user, and Common Criteria experts who can work effectively with the rest of the {TC-shortname} members. Core SMEs should have adequate competence, time and resources available in order to contribute to provide timely resolutions to the {TC-shortname}.
 
 ==== Industry SMEs
 Industry SMEs provide knowledge of the technology area and experience with product evaluation. They also help make appropriate decisions based on their practical knowledge of markets, customer expectations, implementation, and costs. 

@@ -1,78 +1,57 @@
-= Common Criteria in the Cloud Membership <DATE>
-:showtitle:
-:table-caption: Table
-:revnumber: 0.1
-:revdate: 2022-03-16
+= Common Criteria in the Cloud Key Persons
 
-:iTC-longname: Common Criteria in the Cloud iTC
-:iTC-shortname: Cloud-iTC
+:table-caption: Table
+:revnumber: 1.1
+:revdate: 2023-12-22
+
+:iTC-longname: Common Criteria in the Cloud TC
+:iTC-shortname: Cloud-TC
 :iTC-email: TBD
 :iTC-website: https://ccinthecloud.github.io/
 :iTC-GitHub: https://github.com/CC-in-the-Cloud/Admin
 
-== CC in the Cloud Membership
-[cols=".^2,.^2,.^2,.^2,.^1",options="header"]
+== CC in the Key Persons
+[cols=".^2,.^2,.^2,.^2",options="header"]
 |====
 
 |Position
 |Name
 |Organization
 |Type
-|Joined
 
 |Chair
-|J
-|Mr. Coffee
+|Joshua Brickman
+|Oracle
 |Vendor
-|1/1/2019
 
 |Deputy Chair
-|
-|
-|Scheme
-|
-
-|CCDB Liason
-|
-|
-|
-|
+|Greg Youst
+|DISA
+|End User
 
 |ISO Liason
-|
-|
-|
-|
+|Tyrone Stoddard
+|Oracle
+|Vendor
 
-|Record Manager
-|
-|
-|
-|
-
-|Technical Editor
-|
-|
-|
-|
-
-|Member
-|
-|
-|Lab
-|
-
-|Member
-|
+|CCDB Liason
+|Matt Downey
 |NIAP
 |Scheme
-|
 
-|Non-Voting
-|
-|
-|
-|
+|Record Manager
+|Garrett Nickels
+|Lightship Security
+|Lab
 
+|Technical Editor
+|Brandon Harvey
+|Oracle
+|Vendor
+
+|Key Contributor
+|Justin Fischer
+|Leidos
+|Lab
 
 |====
