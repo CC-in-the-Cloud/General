@@ -23,6 +23,62 @@ This guidance introduces several concepts necessary to facilitate CCitC evaluati
 
 == Contributors
 
+=== Lead Author(s)
+
+Joshua Brickman (Chair) +
+Matt Downey (CCUF liaison, NIAP Technical Lead) +
+Brandon Harvey  (Technical Writer) +
+Justin Fisher (Pilot sub-group leader) +
+Garrett Nickel (Record Keeper) +
+Jade Stewart (NIAP Liaison) +
+Tyrone Stodart (ISO Liaison) +
+Greg Youst (Deputy Chair) +
+
+=== Contributors
+
+Ferid Ahmed +
+Michael Angelo +
+Josh Anzaroot +
+Tom Benkart +
+Maureen Barry +
+Jennifer Brady +
+Chris Brych +
+Dani Chappell +
+Tim Chevalier +
+Cory Clark +
+Erin Connor +
+Brad Dispensa +
+Jim Donndelinger +
+Chris Enterline +
+Roger French +
+Tom Gallagher +
+Shaun Geddis +
+Anne Gugel +
+Randy Heimann +
+Jenn Honkofsky +
+Anantha Kandiah +
+Swapna Katikaneni +
+Dylan Kehs +
+Thibaut Marconnet +
+Jerome Myers +
+Andy Nissan +
+Wolfgang Peter +
+David Rumley +
+Alicia Squires +
+
+=== Reviewers
+
+King Ables +
+Kelvert Ballantyne +
+Shaun Gilmore +
+Mike Grimm +
+Matt Keller +
+Kristy Knowles +
+Ben Jacoby +
+Elaine Newton +
+Nithya Rachamadugu +
+Simon Rix +
+
 == Cloud Composition
 
 When conducting Common Criteria evaluations for IT products in cloud environments, it is crucial to recognize that the Target of Evaluation (TOE) will often encompass products designed for the cloud's unique demands. In this context, the TOE is most likely to consist of products that are capable of "lifting and shifting," meaning they can seamlessly migrate and operate in cloud environments. These types of TOEs typically fall within the three primary cloud architecture models: Software as a Service (SaaS), Platform as a Service (PaaS), or Infrastructure as a Service (IaaS). 
