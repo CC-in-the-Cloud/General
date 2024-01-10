@@ -81,7 +81,7 @@ Simon Rix +
 
 == Cloud Composition
 
-When conducting Common Criteria evaluations for IT products in cloud environments, it is crucial to recognize that the Target of Evaluation (TOE) will often encompass products designed for the cloud's unique demands. In this context, the TOE is most likely to consist of products that are capable of "lifting and shifting," meaning they can seamlessly migrate and operate in cloud environments. These types of TOEs typically fall within the three primary cloud architecture models: Software as a Service (SaaS), Platform as a Service (PaaS), or Infrastructure as a Service (IaaS). 
+When conducting Common Criteria evaluations for IT products in cloud environments, it is crucial to recognize that the Target of Evaluation (TOE) may be presented in a variety of deployment models. TOE products can be specifically designed to operate within the cloud natively, utilizing services and constructs that are only available within the cloud environment. They can also be deployed as self-contained products that are simply hosted on cloud infrastructure, also known as “lift and shift." They may be a hybrid of both methods. The TOE will typically fall within the three primary cloud architecture models: Software as a Service (SaaS), Platform as a Service (PaaS), or Infrastructure as a Service (IaaS).
 
 To further advance this concept, the following cloud architectures may be composed of Protection Profiles that are extended for a cloud context as shown below:
 
@@ -170,7 +170,9 @@ By adapting the TSS and AGD requirements in this manner, the authors of protecti
 
 The following diagrams illustrate the relationships between these entities: 
 
-While there may be be functional differences between a TOE and a TOE platform in a cloud OE, the relationship between the TOE and the TOE Platform to provide SFR enforcing functionality is not changed for cloud-based evaluations. However, the TOE Platform will require a hosting environment provide by the Trusted Platform. 
+While there may be be functional differences between a TOE and a TOE platform in a cloud OE, the relationship between the TOE and the TOE Platform to provide SFR enforcing functionality is not changed for cloud-based evaluations. However, the TOE Platform will require a hosting environment provide by the Trusted Platform.
+
+Additionally, there may be such cases which may require PP authors to provide additional selections for invoking either the TOE Platform or the Trusted Platform for SFR enforcing functionality.
 
 .TOEPlatform
 image::images/TOEPlatform.png[ToE Platform Example]
@@ -190,7 +192,7 @@ If the TOE is a General Purpose Compute Platform (GPCP) then no TOE Platform is 
 
 Evaluation Authorities for schemes should review carefully this guidance and any PP that is being used for an evaluation of a TOE in a cloud environment, and confirm that there are no conflicts with existing Evaluation Authority policies (for example, a requirement for the evaluator have the the TOE physically located or tested in their own facility). Although physical control is not pragmatic for cloud evaluations, this does not mean that the lab is not in control of the cloud testing environment. If a lab provisions cloud platforms for Common Criteria testing purposes, the appropriate controls for accreditation can be extended to their cloud testing environment.
 
-Evaluation Authorities should consider to provide their own policies regarding Trusted Platform acceptance criteria in order to support the evaluation efforts. The Protection Profile should provide guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the Security Objectives of the Operating Environment of the PP. This may likely include a mapping to Cloud Authorization Scheme(s) that the Evaluation Authority may recognize as providing assurance that the requirements are met, and may provide input for an Evaluation Authority policy.
+Evaluation Authorities should consider to provide their own policies regarding Trusted Platform acceptance criteria in order to support the evaluation efforts. The Protection Profile should provide guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the Security Objectives of the Operating Environment of the PP. This may likely include a mapping to Cloud Authorization Scheme(s) that the Evaluation Authority may recognize as providing assurance that the security objective of the operating environment are met, and may provide input for an Evaluation Authority policy.
 
 Evaluation Authorities should review the evaluator evidence provided regarding the establishment of their test environment for the cloud. The evidence provided by the evaluator (that their environment establishes controls provided by the CSP to ensure effective isolation equivalent to on-prem testing to maintain the integrity of results) should be carefully reviewed.
 
