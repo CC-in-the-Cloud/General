@@ -100,7 +100,7 @@ In this example, the TOE relies on a TOE platform from an OS vendor which is hos
 
 === Platform as a Service (PaaS)
 [options=unbreakable]
-This topology enables the deployment of customer applications onto cloud infrastructure(s). The TOE does not manage or control the underlying cloud infrastructure(s) including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
+This topology enables the deployment of applications onto cloud infrastructure(s). The TOE does not manage or control the underlying cloud infrastructure(s) including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
 
 
 The following PPs are examples which might be extended with CCitC guidance to cover the above use case: PP_OS, cPP_ND
@@ -129,11 +129,11 @@ In this example, the TOE provided by the IaaS provider relies on a cloud operati
 
 In the realm of cloud security, the shared security model is a fundamental concept that defines the division of responsibilities between the CSP and their customers within a cloud environment. This model acknowledges that while the CSP is responsible for securing the underlying cloud infrastructure, and the customer bears the responsibility of securing their applications, data, and configurations within that infrastructure based on the service model. The shared security model recognizes that security is a collaborative effort, where both the CSP and the customer play crucial roles. This model is widely embraced in various cloud security frameworks, as it provides a clear model for understanding and allocating security responsibilities in a cloud environment. By delineating these responsibilities, the shared security model helps establish trust, accountability, and transparency between the CSP and the customer, ensuring a holistic approach to cloud security.
 
-This concept is useful for CCitC evaluations as well and mirrors the relationship found with the TOE and TOE platform. To emphasize the enhanced requirements for Cloud Infrastructure we will refer to the shared responsibility model in terms of the TOE and the Trusted Platform.
+This concept is useful for CCitC evaluations as well and mirrors the relationship found with the TOE and TOE platform. To emphasize the enhanced requirements for Cloud Infrastructure we will refer to the shared responsibility model in terms of the TOE and the <<Trusted Platform>>.
 
 === Responsibilities
 
-In the majority of use cases the TOE administrator (the CSP customer) is responsible for the secure utilization and customization of the cloud services provided by the CSP. This includes managing user access controls, configuring security settings, and implementing appropriate security measures aligned with their specific requirements. These elements may map appropriately to existing SFRs such as management functions defined by the FMT class in CC Part 2 (FMT_SMF) with or without refinement for CCitC. The TOE administrator ensures that the TOE (cloud tenant) operates securely within the parameters set by the CSP (TOE latform).
+In the majority of use cases the TOE administrator (the customer) is responsible for the secure utilization and customization of the cloud services provided by the CSP. This includes managing user access controls, configuring security settings, and implementing appropriate security measures aligned with their specific requirements. These elements may map appropriately to existing SFRs such as management functions defined by the FMT class in CC Part 2 (FMT_SMF) with or without refinement for CCitC. The TOE administrator ensures that the TOE (cloud tenant) operates securely within the parameters set by the CSP (TOE Platform).
 
 While the CSP maintains the security and availability of the TOE platform, the TOE administrator (customer) is assumed to be tasked with safeguarding their applications, data, and configurations within the cloud environment. They actively manage security controls, such as authentication mechanisms, encryption protocols, and network access policies, to protect their assets and mitigate potential risks.
 
@@ -169,7 +169,7 @@ The TSS and AGD requirements modifications provide clear and accessible guidance
 
 The following diagrams illustrate the relationships among these entities: 
 
-While there may be be functional differences between a TOE and a TOE platform in a cloud OE, the relationship between the two in providing SFR enforcing functionality is not changed for cloud-based evaluations. However, the TOE platform will require a hosting environment provide by the trusted platform.
+While there may be be functional differences between a TOE and a TOE platform in a cloud OE, the relationship between the two in providing SFR enforcing functionality is not changed for cloud-based evaluations. However, the TOE platform will require a hosting environment provided by the trusted platform.
 
 Additionally, there may be such cases which may require PP authors to provide additional selections for invoking either the TOE platform or the trusted platform for SFR enforcing functionality.
 
@@ -272,13 +272,13 @@ Applicable guidance shall be followed when labeling OEs such as:
 * TOE version XX.YY on Hypervisor version X.Y on CPU model Z
 * TOE version XX.YY on Hypervisor version X.Y on OS version X.Y on CPU model Z
 
-TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made such as when all entropy is utilizing a Jitter entropy source which exists only in the OS Userland. However, if the TOE is relying on the TOE platform for any SFR enforcing functionality, then the TOE must be able to conclusively demonstrate knowledge of the underlying TOE platform for this functionality.
+TOE's that are being evaluated in a cloud context are expected to be able to conclusively demonstrate knowledge of the underlying TOE platform for these specifics. If SFR enforcing functionality is agnostic to the TOE platform, such equivalency claims may be made such as when all entropy is utilizing a Jitter entropy source which exists only in the OS User Space. However, if the TOE is relying on the TOE platform for any SFR enforcing functionality, then the TOE must be able to conclusively demonstrate knowledge of the underlying TOE platform for this functionality.
 
-At this time, if a TOE is reliant on the OE for cryptographic operations, there is no need to leverage the related collateral that explicitly states operation for a given Cloud Provider. This equivalence rationale should be considered when a TOE developer is reliant upon a CSP for algorithm certification and many TOE platforms are claimed.
+At this time, if a TOE is reliant on the OE for cryptographic operations, there is no need to leverage collateral, such as cyptrographic module validations, that explicitly states operation for a Cloud Provider. This equivalence rationale should be considered when a TOE developer is reliant upon a CSP for algorithm certification and many TOE platforms are claimed.
 
 == Protection Profile Considerations
 
-The following section provides a high-level overview for adapting CCiTC methodology to existing PPs, including examples where appropriate. This approach is predicated on determining the suitability of a PP for cloud evaluations, considerations for how the security problem definition, security objectives, and security requirements are affected by cloud evaluations, and how these evaluations may relate to other cloud authorization schemes recognized by national certification bodies.
+The following section provides a high-level overview for adapting CCiTC methodology to existing PPs, including examples where appropriate. This approach is predicated on determining the suitability of a PP for cloud evaluations. Considerations were given to the security problem definition, security objectives, and security requirements are affected by cloud evaluations, and how these evaluations may relate to other cloud authorization schemes recognized by national certification bodies.
 
 === General Procedure for Deriving Cloud Evaluation Guidance for a Protection Profile or PP-Module
 
@@ -315,7 +315,7 @@ Once these questions have been answered for a particular cloud evaluation method
 Complete a mapping document (e.g. spreadsheet) that lists out each of the following items in the PP or PP-Module being examined:
 * SFRs
 * Assumptions 
-* SARs
+* Security Assurance Requirements (SAR)s
 
 A template for the mapping document along with a completed sample for the MDM PP is included as an appendix to this document.
 
@@ -382,7 +382,7 @@ In the context of software, if one reviews the SPD and can determine that all as
 
 Many PP assumptions are similar if not identical among PPs. For example, assumptions regarding trusted administrators or physical protection of the TOE are generally present in PPs with very similar wording among them. The MDM PP is no exception. The decomposition and mappings done for this PP could potentially be usable in other PPs without needing to come up with separate rationale for what is essentially the same process.
 
-Additionally, there are some assumptions (addressed by operational environment objectives) that are specific to cloud environments and do not apply to on-premise use cases. Existing PPs, therefore, do not have any reference to these since they were not written with cloud evaluations in mind. The CCitC technical community has compiled some sample assumptions and environmental objectives that could be considered for inclusion in PPs that support cloud evaluations; these are listed in <<Appendix A: Threats, Assumptions and Security Objectives for each PP.>>  below. Note that this approach is similar to the NDcPP, which has assumptions and environmental security objectives that only apply in certain situations, such as when the TOE is distributed or when the TOE is virtualized. 
+Additionally, there are some assumptions (addressed by operational environment objectives) that are specific to cloud environments and do not apply to on-premise use cases. Existing PPs, therefore, do not have any reference to these since they were not written with cloud evaluations in mind. The CCitC technical community has compiled some sample assumptions and environmental objectives that could be considered for inclusion in PPs that support cloud evaluations; these are listed in <<Appendix A: Threats, Assumptions and Security Objectives for each PP>> below. Note that this approach is similar to the NDcPP, which has assumptions and environmental security objectives that only apply in certain situations, such as when the TOE is distributed or when the TOE is virtualized. 
 
 Note that the shared security model must be considered when looking at assumptions. Responsibility for secure deployment and configuration of the TOE may involve collaboration of up to four different groups (infrastructure vendor, platform vendor, software vendor, and end user). The roles and responsibilities must be considered on a PP or PP-Module level because the trusted personnel will differ based on what layer of the cloud stack the TOE sits on. This may vary from vendor to vendor or from product to product. For example, a CSP deploying its own software on its own cloud infrastructure may only have a single point of contact on their end and there are no cross-organizational concerns.
 
@@ -401,21 +401,21 @@ On an individual SFR level, if the method by which the TOE meets an SFR differs 
 
 * Class AGD (Guidance) – Preparatory procedures will differ significantly between cloud-based and on-premise TOEs. The PP author must provide guidance for the preparatory procedures that are needed for the TOE to be deployed in its claimed cloud environments. This may involve separate sections for separate CSPs if multiple CSPs are claimed in the evaluated configuration. The guidance may assume that the intended reader has basic familiarity with deploying cloud products; the PP author’s focus should be to ensure that developers understand the need for the guidance to instruct users on how to replicate the evaluated configuration to the greatest extent possible.
 
-* Class ALC (Lifecycle) – The TOE and its operational environment cannot be assumed to be static in a cloud environment. Identification of both the TOE and its operational environment is therefore critical for the user to understand the tradeoffs among compliance with the evaluated configuration of the TOE and any subsequent security or feature enhancements that may be made after it has been certified. PP authors are encouraged to include lifecycle evaluation activities for how the TOE and its environmental dependencies are identified in the evaluated configuration and how updates are delivered both to the TOE and to its underlying operational environment. It may be the case that the CSP is responsible for back-end updates to the TOE’s operational environment. The PP author should emphasize that this be clearly expressed in the life cycle documentation so that the evaluation laboratory can evaluate how the TOE developer takes these environmental changes into consideration when managing the product's life cycle and how such changes are communicated to end users.
+* Class ALC (Lifecycle) – The TOE and its operational environment cannot be assumed to be static in a cloud environment. Identification of both the TOE and its operational environment is critical for the user to understand the tradeoffs among compliance with the evaluated configuration of the TOE and any subsequent security or feature enhancements that may be made after it has been certified. PP authors are encouraged to include lifecycle evaluation activities for how the TOE and its environmental dependencies are identified in the evaluated configuration and how updates are delivered both to the TOE and to its underlying operational environment. It may be the case that the CSP is responsible for back-end updates to the TOE’s operational environment. The PP author should emphasize that this be clearly expressed in the life cycle documentation so that the evaluation laboratory can evaluate how the TOE developer takes these environmental changes into consideration when managing the product's life cycle and how such changes are communicated to end users.
 
 * Class ATE (Testing) – As discussed previously, functional testing of SFR claims may or may not be different when the TOE is evaluated in the cloud. For cases where on-premise and cloud evaluation of a given SFR may differ, the PP author is expected to provide clear guidance as to the evaluation activities that are different for each use case.
 
-* Class AVA (Vulnerability Analysis) – A vulnerability analysis of a cloud product may involve many dependencies that the TOE relies on in a way that an on-premise TOE may not be able to. Frequent changes to environmental configuration on the CSP side may not be in the control of end users and will continually change the versions of dependent components that the TOE relies upon. PP authors should provide guidance to evaluators to identify the dependencies that the TOE has in the cloud (for each claimed CSP) and conduct vulnerability research on the latest versions of those dependencies, as well as any potential vulnerabilities that are specific to the claimed CSPs. Additionally, guidance for penetration testing should be given with the understanding that the TOE may not be deployed in a fully closed environment and as such there may be limitation on the rules of engagement that must be followed with the CSP. It is expected that evaluation schemes will provide guidance on the penetration test efforts that will be accepted for cloud evaluations, and PP authors should incorporate such guidance into PPs for consistency.
+* Class AVA (Vulnerability Analysis) – A vulnerability analysis of a cloud product may involve many dependencies that the TOE relies on in a way that an on-premise TOE may not be able to. Frequent changes to environmental configuration on the CSP side may not be in the control of end users and will continually change the versions of dependent components that the TOE relies upon. PP authors should provide guidance to evaluators to identify the dependencies that the TOE has in the cloud (for each claimed CSP) and conduct vulnerability research on the latest versions of those dependencies, as well as any potential vulnerabilities that are specific to the claimed CSPs. Additionally, guidance for penetration testing should be given with the understanding that the TOE may not be deployed in a fully closed environment and as such there may be limitations on the rules of engagement that must be followed with the CSP. It is expected that evaluation schemes will provide guidance on the penetration test efforts that will be accepted for cloud evaluations, and PP authors should incorporate such guidance into PPs for consistency.
 
 The high-level takeaways from this are as follows:
 
-* The same notion of needing the operational environment to be a “trusted platform” applies here – deploying the TOE in a cloud platform and infrastructure that has had some sort of third-party authorization is important because it helps the evaluator understand the extent to which the TOE relies on the platform and gives assurance that a vulnerable platform does not introduce any significant potential exploits of the TOE itself.
+* The same notion of needing the operational environment to be a “trusted platform” applies here – deploying the TOE in a cloud platform and infrastructure has undergone a third-party authorization is important because it helps the evaluator understand the extent to which the TOE relies on the platform and gives assurance that a vulnerable platform does not introduce any significant potential exploits of the TOE itself.
 
 * The impact of a cloud deployment on how the TOE is evaluated is generally not going to be specific to a particular PP or PP-Configuration; following general CCitC guidance for this should be suitable in most cases.
 
 ==== Map to Other Applicable Cloud Programs
 
-Once the assumptions for the TOE’s operational environment are mapped to the referenced cloud certification scheme for determination of what can be considered a “trusted platform” for the TOE and the SFRs and SARs have been assessed to determine how cloud deployment affects the certification process, the output of this can be mapped to other cloud certification programs.
+Once the assumptions for the TOE’s operational environment are mapped to the referenced cloud certification scheme to determine what can be considered a 'trusted platform' for the TOE, and the SFRs and SARs have been assessed to determine how cloud deployment affects the certification process. The output of this assessment can be mapped to other cloud certification programs.
 
 If starting with FedRAMP, a non-US cloud certification scheme will not use NIST SP 800-53 to associate security controls with required system behavior, but such a scheme would likely have significant overlap, just with a different naming scheme. 
 
@@ -433,9 +433,9 @@ This chapter describes security problems in terms of threats, assumptions and or
 
 Appendix A details the threats, assumptions, security objectives for the TOE, and security objectives for the operational environment for a number of PPs of interest.
 
-In Appendix B specific aspects of the assumptions and security objectives for the operational environment were considered to determine whether assumptions made for each PP of interest are consistent and could be satisfied by a cloud environment. The analysis found that the assumptions and security objectives for the OE for PPs of interest are consistent: There are generally only three categories: Platform Integrity, Proper (Non-Malicious User) and Proper (Trusted) Admin. The virtualization PP additionally considers Physical Security but this is not considered by the other PPs.
+In Appendix B specific aspects of the assumptions and security objectives for the operational environment were considered to determine whether assumptions made for each PP of interest are consistent and could be satisfied by a cloud environment. The analysis found that the assumptions and security objectives for the OE for PPs of interest are consistent: There are generally only three categories: Platform Integrity, Proper (Non-Malicious) User and Proper (Trusted) Admin. The virtualization PP additionally considers Physical Security but this is not considered by the other PPs.
 
-It is not necessarily expected that a cloud environment will introduce new threats, assumptions or organizational security policies, although the PP writers may wish to consider whether existing threats, assumptions and organization security policies should be refined to provide more explanation in the case of cloud.  For example, threat models may consider the impact of potential ubiquitous access and multi-tenancy to either add to existing threats, assumptions and organizational security policies or refine them.
+It is not expected that a cloud environment will introduce new threats, assumptions or organizational security policies. However, the PP writers may wish to consider whether existing threats, assumptions and organization security policies should be refined to provide more explanation in the case of cloud.  For example, threat models may consider the impact of potential ubiquitous access and multi-tenancy to either add to existing threats, assumptions and organizational security policies or refine them.
 
 ==== Security Objectives
 
@@ -455,7 +455,14 @@ While cloud authorization of the environment is an essential part of gaining suf
 
 On a general level, the CC in the Cloud technical community is developing guidance documentation that should be usable across all  CC cloud evaluations that covers the cloud-specific requirements for operational and preparatory procedures. Such guidance should be applied uniformly across all PPs to ensure consistent presentation across technology types.
 
-On a per-PP level, it will be necessary for technical communities to determine the underlying assumptions that the TOE relies on a cloud service provider to satisfy, the extent to which existing SFRs can be tested in a cloud setting, any workarounds or updates to the required activities for those tests that cannot be done strictly as written, and any cloud-specific SFRs that need to be added as implementation-dependent requirements to ensure that cloud-specific threats are adequately mitigated. This information may depend on the specific cloud service provider being used, so consultation with a wide variety of software vendors, cloud service providers, and end users is recommended to ensure the broadest possible set of use cases are being considered.
+At a per-PP level, technical communities will need to determine several key factors such as:
+
+* The underlying assumptions that the TOE relies on a cloud service provider to satisfy. 
+* The extent to which existing SFRs can be tested in a cloud setting.
+* Any workarounds or updates required for tests that cannot be strictly performed as written. 
+* Any cloud-specific SFRs that need to be added as implementation-dependent requirements. 
+
+This ensures that cloud-specific threats are adequately mitigated.
 
 Security best practices are well-established principles and the cloud authorization schemes used by different nations should have significant overlap. Once the applicability of one authorization scheme is assessed as a reference, the process for adapting this to other such schemes should be straightforward. Ultimately the buy-in of individual CCRA participants will affect the cloud authorization schemes that need to be assessed for a given PP or PP-Module.
 
@@ -509,7 +516,7 @@ The trusted platform ensures that there is no unauthorized access possible for s
 === A.TRUSTED_PLATFORM_SERVICE
 The TOE relies upon a trustworthy platform and local network from which it provides administrative capabilities.
 
-The TOE relies on this platform to provide a range of security-related services including reliable timestamps, user and group account management, user authentication, user authorization, logon and logout services via a local or network directory service, remote access control, and audit log management services to include offloading of audit logs to other servers. The platform is expected to be configured specifically to provide TOE services, employing features such as a host-based firewall, which limits its network role to providing TOE functionality.
+The TOE relies on this platform to provide a range of security-related services including reliable timestamps, user and group account management, user authentication, user authorization, logon and logout services via a local or network directory service, remote access control, and audit log management services to include offloading of audit logs to other servers. The platform is expected to be configured specifically to provide TOE services, such as a host-based firewall, which limits its network role to providing TOE functionality.
 
 === OE.TRUSTED_PLATFORM_SERVICE
 The TOE relies upon a trustworthy computing platform for its execution. This includes the underlying operating system and any discrete execution environment provided to the TOE. The trusted platform service shall be managed according to known, accepted and trusted policies. Any information provided by the trusted platform and used to support user authentication and authorization used by the TOE is correct and up to date.
@@ -666,6 +673,14 @@ A set of related IT components provided in support of one or more business proce
 
 [NISTIR 7693]
 
+=== SAR
+
+Security Assurance Requirement as per CC Part 3.
+
+=== SFR
+
+Security Functional Requirement as per CC Part 2.
+
 === Trusted Platform
 
 A Trusted Platform is the underlying hosting environment for the TOE and/or TOE platform that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
@@ -673,7 +688,7 @@ A Trusted Platform is the underlying hosting environment for the TOE and/or TOE 
 * The evaluation authority determines sufficiency and may publish a policy.
 * Components of a platform may include, e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.
 
-=== TOE platform
+=== TOE Platform
 
 A TOE platform is the underlying combination of software, firmware, or hardware required for TOE operation that is sufficient to meet the assumptions and environmental security objectives of the PPs and modules the TOE claims.
 
@@ -905,7 +920,7 @@ It can be observed that for each PP higher in the stack, it may rely on security
 
 image::images/ppstack.png[]
 
-The assumptions and security objectives for the OE for the three PP’s in this example map well to each other. There are generally only three categories: Platform Integrity, Proper (Non-Malicious User) and Proper (Trusted) Admin. The virtualization PP considers also Physical Security but this not considered by the other PPs.
+The assumptions and security objectives for the OE for the three PP’s in this example map well to each other. There are generally only three categories: Platform Integrity, Proper (Non-Malicious) User and Proper (Trusted) Admin. The virtualization PP considers also Physical Security but this not considered by the other PPs.
 
 In the context of these PP’s, where the assurance level is low (no development security requirements, vulnerability requirements at AVA_VAN.1: public search), the assumptions and Security Objectives for the OE should be sufficiently satisfied by any suitable cloud security certification process recognized by a national government supporting Common Criteria that addresses the environment being used. (e.g. lowest level Fedramp, BSI C5 baseline, ISO27017).
 
