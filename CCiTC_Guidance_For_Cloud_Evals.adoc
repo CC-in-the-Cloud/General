@@ -13,7 +13,7 @@
 
 The Common Criteria (CC) in the Cloud (CCitC) Technical Community has developed this guidance document to provide a complimentary approach that allows for IT product evaluations in cloud operational environments. It includes instructions and examples of how to extend or develop Protection Profiles (PPs) for Target of Evaluation (TOE) deployments in cloud environments. This effort does not replace service-oriented frameworks or Cloud Authorization schemes.
 
-The intended audience of this document are Protection Profile authors (e.g. iTCs and national TCs), but it may also be useful for cloud service providers, evaluators, evaluation authorities (schemes), labs, customers, and other stakeholders of these types of products. The expectations for the roles above are further discussed in section [Roles Clarification].
+The intended audience of this document are Protection Profile authors (e.g. iTCs and national TCs), but it may also be useful for cloud service providers, evaluators, evaluation authorities (schemes), labs, customers, and other stakeholders of these types of products. The expectations for the roles above are further discussed in section <<Roles Clarification>>.
 
 This guidance introduces several concepts necessary to facilitate CCitC evaluations such as the trusted platform, as well as provides guidance to CC testing laboratories and CC schemes. However, it primarily covers three general areas:
 
@@ -23,7 +23,7 @@ This guidance introduces several concepts necessary to facilitate CCitC evaluati
 
 == Contributors
 
-=== Lead Author(s)
+=== Lead Authors
 
 Joshua Brickman (Chair) +
 Matt Downey (CCUF liaison, NIAP Technical Lead) +
@@ -89,9 +89,9 @@ To further advance this concept, the following cloud architectures may be compos
 [options=unbreakable]
 This topology enables the SaaS Application (TOE) to run on cloud infrastructure where it is accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The TOE does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage.
 
-The following PPs are examples which could be extended with CCitC guidance to cover the above use case: cPP_App_SW, cPP_DBMS, PP_MDM.
+The following PPs are examples which could be extended with CCitC guidance to cover the above use case: cPP_App_SW, cPP_DBMS, and PP_MDM.
 
-For example, if the cPP for Application Software were to be used as a baseline, the cloud extensions may be applied to the existing TOE boundary and TOE platform as shown in the following diagram:
+For example, if the cPP for Application Software were to be used as a baseline, the cloud extensions may be applied to the existing TOE boundary and TOE platform as shown in the <<SaaS Example>>.
 
 .SaaS Example
 image::images/saas.png[SaaS Example]
@@ -100,12 +100,12 @@ In this example, the TOE relies on a TOE platform from an OS vendor which is hos
 
 === Platform as a Service (PaaS)
 [options=unbreakable]
-This topology enables the deployment of applications onto cloud infrastructure(s). The TOE does not manage or control the underlying cloud infrastructure(s), including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
+This topology enables the deployment of applications onto cloud infrastructures. The TOE does not manage or control the underlying cloud infrastructures, including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
 
 
-The following PPs are examples which might be extended with CCitC guidance to cover the above use case: PP_OS, cPP_ND
+The following PPs are examples which might be extended with CCitC guidance to cover the above use case: PP_OS, and cPP_ND
 
-For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline, the cloud extensions may be applied to the existing TOE boundary and cloud operational environment as shown in the following diagram:
+For example, if the Protection Profile for General Purpose Operating System were to be used as a baseline, the cloud extensions may be applied to the existing TOE boundary and cloud operational environment as shown in the <<PaaS Example>>:
 
 .PaaS Example
 image::images/paas.png[PaaS Example]
@@ -118,7 +118,7 @@ For this topology, the TOE is capable of provisioning processing, storage, netwo
 
 The following PPs are examples which might be extended with CCitC guidance to cover the above use case: PP_BASE_VIRTUALIZATION.
 
-For example, if the Protection Profile for Virtualization were to be used as a baseline, the cloud extensions may be applied to the existing TOE Boundary and Cloud OE as shown in the following diagram:
+For example, if the Protection Profile for Virtualization were to be used as a baseline, the cloud extensions may be applied to the existing TOE Boundary and Cloud OE as shown in the <<IaaS Example>>:
 
 .IaaS Example
 image::images/iaas.png[IaaS Example]
@@ -137,7 +137,7 @@ In the majority of use cases, the TOE administrator (the customer) is responsibl
 
 While the CSP maintains the security and availability of the TOE platform, the TOE administrator (customer) is assumed to be tasked with safeguarding their applications, data, and configurations within the cloud environment. They actively manage security controls, such as authentication mechanisms, encryption protocols, and network access policies, to protect their assets and mitigate potential risks.
 
-The evaluation and assessment of the shared security model must consider both the TOE administrator (customer) and the TOE platform (CSP). The CSP, as the TOE platform, undergoes evaluation against relevant security standards, certifications, and best practices to demonstrate the effectiveness of the underlying cloud infrastructure's security controls. See the trusted platform section for more information on the required security assessments for the TOE platform.
+The evaluation and assessment of the shared security model must consider both the TOE administrator (customer) and the TOE platform (CSP). The CSP, as the TOE platform, undergoes evaluation against relevant security standards, certifications, and best practices to demonstrate the effectiveness of the underlying cloud infrastructure's security controls. See the <<Trusted Platform>> section for more information on the required security assessments for the TOE platform.
 
 Simultaneously, the TOE administrator (customer) is responsible for implementing and managing security controls and configurations within their own cloud environment. They utilize the provided security features, adhere to the CSP's policies and guidelines, and maintain appropriate security configurations to ensure the confidentiality, integrity, and availability of their data.
 
@@ -161,7 +161,7 @@ Ultimately, by designating the customer as the TOE administrator, the shared sec
 
 To ensure that TOE administrators who are familiar with Common Criteria but may have limited knowledge of cloud infrastructure and security can effectively manage the TOE within the shared security model, it is important for PP authors to adapt the AGD requirements accordingly. This includes providing clear instructions, accessible language, and practical guidance tailored to TOE administrators to help bridge the gap between Common Criteria expertise and the challenges of managing security in a cloud environment.
 
-Additionally, the Security Target (ST) ASE requirements can be modified by PP authors to provide clear explanations that are tailored to evaluators limited knowledge of cloud infrastructure and security. Such modifications may be appropriate for the  TOE Summary Specification (TSS) requirements and should include detailed information such that it is clear how the TSFI or Security Functional Requirement (SFR) enforcing features interact with the TOE platform in a cloud context. 
+Additionally, the Security Target (ST) ASE requirements can be modified by PP authors to provide clear explanations that are tailored to evaluator's limited knowledge of cloud infrastructure and security. Such modifications may be appropriate for the  TOE Summary Specification (TSS) requirements and should include detailed information such that it is clear how the TSFI or Security Functional Requirement (SFR) enforcing features interact with the TOE platform in a cloud context. 
 
 The TSS and AGD requirement's modifications provide clear and accessible guidance, empowering TOE administrators to make informed decisions, configure the TOE securely, and fulfill their security responsibilities effectively.
 
@@ -191,11 +191,11 @@ If the TOE is a general purpose compute platform (GPCP), then no TOE platform is
 
 Scheme evaluation authorities should carefully review this guidance for any PP that is being used for an evaluation of a TOE in a cloud environment and confirm that there are no conflicts with existing evaluation authority policies. For example, a requirement for the evaluator to have the the TOE physically located or tested in their own facility. Although physical control is not practical for cloud evaluations, this does not mean that the lab is not in control of the cloud testing environment. If a lab provisions cloud platforms for testing, the appropriate controls for accreditation can be extended to their cloud testing environment.
 
-Evaluation authorities should consider providing their own policies regarding trusted platform acceptance criteria in order to support the evaluation efforts. The PP should provide guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the security objectives of the OE. This may likely include a mapping to Cloud Authorization Scheme(s) that the evaluation authority may recognize as providing assurance that the security objective for the OE are met, and may provide input for an evaluation authority policy.
+Evaluation authorities should consider providing their own policies regarding trusted platform acceptance criteria in order to support the evaluation efforts. The PP should provide guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the security objectives of the OE. This may likely include a mapping to Cloud Authorization Schemes that the evaluation authority may recognize as providing assurance that the security objective for the OE are met, and may provide input for an evaluation authority policy.
 
 Evaluation authorities should review the evaluator evidence regarding the establishment of their cloud testing environment. This evidence should demonstrate that its environment establishes controls provided by the CSP to ensure effective isolation equivalent to on-prem testing thereby maintaining the integrity of results.
 
-Evaluation authorities should review the PPs guidance around vulnerability testing as well and confirm that the evaluator has considered that guidance. The evaluator evidence should demonstrate that the evaluator was able to utilize cloud attack vectors. (e.g. service portal, management plane, etc. to complete the testing).
+Evaluation authorities should review the PPs guidance around vulnerability testing as well and confirm that the evaluator has considered that guidance. The evaluator evidence should demonstrate that the evaluator was able to use cloud attack vectors. (e.g. service portal, management plane, etc. to complete the testing).
 
 == Guidance for Evaluators
 
@@ -205,7 +205,7 @@ Evaluators should read the PP’s explicit guidance for TOEs in a cloud environm
 
 Evaluators should consider guidance in the Protection Profile regarding testing. An evaluator should prepare cloud testing infrastructure for the evaluation. This environment will establish controls provided by the CSP to ensure effective isolation equivalent to on-prem testing to maintain the integrity of results. This may involve isolated Virtual Local Area Networks (VLANs), Access Control Lists (ACL), Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to evaluation authorities as evaluation deliverables.
 
-Evaluators should also consider vulnerability testing guidance in the PP. It may be the case that when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the evaluators may be required to utilize cloud attack vectors. (e.g. service portal, management plane, etc. to complete the testing).
+Evaluators should also consider vulnerability testing guidance in the PP. It may be the case that when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the evaluators may be required to use cloud attack vectors. (e.g. service portal, management plane, etc. to complete the testing).
 
 == TOE Identification
 
@@ -213,7 +213,7 @@ When deploying a TOE to public cloud infrastructure, proper identification and d
 
 Amazon Web Services (AWS):
 
-In AWS, TOE instances can be provisioned as either bare metal instances or virtual machines (VMs) based on the specific requirements. AWS offers different services such as Amazon Elastic Compute Cloud (EC2) for VM instances and Amazon EC2 Bare Metal instances for bare metal deployment. During the provisioning process, unique identifiers such as instance IDs, resource tags, and naming conventions can be utilized to supplement TOE identification. By assigning descriptive tags and naming conventions, TOE administrators can easily distinguish and manage each TOE instance.
+In AWS, TOE instances can be provisioned as either bare metal instances or virtual machines (VMs) based on the specific requirements. AWS offers different services such as Amazon Elastic Compute Cloud (EC2) for VM instances and Amazon EC2 Bare Metal instances for bare metal deployment. During the provisioning process, unique identifiers such as instance IDs, resource tags, and naming conventions can be used to supplement TOE identification. By assigning descriptive tags and naming conventions, TOE administrators can easily distinguish and manage each TOE instance.
 
 In the examples below, the configuration options for a compute instance are shown:
 
@@ -261,7 +261,7 @@ image::images/azure5.png[Azure Example 5]
 
 Oracle Cloud Infrastructure:
 
-Oracle Cloud Infrastructure (OCI) enables the deployment of TOE instances using Oracle VMs or bare metal compute shapes. OCI assigns a unique OCID (Oracle Cloud Identifier) to each compute instance, serving as a reliable identifier for TOE instances. Administrators can further enhance TOE identification by leveraging OCI's tagging system, which allows the assignment of user-defined tags. These tags can be utilized to categorize and identify TOE instances based on their specific attributes and requirements.
+Oracle Cloud Infrastructure (OCI) enables the deployment of TOE instances using Oracle VMs or bare metal compute shapes. OCI assigns a unique OCID (Oracle Cloud Identifier) to each compute instance, serving as a reliable identifier for TOE instances. Administrators can further enhance TOE identification by leveraging OCI's tagging system, which allows the assignment of user-defined tags. These tags can be used to categorize and identify TOE instances based on their specific attributes and requirements.
 
 The following image displays the first steps in creating a compute instance.
 
@@ -324,7 +324,7 @@ Note that most existing PPs do not currently define cloud use cases. This will n
 
 Note that the mapping activities below may help a technical community determine whether a PP is capable of supporting cloud evaluations as-is or whether changes to that PP would be needed. This in turn would help determine whether evaluating a particular product type in a cloud setting is actually feasible.
 
-==== Choose Cloud Standard/Security Controls for Mapping 
+==== Choose Cloud Standard and Security Controls for Mapping 
 
 Different nations use different standards, methodologies, and assessment schemes for approval of cloud infrastructure, platforms, and software. This may tie into more general security controls that can be examined. For example, the U.S. standard NIST SP 800-53 defines security controls for information systems across physical, personnel, procedural, and technical domains. The FedRAMP authorization process ensures that cloud infrastructure, platforms, and software can be deployed in a manner that satisfies the 800-53 security controls that the program considers to be relevant to cloud systems. FedRAMP defines Low, Moderate, and High assessment baselines with hierarchical controls. In the MDM example discussed throughout this document, FedRAMP will be used as the cloud authorization scheme for reference.
 
@@ -465,7 +465,7 @@ It is not expected that a cloud environment will introduce new threats, assumpti
 
 ==== Security Objectives
 
-Security objectives for the TOE map to security functionalities/services of the TOE itself so it is not expected that changes would be required.
+Security objectives for the TOE map to security functionalities or services of the TOE itself so it is not expected that changes would be required.
 
 As described in Appendix B of this document, the security objectives for the OE provide the general requirements that should be satisfied by the cloud environment. It is proposed that PPs should include an appendix as guidance for an evaluator to assess whether the cloud environment for the TOE satisfies the security objectives for the OE of the PP. In the context of the PP’s highlighted, where the assurance level is low (no development security requirements, vulnerability requirements at AVA_VAN.1: public search), the assumptions and Security Objectives for the OE should be sufficiently satisfied by any suitable cloud security certification process recognized by a national government supporting Common Criteria, that addresses the environment being used (e.g. lowest level FedRAMP, BSI C5 baseline, ISO27017).
 
@@ -496,7 +496,7 @@ Security best practices are well-established principles and the cloud authorizat
 
 In the case where a TOE is hosted on a trusted platform, platform related Assumptions and associated Security Objectives for the OE should be fulfilled by that trusted platform.
 
-Below are a suggested set of Assumptions and security objectives for the OE that may be incorporated into a PP. The table provides a mapping between them and also to <<Cloud Authorization Scheme Controls - Cisco CCF v2.0>>, which provides further mapping to individual cloud authorization schemes. Such mapping in a Protection Profile may be used by an evaluator to confirm that the selected Trusted Platform has been validated by an appropriate Cloud Authorization Scheme to have controls fulfilling the assumptions and associated security objectives for the OE. 
+Below are a suggested set of Assumptions and security objectives for the OE that may be incorporated into a PP. The table provides a mapping between them and also to <<CiscoCCFv2>>, which provides further mapping to individual cloud authorization schemes. Such mapping in a Protection Profile may be used by an evaluator to confirm that the selected Trusted Platform has been validated by an appropriate Cloud Authorization Scheme to have controls fulfilling the assumptions and associated security objectives for the OE. 
 
 Threats are not considered here since they map to security objectives for the TOE rather than assumptions and security objectives for the OE. A threat, as an adverse action performed by a threat agent on an asset, is not contextual to the OE of the TOE. However, an author may choose to review the listed threats detailed in a PP in the context of cloud evaluations.
 
@@ -586,7 +586,7 @@ In general, the AVA methodology shall be sufficient for most TOE types. However,
 
 As we have introduced a trusted platform concept, underlying vulnerabilities in the cloud operational environment can be treated as they are in traditional OE analysis.
 
-However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the means in which evaluators are expected to shift negative test coverage must utilize cloud attack vectors. (e.g. service portal, management plane, etc.)
+However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the means in which evaluators are expected to shift negative test coverage must use cloud attack vectors. (e.g. service portal, management plane, etc.)
 
 
 == Contributors Roles in Product Evaluations
@@ -595,7 +595,7 @@ However, when applicable vulnerabilities are discovered or suspected for TOEs op
 
 ==== Administrator
 
-Entity that has a level of trust with respect to all policies implemented by the TOE security functionality [CC:2022 Part 1]
+Entity that has a level of trust with respect to all policies implemented by the TOE security functionality <<CC2022>>
 
 ==== Customer
 
@@ -603,7 +603,7 @@ A customer of the Cloud Service Provier. Also may be the administrator for the T
 
 ==== Developer
 
-Organization responsible for the development of the TOE [CC:2022 Part 1]
+Organization responsible for the development of the TOE <<CC2022>>
 
 ==== Cloud Service Provider (CSP)
 
@@ -611,11 +611,11 @@ A cloud service provider, or CSP, is an entity that offers some component of clo
 
 ==== Evaluation Authority (EA)
 
-Body operating an evaluation scheme [CC:2022 Part 1]
+Body operating an evaluation scheme <<CC2022>>
 
 ==== Evaluator
 
-Individual assigned to perform evaluations in accordance with a given evaluation standard and associated evaluation methodology [CC:2022 Part 1]
+Individual assigned to perform evaluations in accordance with a given evaluation standard and associated evaluation methodology <<CC2022>>
 
 == Glossary
 
@@ -629,11 +629,15 @@ A bare-metal server is a physical computer server that is used by only one custo
 
 A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
 
-[CNSSI 4009-2015 from NIST SP 800-145]
-[NIST SP 1800-16B under Cloud Computing from NIST SP 800-145]
-[NIST SP 1800-16C under Cloud Computing from NIST SP 800-145]
-[NIST SP 1800-16D under Cloud Computing from NIST SP 800-145]
-[NISTIR 8401]
+<<CNSSI-4009>>
+
+<<SP1800-16B>>
+
+<<SP1800-16C>>
+
+<<SP1800-16D>>
+
+<<NISTIR-8401>>
 
 === Cloud Authorization Scheme
 
@@ -659,13 +663,13 @@ The Hosting Environment consists of everything that is outside the TOE boundary 
 
 The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
 
-[NIST SP 1800-16B under Cloud Computing from NIST SP 800-145]
+<<SP1800-16B>>
 
 === Multi-Cloud
 
 A cloud deployment model in which a cloud service customer uses public cloud services provided by two or more cloud service providers.
 
-[ISO/IEC 27465]
+<<ISO-27465>>
 
 === Multi-Tenant
 
@@ -684,19 +688,19 @@ comprising multiple customers (e.g., business units). It may be owned, managed, 
 operated by the organization, a third party, or some combination of them, and it may exist
 on or off premises.
 
-[NIST SP 800-145]
+<<SP800-145>>
 
 === Product
 
 Part of the equipment (hardware, software, and materials) for which usability is to be specified or evaluated.
 
-[NISTIR 8040 under Product from ISO 9241-11:1998]
+<<NISTIR-8401>>
 
 === Service
 
 A set of related IT components provided in support of one or more business processes.
 
-[NISTIR 7693]
+<<NISTIR-7693>>
 
 === SAR
 
@@ -717,22 +721,23 @@ A Trusted Platform is the underlying hosting environment for the TOE and/or TOE 
 
 A TOE platform is the underlying combination of software, firmware, or hardware required for TOE operation that is sufficient to meet the assumptions and environmental security objectives of the PPs and Modules the TOE claims.
 
-Standalone physical devices will not utilize a TOE platform in its respective protection profiles.
+Standalone physical devices will not use a TOE platform in its respective protection profiles.
 
 == References
 
-* [nist_cloud] NIST SP 800-145 "The NIST Definition of Cloud
-* [CC_2022] Common Criteria for Information Technology Security Evaluation, November 2022
-* [NISTIR 7693] NIST Specification for Asset Identification 1.1
-* [NISTIR 8040 under Product from ISO 9241-11:1998] NIST Measuring the Usability and Security of Permuted Passwords on Mobile Platforms
-* [NIST SP 800-145] The NIST Definition of Cloud Computing
-* [ISO/IEC 27465] Systems and software engineering — Vocabulary
-* [NIST SP 800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
-* [CNSSI 4009-2015 from NIST SP 800-145] Committee on National Security Systems
-* [NIST SP 1800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
-* [NIST SP 1800-16C under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
-* [NIST SP 1800-16D under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
-* [NISTIR 8401] Satellite Ground Segment: Applying the Cybersecurity Framework to Satellite Command and Control
+* [[SP800-145]] [NIST SP 800-145] "The NIST Definition of Cloud"
+* [[CC2022]] [CC_2022] Common Criteria for Information Technology Security Evaluation, November 2022
+* [[CiscoCCF2]] Cisco CCF v2.0 - Cloud Authorization Scheme Controls 
+* [[NISTIR-7693]] [NISTIR 7693] NIST Specification for Asset Identification 1.1
+* [[NISTIR-7693]] [NISTIR 8040 under Product from ISO 9241-11:1998] NIST Measuring the Usability and Security of Permuted Passwords on Mobile Platforms
+* [[SP800-145]] [NIST SP 800-145] The NIST Definition of Cloud Computing
+* [[IS27465]] [ISO/IEC 27465] Systems and software engineering — Vocabulary
+* [[SP800-16B]] [NIST SP 800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [[CNSSI]] [CNSSI 4009-2015 from NIST SP 800-145] Committee on National Security Systems
+* [[SP1800-16B]] [NIST SP 1800-16B under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [[SP1800-16C]] [NIST SP 1800-16C under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [[SP1800-16D]] [NIST SP 1800-16D under Cloud Computing from NIST SP 800-145] Information Technology Security Training Requirements: a Role- and Performance-Based Model
+* [[NISTIR-8401]] [NISTIR 8401] Satellite Ground Segment: Applying the Cybersecurity Framework to Satellite Command and Control
 
 
 == Appendix A: Threats, Assumptions, and Security Objectives for each PP.
