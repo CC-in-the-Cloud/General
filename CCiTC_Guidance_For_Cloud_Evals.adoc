@@ -41,7 +41,7 @@ Greg Youst (Deputy Chair) +
 Justin Fisher +
 
 |Farid Ahmed, PhD +
-Michael Angelo +
+Michael F. Angelo +
 Josh Anzaroot +
 Maureen Barry +
 Tom Benkart +
@@ -235,8 +235,6 @@ Hardware configuration:
 .AWS Example
 image::images/aws3.png[AWS Example 3]
 
-[toclevels=1]
-
 === Azure:
 
 In Azure, TOE instances can be created using Virtual Machines or Azure Dedicated Hosts for bare metal deployment. When deploying VM instances, Azure assigns a unique resource ID, which can be used for TOE identification. Additionally, Azure Resource Manager (ARM) tags and labels can be assigned to each TOE instance for effective identification and categorization. These tags can include metadata such as TOE name, version, environment, or any other relevant information that aids in TOE management and identification.
@@ -266,8 +264,6 @@ VM networking configuration options may also be customized as seen here.
 .Azure Example
 image::images/azure5.png[Azure Example 5]
 
-[toclevel=1]
-
 === Oracle Cloud Infrastructure:
 
 Oracle Cloud Infrastructure (OCI) enables the deployment of TOE instances using Oracle VMs or bare metal compute shapes. OCI assigns a unique OCID (Oracle Cloud Identifier) to each compute instance, serving as a reliable identifier for TOE instances. Administrators can further enhance TOE identification by leveraging OCI's tagging system, which allows the assignment of user-defined tags. These tags can be used to categorize and identify TOE instances based on their specific attributes and requirements.
@@ -288,8 +284,6 @@ Hardware configuration options for creating the instance as a VM or as a Bare Me
 image::images/oci3.png[OCI Example 3]
 
 By utilizing unique identifiers, resource tags, and metadata labels provided by the cloud OE, TOE identification can be effectively established. These identification mechanisms aid in maintaining transparency, control, and management of TOE instances under evaluation. 
-
-[toclevel=1]
 
 == Cloud Equivalence Considerations
 
