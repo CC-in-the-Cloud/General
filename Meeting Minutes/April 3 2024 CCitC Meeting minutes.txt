@@ -1,0 +1,10 @@
+Garrett ooo. Josh taking minutes and running the meeting
+We started by reviewing the minutes from the last meeting.
+Josh noted that OnlyOffice is going away and we need to migrate our material to Git.  Andy suggested a quick zip and dump, no need to go through a major effort to review each item.
+Josh shared that he spoke to Matt Downey and there was a committment for a response this week (after the meeting Matt got back to Josh and we are now listed on the CC Portal).
+Someone needs to do an update to the joint session at the upcoming Virtual CCUF.  Josh asked for volunteers.  Content can be provided from Tyrone's talk at EUCSA and Garrett's at CCUF in the fall.
+Brandon demo'ed the release of CCitC.
+Maureen Barry updated that the DBMS iTC is already looking at CCitC.  Josh advised that the iTC should be sure that the sponsoring nations are on board with the strategy.
+Action: Josh to post Tyrone's talk in the media section of Git.
+Action: Josh to type up minutes.
+Next meeting:  April 17, 2024, 11am ET
