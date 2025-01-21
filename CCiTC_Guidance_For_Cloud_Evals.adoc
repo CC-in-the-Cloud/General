@@ -4,8 +4,8 @@
 :title-logo-image: image:images/CCitCLogo.png[align=center]
 :icons: font
 :toc:
-:revnumber: 1.0
-:revdate: 2024-02-06
+:revnumber: 1.1
+:revdate: 2025-01-21
 
 :iTC-longname: Common Criteria in the Cloud Technical Community 
 :iTC-shortname: CCitC
@@ -302,7 +302,7 @@ By utilizing unique identifiers, resource tags, and metadata labels provided by 
 
 == Cloud Equivalence Considerations
 
-When writing Security Targets, the Cloud Service Offering (CSO) must be detailed in the TOE evaluated configuration and shall include the cloud region and/or applicable datacenter. CSOs offered by the same CSP cannot inherently be assumed to be equivalent. For instance, CSPs may have separate environments among government or commercial customers with differing security capabilities. Therefore, an equivalency rationale must be made to claim multiple CSO compatibility with the evaluated configuration. However, if cloud authorizations exist for multiple regions or datacenters in which a CSO is found to meet similar requirements constistently this may be leveraged as equivalency rationale. In addition, each CC scheme has the option to define a policy for acceptance criteria.
+When writing Security Targets, the Cloud Service Offering (CSO) must be detailed in the TOE evaluated configuration and shall include the cloud region and/or applicable datacenter. CSOs offered by the same CSP cannot inherently be assumed to be equivalent. For instance, CSPs may have separate environments among government or commercial customers with differing security capabilities. Therefore, an equivalency rationale must be made to claim multiple CSO compatibility with the evaluated configuration. However, if cloud authorizations exist for multiple regions or datacenters in which a CSO is found to meet similar requirements consistently this may be leveraged as equivalency rationale. In addition, each CC scheme has the option to define a policy for acceptance criteria.
 
 === CPU Equivalency 
 
@@ -475,7 +475,7 @@ For example, when the TOE is evaluated in the cloud against the MDM PP, addition
 
 This process was followed for the MDM PP to determine how evaluation activities for its SARs would be affected in the case where a TOE is evaluated in the cloud. The following are considerations for PP authors on how to incorporate cloud evaluation guidance into SAR evaluation activities:
 
-* Class ASE (Security Target) – PP authors should make it clear that any cloud-based evaluation of the TOE should clearly state the operational environment in which the TOE was tested to the greatest degree that is feasible. This is expected to include the claimed CSPs, regions, and hardware machine pools where applicable. If the CSP has functionality that the TOE relies on to support the enforcement of its security claims, such as data-at-rest protection, these should be referenced in the physical boundary of the TOE as security-relevant interfaces to the cloud.
+* Class ASE (Security Target) – PP authors should make it clear that any cloud-based evaluation of the TOE should clearly state the operational environment in which the TOE was tested to the greatest degree that is feasible. This is expected to include the claimed CSPs, regions, Compute, Storage and Network configurations where applicable. If the CSP has functionality that the TOE relies on to support the enforcement of its security claims, such as data-at-rest protection, these should be referenced in the physical boundary of the TOE as security-relevant interfaces to the cloud.
 
 ** On an individual SFR level, if the method by which the TOE meets an SFR differs when it is being evaluated in the cloud, the PP author must ensure that evaluation activities have appropriate guidance for what the Security Target needs to document when making these claims. Any implementation-based SFRs that are only claimed when the TOE is evaluated in the cloud or only when it is evaluated on-premise must also indicate clearly when those SFRs are expected to apply.
 
@@ -566,7 +566,7 @@ The Security Administrators for the trusted platform are assumed to be trusted a
 [toclevels=1]
 
 === OE.TRUSTED_PLATFORM_ADMINISTRATOR 
-Trusted Platform Security Administrators are trusted to follow and apply all guidance documentation in a trusted manner. 
+Trusted Platform Security Administrators are trusted to follow and act consistently with, the underlying cloud authorization collateral for Trusted Platforms.
 
 [toclevels=1]
 
@@ -656,7 +656,7 @@ the Assumption      |Cloud Authorization Scheme Controls - Cisco CCF v2.0
 
 === Guidance Documentation
 
-If there is existing documentation for a CSP it should be leveraged. Each CSP that is tested shall provide instructions for deployment of the TOE. Consultants and vendors shall provide necessary supplemental guidance as it supports deploying the TOE as evaluated in the cloud. In addition, functionality that is included but not evaluated shall be clearly identified. 
+If there is existing documentation for a CSP it should be leveraged. Consultants and vendors shall provide necessary supplemental guidance as it supports deploying the TOE as evaluated in the cloud. In addition, functionality that is included but not evaluated shall be clearly identified. 
 
 It is important to distinguish here that not all expected elements of a traditional AGD document can be translated for Cloud Environments. It may be necessary to exclude or supplement these guidance requirements depending on the topology of the product and the cloud service provider. In some circumstances, the Cloud Provider is the only entity that may fulfill these guidance requirements to ensure that the TOE is deployed in the tested configuration.
 
@@ -664,7 +664,7 @@ It is important to distinguish here that not all expected elements of a traditio
 
 As Common Criteria testing requires isolated test environments for each TOE to prevent contamination of test results, testing on Public Cloud infrastructure raises some unique challenges. 
 
-An evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. 
+Not all TOE developers will procure cloud resources for Common Criteria Evaluations and certain CCTL's may wish to facilitate this hosting for cloud evaluations. As such, an evaluator. An evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. Best practices for test environments to expand on these controls for various stakeholders may be forthcoming in future CCiTC publications.
 
 In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable. 
 
@@ -743,10 +743,6 @@ An offering provided to a customer by a Cloud Service Provider.
 
 A cloud service provider, or CSP, is a company that offers some component of cloud computing; typically infrastructure as a service (IaaS), software as a service (SaaS), or platform as a service (PaaS) to other businesses or individuals.
 
-=== Hosting Environment
-
-The Hosting Environment consists of everything that is outside the TOE boundary and is equivalent to the CC term "Operational Environment."
-
 === Hybrid Cloud
 
 The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
@@ -802,7 +798,7 @@ Security Functional Requirement as per CC Part 2.
 
 A Trusted Platform is the underlying hosting environment for the TOE and/or TOE platform that is sufficient to meet the assumptions and environmental security objectives of the PPs and Modules the TOE claims.
 
-* The evaluation authority determines sufficiency and may publish a policy.
+* The evaluation authority determines sufficiency and may publish a policy. See <<Scheme Guidance>>
 * Components of a platform may include, (e.g., an operating system, virtualization hypervisor, network components or switches, and the hardware needed to run the software.)
 
 === TOE Platform
