@@ -457,8 +457,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1><em>CC in the Cloud</em> Guidance for Cloud Evaluations</h1>
 <div class="details">
-<span id="revnumber">version 1.1,</span>
-<span id="revdate">2025-01-21</span>
+<span id="revnumber">version 1.1.1,</span>
+<span id="revdate">2025-02-05</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -827,7 +827,7 @@ Simon Rix<br></p></td>
 <p>By adapting CC requirements like FAU_GEN.1 to encompass log consumption from the CSP, the protection profile enables the virtualized network device to leverage the logging capabilities provided by the CSP while maintaining compliance with CC requirements. This ensures that security-relevant events are properly logged, analyzed, and acted upon in the cloud environment, contributing to a comprehensive security posture for the virtualized network device.</p>
 </div>
 <div class="paragraph">
-<p>Additionally, it may be important to add a third element to the shared security model for CCitC evaluations. This would be the inclusion of the TOE developer in addition to the TOE administrator and CSP. The TOE developer may be responsible for providing TOE security updates, maintaining a trusted update channel and infrastructure, or even applying these updates on behalf of the TOE administrator. This is a common feature with traditional SaaS use cases. In such cases where a TOE developer is expected to share responsibilities in the security model, PP authors must make the appropriate refinements, additions, or iterations of related elements in their PPs. This is a scenario that may be more common in TOE types that are meant to incorporate physical hardware into Cloud Infrastructure such as a Hardware Security Module (HSM). However, CCitC evaluations are not limited to a particular deployment model. Additionally, it is expected that there will be evaluations of TOEs that are integral to a CSPs cloud stack from hardware to application layers.</p>
+<p>Additionally, it may be important to add additional elements to the shared security model for CCitC evaluations. This would be the inclusion of the TOE developer in addition to the TOE administrator and CSP. The TOE developer may be responsible for providing TOE security updates, maintaining a trusted update channel and infrastructure, or even applying these updates on behalf of the TOE administrator. This is a common feature with traditional SaaS use cases. In such cases where a TOE developer is expected to share responsibilities in the security model, PP authors must make the appropriate refinements, additions, or iterations of related elements in their PPs. This is a scenario that may be more common in TOE types that are meant to incorporate physical hardware into Cloud Infrastructure such as a Hardware Security Module (HSM), Hardware Root of Trust, Trusted Execution Environment, etc. However, CCitC evaluations are not limited to a particular deployment model. Additionally, it is expected that there will be evaluations of TOEs that are integral to a CSPs cloud stack from hardware to application layers.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1054,7 +1054,7 @@ Simon Rix<br></p></td>
 <h2 id="_cloud_equivalence_considerations">Cloud Equivalence Considerations</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When writing Security Targets, the Cloud Service Offering (CSO) must be detailed in the TOE evaluated configuration and shall include the cloud region and/or applicable datacenter. CSOs offered by the same CSP cannot inherently be assumed to be equivalent. For instance, CSPs may have separate environments among government or commercial customers with differing security capabilities. Therefore, an equivalency rationale must be made to claim multiple CSO compatibility with the evaluated configuration. However, if cloud authorizations exist for multiple regions or datacenters in which a CSO is found to meet similar requirements consistently this may be leveraged as equivalency rationale. In addition, each CC scheme has the option to define a policy for acceptance criteria.</p>
+<p>When writing Security Targets, the Cloud Service Offering (CSO) must be detailed in the TOE evaluated configuration and shall include the cloud region and/or applicable datacenter. CSOs offered by the same CSP cannot inherently be assumed to be equivalent. For instance, CSPs may have separate environments among government or commercial customers with differing security capabilities. Therefore, an equivalency rationale must be made to claim multiple CSO compatibility with the evaluated configuration. However, if cloud authorizations exist for multiple regions or datacenters in which a CSO is found to meet similar requirements consistently this may be leveraged as equivalency rationale. In addition, each CC scheme has the option to define a policy for equivalency acceptance criteria.</p>
 </div>
 <div class="sect2">
 <h3 id="_cpu_equivalency">CPU Equivalency</h3>
@@ -1418,7 +1418,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <p>Class ALC (Lifecycle) – The TOE and its operational environment cannot be assumed to be static in a cloud environment. Identification of both the TOE and its operational environment is critical for the user to understand the tradeoffs among compliance with the evaluated configuration of the TOE and any subsequent security or feature enhancements that may be made after it has been certified. PP authors are encouraged to include lifecycle evaluation activities for how the TOE and its environmental dependencies are identified in the evaluated configuration and how updates are delivered both to the TOE and to its underlying operational environment. It may be the case that the CSP is responsible for back-end updates to the TOE’s operational environment. The PP author should emphasize that this be clearly expressed in the life cycle documentation so that the evaluation laboratory can evaluate how the TOE developer takes these environmental changes into consideration when managing the product&#8217;s life cycle and how such changes are communicated to end users.</p>
 </li>
 <li>
-<p>Class ATE (Testing) – As discussed previously, functional testing of SFR claims may or may not be different when the TOE is evaluated in the cloud. For cases where on-premise and cloud evaluation of a given SFR may differ, the PP author is expected to provide clear guidance as to the evaluation activities that are different for each use case.</p>
+<p>Class ATE (Testing) – As discussed previously in <a href="#_cloud_equivalence_considerations">Cloud Equivalence Considerations</a>, functional testing of SFR claims may or may not be different when the TOE is evaluated in the cloud. For cases where on-premise and cloud evaluation of a given SFR may differ, the PP author is expected to provide clear guidance as to the evaluation activities that are different for each use case.</p>
 </li>
 <li>
 <p>Class AVA (Vulnerability Analysis) – A vulnerability analysis of a cloud product may involve many dependencies that the TOE relies on in a way that an on-premise TOE may not be able to. Frequent changes to environmental configuration on the CSP side may not be in the control of end users and will continually change the versions of dependent components that the TOE relies upon. PP authors should provide guidance to evaluators to identify the dependencies that the TOE has in the cloud (for each claimed CSP) and conduct vulnerability research on the latest versions of those dependencies, as well as any potential vulnerabilities that are specific to the claimed CSPs. See the <a href="#_scheme_guidance">Scheme Guidance</a> section for specific suggestions regarding penetration testing.</p>
@@ -1472,7 +1472,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <p>In <a href="#Appendix B">[Appendix B]</a>, specific aspects of the assumptions and security objectives for the operational environment were considered to determine whether assumptions made for each PP of interest are consistent and could be satisfied by a cloud environment. The analysis found that the assumptions and security objectives for the OE for PPs of interest are consistent: There are generally only three categories: Platform Integrity, Proper (Non-Malicious) User and Proper (Trusted) Admin. The virtualization PP additionally considers Physical Security but this is not considered by the other PPs.</p>
 </div>
 <div class="paragraph">
-<p>It is not expected that a cloud environment will introduce new threats, assumptions, or organizational security policies. However, the PP writers may wish to consider whether existing threats, assumptions, and organization security policies should be refined to provide more explanation in the case of cloud.  For example, threat models may consider the impact of potential ubiquitous access and multi-tenancy to either add to existing threats, assumptions, and organizational security policies or refine them.</p>
+<p>The PP writers may wish to consider whether existing threats, assumptions, and organization security policies should be refined to provide more explanation in the case of cloud.  For example, threat models may consider the impact of potential ubiquitous access and multi-tenancy to either add to existing threats, assumptions, and organizational security policies or refine them.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1725,7 +1725,7 @@ the Assumption</th>
 <h2 id="_vulnerability_assessment_methodology">Vulnerability Assessment Methodology</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In general, the AVA methodology shall be sufficient for most TOE types. However, certain edge cases may present themselves.</p>
+<p>In general, the AVA methodology shall be sufficient for most TOE types. However, certain edge cases may present themselves. Evaluators must consider the TOE deployment guidance and identify relevant cloud attack vectors. For instance, a very common vulnerability in cloud computing use cases is the improper configuration of block object storage resources to be publicly accessible with no access control.</p>
 </div>
 <div class="paragraph">
 <p>As we have introduced a trusted platform concept, underlying vulnerabilities in the cloud operational environment can be treated as they are in traditional OE analysis.</p>
@@ -2300,8 +2300,8 @@ OE.PROPER_ADMIN</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.1<br>
-Last updated 2025-01-21 14:44:48 -0600
+Version 1.1.1<br>
+Last updated 2025-02-05 08:12:08 -0600
 </div>
 </div>
 </body>
