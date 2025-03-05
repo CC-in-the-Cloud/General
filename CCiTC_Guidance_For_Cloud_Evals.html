@@ -692,16 +692,16 @@ Simon Rix<br></p></td>
 <h2 id="_overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The evolution of Common Criteria (CC) evaluations into cloud environments reflects the growing need to address security in modern IT systems. To effectively support this transition, Protection Profile (PP) authors must focus on aligning their assumptions and objectives for the operational environment with established cloud authorization frameworks such as FedRAMP, C5, and SecNumCloud. These frameworks offer a wealth of operational controls and assurances that are critical for defining trusted platforms and addressing jurisdictional challenges, such as data sovereignty requirements.</p>
+<p>The evolution of Common Criteria (CC) evaluations into cloud environments reflects the growing need to address security in modern IT systems. To effectively support this transition, Protection Profile (PP) authors should focus on aligning their assumptions and objectives for the operational environment with established cloud authorization frameworks such as FedRAMP, C5, and SecNumCloud. These frameworks offer a wealth of operational controls and assurances that are critical for defining trusted platforms and addressing jurisdictional challenges, such as data sovereignty requirements.</p>
 </div>
 <div class="paragraph">
-<p>This alignment is not merely a convenience—it is foundational to the success of cloud-based CC evaluations. Cloud authorization frameworks already validate key aspects of a cloud service provider’s (CSP) operational environment, such as access controls, physical security, and regulatory compliance. By leveraging these existing assurances, PP authors can build a bridge between the operational realities of cloud deployments and the formalized assurance processes required by CC. This integration allows CC schemes to refine their criteria for trusted platforms in a way that is both practical and globally relevant.</p>
+<p>This alignment is not merely a convenience—it is foundational to the success of cloud-based CC evaluations. Cloud authorization frameworks already validate key aspects of a cloud service provider’s (CSP) operational environment, such as access controls, physical security, and regulatory compliance. By leveraging these authorization programs, PP authors can build a bridge between the operational realities of cloud deployments and the formalized assurance processes required by CC. This integration allows CC schemes to refine their criteria for trusted platforms in a way that is both practical and globally relevant.</p>
 </div>
 <div class="paragraph">
-<p>For example, cloud frameworks inherently address concerns such as multi-tenancy, shared resource access, and data residency through their certification processes. When PP authors align their assumptions and objectives with these frameworks, they ensure that CC evaluations consider not only the technical functionality of a Target of Evaluation (TOE) but also the broader operational and compliance context in which it exists. This alignment provides evaluators with a clear, actionable foundation for assessing the suitability of the operational environment while simultaneously addressing critical issues like sovereignty and regulatory adherence.</p>
+<p>For example, cloud frameworks inherently address concerns such as multi-tenancy, shared resource access, and data residency through their authorization processes. When PP authors align their assumptions and objectives with these frameworks, they ensure that CC evaluations consider not only the technical functionality of a Target of Evaluation (TOE) but also the broader operational and compliance context in which it exists. This alignment provides evaluators with a clear, actionable foundation for assessing the suitability of the operational environment while simultaneously addressing critical issues like sovereignty and regulatory adherence.</p>
 </div>
 <div class="paragraph">
-<p>As PPs are updated to support cloud evaluations, they must also account for scenarios where the TOE operates on a trusted platform or forms part of the trusted platform’s internal infrastructure. This is particularly relevant for solutions like virtualization platforms, software-defined networking components, and Operating Systems that are integral to cloud operations. By extending CC evaluations into these areas, PP authors help raise the overall assurance bar for cloud environments.</p>
+<p>As PPs are updated to support cloud evaluations, they must also account for scenarios where the TOE operates on a trusted platform or forms part of the trusted platform’s internal infrastructure. This is particularly relevant for solutions like virtualization platforms, software-defined networking components, and operating systems that are integral to cloud operations. By extending CC evaluations into these areas, PP authors help raise the overall assurance bar for cloud environments.</p>
 </div>
 <div class="paragraph">
 <p>This creates a bidirectional and symbiotic relationship between CC and cloud authorization frameworks. While cloud frameworks validate operational controls and compliance, they lack the formal functional testing that is the foundation of CC evaluations. CC fills this gap by formally evaluating a TOE’s security claims and functional behavior. Together, these approaches complement one another: CC evaluations benefit from the operational assurances provided by cloud frameworks, and cloud frameworks gain credibility through the assurance CC brings to individual components.</p>
@@ -836,13 +836,13 @@ Simon Rix<br></p></td>
 <p>Ultimately, by designating the customer as the TOE administrator, the shared security model reinforces their active involvement in the secure administration of the cloud services. The CSP, as the TOE platform, provides the underlying infrastructure, while the TOE administrator assumes the responsibility of effectively configuring, managing, and monitoring the TOE to meet their specific security objectives and compliance requirements.</p>
 </div>
 <div class="paragraph">
-<p>To ensure that TOE administrators who are familiar with Common Criteria, but may have limited knowledge of cloud infrastructure and security can effectively manage the TOE within the shared security model. Therefore, it is important for PP authors to adapt the AGD requirements accordingly. This includes providing clear instructions, accessible language, and practical guidance tailored to TOE administrators to help bridge the gap between Common Criteria expertise and the challenges of managing security in a cloud environment. This is further described in the <a href="#_determine_impact_on_sars">Determine Impact on SARs</a> section.</p>
+<p>To ensure that TOE administrators who are familiar with Common Criteria (but may have limited knowledge of cloud infrastructure and security) can effectively manage the TOE within the shared security model it is important for PP authors to adapt the AGD requirements accordingly. This includes providing clear instructions, accessible language, and practical guidance tailored to TOE administrators to help bridge the gap between Common Criteria expertise and the challenges of managing security in a cloud environment. This is further described in the <a href="#_determine_impact_on_sars">Determine Impact on SARs</a> section.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_security_target_ase">Security Target (ASE)</h3>
 <div class="paragraph">
-<p>Additionally, the Security Target (ST) ASE requirements can be modified by PP authors to provide clear explanations that are tailored to evaluator&#8217;s limited knowledge of cloud infrastructure and security. Such modifications may be appropriate for the  TOE Summary Specification (TSS) requirements and should include detailed information such that it is clear how the TSFI or Security Functional Requirement (SFR) enforcing features interact with the TOE platform in a cloud context.</p>
+<p>Additionally, the Security Target (ST) ASE requirements can be modified by PP authors to provide clear explanations that are tailored to evaluator&#8217;s limited knowledge of cloud infrastructure and security. Such modifications may be appropriate for the TOE Summary Specification (TSS) requirements and should include detailed information such that it is clear how the TSFI or Security Functional Requirement (SFR) enforcing features interact with the TOE platform in a cloud context.</p>
 </div>
 </div>
 </div>
@@ -1027,7 +1027,7 @@ Simon Rix<br></p></td>
 <div class="title">Figure 14. OCI Example</div>
 </div>
 <div class="paragraph">
-<p>Operating system verion and the corresponding images may be used, or a custom image can be provided.</p>
+<p>Operating system version and the corresponding images may be used, or a custom image can be provided.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1137,7 +1137,7 @@ The proper integration of multiple entropy sources where available</p>
 <h2 id="_protection_profile_considerations">Protection Profile Considerations</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following section provides a high-level overview for adapting CCitC methodology to existing PPs, including examples where appropriate. This approach is predicated on determining the suitability of a PP for cloud evaluations. Considerations were given to the security problem definition, security objectives, and security requirements are affected by cloud evaluations, and how these evaluations may relate to other cloud authorization schemes recognized by national schemes.</p>
+<p>The following section provides a high-level overview for adapting CCitC methodology to existing PPs, including examples where appropriate. This approach is predicated on determining the suitability of a PP for cloud evaluations. Considerations were given to the security problem definition, security objectives, how security requirements are affected by cloud evaluations, and how these evaluations may relate to other cloud authorization schemes recognized by national schemes.</p>
 </div>
 <div class="sect2">
 <h3 id="_procedure_for_deriving_cloud_evaluation_guidance_for_a_pp_or_pp_module">Procedure for Deriving Cloud Evaluation Guidance for a PP or PP-Module</h3>
@@ -1431,7 +1431,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <div class="ulist">
 <ul>
 <li>
-<p>The same notion of needing the operational environment to be a “trusted platform” applies here – deploying the TOE in a cloud platform and infrastructure has undergone a third-party authorization is important because it helps the evaluator understand the extent to which the TOE relies on the platform and assures that a vulnerable platform does not introduce any significant potential exploits of the TOE itself.</p>
+<p>The same notion of needing the operational environment to be a “trusted platform” applies here – deploying the TOE in a cloud platform and infrastructure that has undergone a third-party authorization is important because it helps the evaluator understand the extent to which the TOE relies on the platform and assures that a vulnerable platform does not introduce any significant potential exploits of the TOE itself.</p>
 </li>
 <li>
 <p>The impact of a cloud deployment on how the TOE is evaluated is generally not going to be specific to a particular PP or PP-Configuration; following general CCitC guidance for this should be suitable in most cases.</p>
@@ -1442,7 +1442,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <div class="sect3">
 <h4 id="_map_to_other_applicable_cloud_programs">Map to Other Applicable Cloud Programs</h4>
 <div class="paragraph">
-<p>Once the assumptions for the TOE’s operational environment are mapped to the referenced cloud certification scheme to determine what can be considered a 'trusted platform' for the TOE, and the SFRs and SARs have been assessed to determine how cloud deployment affects the certification process. The output of this assessment can be mapped to various cloud certification programs.</p>
+<p>Once the assumptions for the TOE’s operational environment are mapped to the referenced cloud certification scheme to determine what can be considered a 'trusted platform' for the TOE, and the SFRs and SARs have been assessed to determine how cloud deployment affects the certification process then the output of this assessment can be mapped to various cloud certification programs.</p>
 </div>
 <div class="paragraph">
 <p>If starting with FedRAMP, a non-U.S. cloud certification scheme will not use NIST SP 800-53 to associate security controls with required system behavior, but such a scheme would likely have significant overlap, just with a different naming scheme.</p>
@@ -1496,7 +1496,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <p>However, not all clouds are created equal. Some method is needed to ensure that if the TOE depends on a cloud platform or infrastructure, there is sufficient trust in its security to say they are eligible to be used as the TOE’s operational environment.</p>
 </div>
 <div class="paragraph">
-<p>While cloud authorization of the environment is an essential part of gaining sufficient trust to deploy the TOE in a cloud setting, such an authorization of the TOE itself, may only offer minimal value in terms of evidence reuse. This is due to the specific granularity of CC evidence. However, the benefits may flow the opposite direction; due to the high level of rigor of a CC evaluation, the evidence from such a certification could potentially be reused for a higher-level cloud certification.</p>
+<p>While cloud authorization of the environment is an essential part of gaining sufficient trust to deploy the TOE in a cloud setting, such an authorization of the TOE itself, may only offer minimal value in terms of evidence reuse. This is due to the specific granularity of CC evidence. However, the benefits may flow in the opposite direction; due to the high level of rigor of a CC evaluation, the evidence from such a certification could potentially be reused for a higher-level cloud certification.</p>
 </div>
 <div class="paragraph">
 <p>On a general level, the CC in the Cloud technical community is developing guidance documentation that should be usable across all  CC cloud evaluations that covers the cloud-specific requirements for operational and preparatory procedures. Such guidance should be applied uniformly across all PPs to ensure consistent presentation across technology types.</p>
@@ -1543,7 +1543,7 @@ that adequately meets the PPs assumptions and organizational security policies.<
 <p>Threats are not considered here since they map to security objectives for the TOE rather than assumptions and security objectives for the OE. A threat, as an adverse action performed by a threat agent on an asset, is not contextual to the OE of the TOE. However, an author may choose to review the listed threats detailed in a PP in the context of cloud evaluations.</p>
 </div>
 <div class="paragraph">
-<p>It should be noted that the these suggested additions for a TOE hosted on a trusted platform does not necessarily replace all the assumptions and security objectives for the OE. For example, assumptions around restrictions on general-purpose computing capabilities, not providing through traffic protection, trusted admin at the level of the TOE, non-malicious/trusted/proper users, and TOE updates are unlikely to be fulfilled by the trusted platform.</p>
+<p>It should be noted that the these suggested additions for a TOE hosted on a trusted platform do not necessarily replace all the assumptions and security objectives for the OE. For example, assumptions around restrictions on general-purpose computing capabilities, not providing through traffic protection, trusted admin at the level of the TOE, non-malicious/trusted/proper users, and TOE updates are unlikely to be fulfilled by the trusted platform.</p>
 </div>
 <div class="sect2">
 <h3 id="_a_trusted_platform_administrator">A.TRUSTED_PLATFORM_ADMINISTRATOR</h3>
@@ -1714,7 +1714,7 @@ the Assumption</th>
 <p>As Common Criteria testing requires isolated test environments for each TOE to prevent contamination of test results, testing on Public Cloud infrastructure raises some unique challenges.</p>
 </div>
 <div class="paragraph">
-<p>Not all TOE developers will procure cloud resources for Common Criteria Evaluations and certain CCTL&#8217;s may wish to facilitate this hosting for cloud evaluations. As such, an evaluator. An evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. Best practices for test environments to expand on these controls for various stakeholders may be forthcoming in future CCiTC publications.</p>
+<p>Not all TOE developers will procure cloud resources for Common Criteria Evaluations and certain CCTL&#8217;s may wish to facilitate this hosting for cloud evaluations. As such, an evaluator should be prepared to create and offer cloud testing infrastructure to TOE developers. This environment must establish controls provided by the CSP to establish effective isolation equivalent to on-prem testing to ensure the integrity of results. This may involve isolated VLANs, ACLs, Compute Resources, etc. on multi-tenant infrastructure. This information will need to be captured and presented to Evaluation Authorities as evaluation deliverables. Best practices for test environments to expand on these controls for various stakeholders may be forthcoming in future CCiTC publications.</p>
 </div>
 <div class="paragraph">
 <p>In general, the necessity to abstract from underlying hardware layers is dictated by the TOE type in Protection Profiles. For instance, the cPP for Application Software relies only on the underlying OS and makes no distinction on whether that OS is virtualized. In this scenario bare metal isolation in the cloud testing would be unnecessary and  a multi-tenancy environment is acceptable.</p>
@@ -1731,7 +1731,7 @@ the Assumption</th>
 <p>As we have introduced a trusted platform concept, underlying vulnerabilities in the cloud operational environment can be treated as they are in traditional OE analysis.</p>
 </div>
 <div class="paragraph">
-<p>However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the means in which evaluators are expected to shift negative test coverage must use cloud attack vectors. (e.g. service portal, management plane, etc.)</p>
+<p>However, when applicable vulnerabilities are discovered or suspected for TOEs operating in a cloud environment, the means by which evaluators are expected to shift negative test coverage must use cloud attack vectors. (e.g. service portal, management plane, etc.)</p>
 </div>
 </div>
 </div>
@@ -2301,7 +2301,7 @@ OE.PROPER_ADMIN</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.1.1<br>
-Last updated 2025-02-05 08:12:08 -0600
+Last updated 2025-03-05 15:49:22 -0600
 </div>
 </div>
 </body>
