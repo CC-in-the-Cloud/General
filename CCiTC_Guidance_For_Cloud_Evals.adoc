@@ -4,7 +4,7 @@
 :title-logo-image: image:images/CCitCLogo.png[align=center]
 :icons: font
 :toc:
-:revnumber: 1.1.1a
+:revnumber: 1.1a
 :revdate: 2025-06-03
 
 :iTC-longname: Common Criteria in the Cloud Technical Community 
